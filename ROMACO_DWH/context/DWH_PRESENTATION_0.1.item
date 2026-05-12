@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_hRUqMO2-Ee6LTJLMTmvwFA" confirmationNeeded="false" hide="false" name="PROD">
+  <contextParameter xmi:id="_hRUqMe2-Ee6LTJLMTmvwFA" comment="" name="DWH_PRESENTATION_PASSWORD" prompt="DWH_PRESENTATION_PASSWORD?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:8GrwChzgzzFDAa+cEx8HqqfNerONY7eVXE7ST9SOwJfIhMpzDw=="/>
+  <contextParameter xmi:id="_hRUqMu2-Ee6LTJLMTmvwFA" comment="" name="DWH_PRESENTATION_LOGIN" prompt="DWH_PRESENTATION_LOGIN?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="adm_bi"/>
+  <contextParameter xmi:id="_hRUqM-2-Ee6LTJLMTmvwFA" comment="" name="DWH_PRESENTATION_SERVER" prompt="DWH_PRESENTATION_SERVER?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="KASV-SQL01"/>
+  <contextParameter xmi:id="_hRUqNO2-Ee6LTJLMTmvwFA" comment="" name="DWH_PRESENTATION_SCHEMA" prompt="DWH_PRESENTATION_SCHEMA?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="PRS"/>
+  <contextParameter xmi:id="_hRUqNe2-Ee6LTJLMTmvwFA" comment="" name="DWH_PRESENTATION_PORT" prompt="DWH_PRESENTATION_PORT?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+  <contextParameter xmi:id="_hRUqNu2-Ee6LTJLMTmvwFA" comment="" name="DWH_PRESENTATION_ADDITIONAL_PARAM" prompt="DWH_PRESENTATION_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="instance=DWH;useNTLMv2=true;domain=ad42;Integrated Security=false"/>
+  <contextParameter xmi:id="_hRUqN-2-Ee6LTJLMTmvwFA" comment="" name="DWH_PRESENTATION_DATABASE" prompt="DWH_PRESENTATION_DATABASE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DWH"/>
+</talendfile:ContextType>

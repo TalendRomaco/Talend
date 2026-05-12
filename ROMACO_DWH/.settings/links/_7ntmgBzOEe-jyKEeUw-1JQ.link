@@ -1,0 +1,11 @@
+{
+  "itemId" : "_7ntmgBzOEe-jyKEeUw-1JQ",
+  "contextList" : [ {
+    "contextName" : "PROD",
+    "repoId" : "_lzkJgDIeEe-epOz61AJceA",
+    "parameterList" : [ {
+      "id" : "_lz3EcTIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_ADDITIONAL_PARAM"
+    } ]
+  } ]
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_x-4hgMEJEeqtY77HEcGowA" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_x-4hgcEJEeqtY77HEcGowA" comment="" name="Zeus_Login" prompt="Zeus_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="sql_zeus_read"/>
+  <contextParameter xmi:id="_x-4hgsEJEeqtY77HEcGowA" comment="" name="Zeus_AdditionalParams" prompt="Zeus_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="instance=IVS"/>
+  <contextParameter xmi:id="_x-4hg8EJEeqtY77HEcGowA" comment="" name="Zeus_Port" prompt="Zeus_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+  <contextParameter xmi:id="_x-4hhMEJEeqtY77HEcGowA" comment="" name="Zeus_Schema" prompt="Zeus_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_x-4hhcEJEeqtY77HEcGowA" comment="" name="Zeus_Password" prompt="Zeus_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:aI1er7R/c7qn+5k+SkyO3mLwMJDz3sGQlWfft90Zs8PjK12G4Uw="/>
+  <contextParameter xmi:id="_x-4hhsEJEeqtY77HEcGowA" comment="" name="Zeus_Server" prompt="Zeus_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="192.168.10.10"/>
+  <contextParameter xmi:id="_x-4hh8EJEeqtY77HEcGowA" comment="" name="Zeus_Database" prompt="Zeus_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="zeus"/>
+</talendfile:ContextType>

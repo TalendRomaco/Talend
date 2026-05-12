@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_YQqrsC4tEe-DYfSotInr5w" confirmationNeeded="false" hide="false" name="PROD">
+  <contextParameter xmi:id="_YQqrsS4tEe-DYfSotInr5w" comment="" name="FOLDER_PATH" prompt="FOLDER_PATH?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="\\KASV-Talend-E01\Talend-Data-Import$"/>
+</talendfile:ContextType>

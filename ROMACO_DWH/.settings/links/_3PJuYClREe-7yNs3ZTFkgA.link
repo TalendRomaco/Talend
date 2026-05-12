@@ -1,0 +1,86 @@
+{
+  "itemId" : "_3PJuYClREe-7yNs3ZTFkgA",
+  "contextList" : [ {
+    "contextName" : "Produktion",
+    "repoId" : "_VSavoJcrEe2AR4f9Fyc4mA",
+    "parameterList" : [ {
+      "id" : "_iecPkJcsEe2AR4f9Fyc4mA",
+      "name" : "SMTP_Port"
+    }, {
+      "id" : "_2TakAZcuEe2AR4f9Fyc4mA",
+      "name" : "SMTP_User_Password"
+    }, {
+      "id" : "_Zn-lMZcsEe2AR4f9Fyc4mA",
+      "name" : "SMTP_Host"
+    }, {
+      "id" : "_2TakAJcuEe2AR4f9Fyc4mA",
+      "name" : "SMTP_User"
+    } ]
+  }, {
+    "contextName" : "Produktion",
+    "repoId" : "_NMth0O29Ee6LTJLMTmvwFA",
+    "parameterList" : [ {
+      "id" : "_q_bHM-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_SERVER"
+    }, {
+      "id" : "_q_bHNu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_q_bHNe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_PORT"
+    }, {
+      "id" : "_q_bHMu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_LOGIN"
+    }, {
+      "id" : "_q_bHN-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_DATABASE"
+    }, {
+      "id" : "_q_bHNO2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_SCHEMA"
+    }, {
+      "id" : "_q_bHMe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_PASSWORD"
+    } ]
+  }, {
+    "contextName" : "Entwicklung",
+    "repoId" : "_VSavoJcrEe2AR4f9Fyc4mA",
+    "parameterList" : [ {
+      "id" : "_iecPkJcsEe2AR4f9Fyc4mA",
+      "name" : "SMTP_Port"
+    }, {
+      "id" : "_2TakAZcuEe2AR4f9Fyc4mA",
+      "name" : "SMTP_User_Password"
+    }, {
+      "id" : "_Zn-lMZcsEe2AR4f9Fyc4mA",
+      "name" : "SMTP_Host"
+    }, {
+      "id" : "_2TakAJcuEe2AR4f9Fyc4mA",
+      "name" : "SMTP_User"
+    } ]
+  }, {
+    "contextName" : "Entwicklung",
+    "repoId" : "_NMth0O29Ee6LTJLMTmvwFA",
+    "parameterList" : [ {
+      "id" : "_q_bHM-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_SERVER"
+    }, {
+      "id" : "_q_bHNu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_q_bHNe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_PORT"
+    }, {
+      "id" : "_q_bHMu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_LOGIN"
+    }, {
+      "id" : "_q_bHN-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_DATABASE"
+    }, {
+      "id" : "_q_bHNO2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_SCHEMA"
+    }, {
+      "id" : "_q_bHMe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_PASSWORD"
+    } ]
+  } ]
+}

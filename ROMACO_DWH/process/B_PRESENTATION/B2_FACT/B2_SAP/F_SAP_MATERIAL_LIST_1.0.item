@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Prod" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="Prod">
+    <contextParameter comment="" name="TARGET_TABLE" prompt="TARGET_TABLE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;F_SAP_MATERIAL_LIST&quot;" internalId="_B457IBz4Ee-jyKEeUw-1JQ"/>
+    <contextParameter comment="" name="DWH_PRESENTATION_PASSWORD" prompt="DWH_PRESENTATION_PASSWORD?" promptNeeded="false" repositoryContextId="_hRKSIO2-Ee6LTJLMTmvwFA" type="id_Password" value="enc:system.encryption.key.v1:0an6zkDQtcOrGs15FwzDMYJ1HU9WIQmYWM8HWrOgNyJEE0+Cug==" internalId="_w7P2EBzJEe-jyKEeUw-1JQ"/>
+    <contextParameter comment="" name="DWH_PRESENTATION_LOGIN" prompt="DWH_PRESENTATION_LOGIN?" promptNeeded="false" repositoryContextId="_hRKSIO2-Ee6LTJLMTmvwFA" type="id_String" value="adm_bi" internalId="_w7P2ERzJEe-jyKEeUw-1JQ"/>
+    <contextParameter comment="" name="DWH_PRESENTATION_SERVER" prompt="DWH_PRESENTATION_SERVER?" promptNeeded="false" repositoryContextId="_hRKSIO2-Ee6LTJLMTmvwFA" type="id_String" value="KASV-SQL01" internalId="_w7P2EhzJEe-jyKEeUw-1JQ"/>
+    <contextParameter comment="" name="DWH_PRESENTATION_SCHEMA" prompt="DWH_PRESENTATION_SCHEMA?" promptNeeded="false" repositoryContextId="_hRKSIO2-Ee6LTJLMTmvwFA" type="id_String" value="PRS" internalId="_w7P2ExzJEe-jyKEeUw-1JQ"/>
+    <contextParameter comment="" name="DWH_PRESENTATION_PORT" prompt="DWH_PRESENTATION_PORT?" promptNeeded="false" repositoryContextId="_hRKSIO2-Ee6LTJLMTmvwFA" type="id_String" value="1433" internalId="_w7P2FBzJEe-jyKEeUw-1JQ"/>
+    <contextParameter comment="" name="DWH_PRESENTATION_ADDITIONAL_PARAM" prompt="DWH_PRESENTATION_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="_hRKSIO2-Ee6LTJLMTmvwFA" type="id_String" value="instance=DWH;useNTLMv2=true;domain=ad42;Integrated Security=false" internalId="_w7P2FRzJEe-jyKEeUw-1JQ"/>
+    <contextParameter comment="" name="DWH_PRESENTATION_DATABASE" prompt="DWH_PRESENTATION_DATABASE?" promptNeeded="false" repositoryContextId="_hRKSIO2-Ee6LTJLMTmvwFA" type="id_String" value="DWH" internalId="_w7P2FhzJEe-jyKEeUw-1JQ"/>
+    <contextParameter comment="" name="DWH_ADMIN_ADDITIONAL_PARAM" prompt="DWH_ADMIN_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="_lzkJgDIeEe-epOz61AJceA" type="id_String" value="instance=DWH;useNTLMv2=true;domain=ad42;Integrated Security=false" internalId="_4VZF8DIeEe-epOz61AJceA"/>
+    <contextParameter comment="" name="DWH_ADMIN_SERVER" prompt="DWH_ADMIN_SERVER?" promptNeeded="false" repositoryContextId="_lzkJgDIeEe-epOz61AJceA" type="id_String" value="KASV-SQL01" internalId="_4VZF8TIeEe-epOz61AJceA"/>
+    <contextParameter comment="" name="DWH_ADMIN_PORT" prompt="DWH_ADMIN_PORT?" promptNeeded="false" repositoryContextId="_lzkJgDIeEe-epOz61AJceA" type="id_String" value="1433" internalId="_4VZF8jIeEe-epOz61AJceA"/>
+    <contextParameter comment="" name="DWH_ADMIN_PASSWORD" prompt="DWH_ADMIN_PASSWORD?" promptNeeded="false" repositoryContextId="_lzkJgDIeEe-epOz61AJceA" type="id_Password" value="enc:system.encryption.key.v1:/51k2v0VeKTW1S3CF1je5EM48ZlTXoIQMUKZIXCtqlhgaa1BXA==" internalId="_4VZF8zIeEe-epOz61AJceA"/>
+    <contextParameter comment="" name="DWH_ADMIN_LOGIN" prompt="DWH_ADMIN_LOGIN?" promptNeeded="false" repositoryContextId="_lzkJgDIeEe-epOz61AJceA" type="id_String" value="adm_bi" internalId="_4VZF9DIeEe-epOz61AJceA"/>
+    <contextParameter comment="" name="DWH_ADMIN_SCHEMA" prompt="DWH_ADMIN_SCHEMA?" promptNeeded="false" repositoryContextId="_lzkJgDIeEe-epOz61AJceA" type="id_String" value="ADM" internalId="_4VZF9TIeEe-epOz61AJceA"/>
+    <contextParameter comment="" name="DWH_ADMIN_DATABASE" prompt="DWH_ADMIN_DATABASE?" promptNeeded="false" repositoryContextId="_lzkJgDIeEe-epOz61AJceA" type="id_String" value="DWH" internalId="_4VZF9jIeEe-epOz61AJceA"/>
+    <contextParameter comment="" name="DWH_STAGE_LOGIN" prompt="DWH_STAGE_LOGIN?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="adm_bi" internalId="_irUjkLF9Ee-7m7ApH-s5VA"/>
+    <contextParameter comment="" name="DWH_STAGE_ADDITIONAL_PARAM" prompt="DWH_STAGE_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="instance=DWH;useNTLMv2=true;domain=ad42;integratedSecurity=false" internalId="_irUjkbF9Ee-7m7ApH-s5VA"/>
+    <contextParameter comment="" name="DWH_STAGE_PORT" prompt="DWH_STAGE_PORT?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="1433" internalId="_irUjkrF9Ee-7m7ApH-s5VA"/>
+    <contextParameter comment="" name="DWH_STAGE_SERVER" prompt="DWH_STAGE_SERVER?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="KASV-SQL01" internalId="_irUjk7F9Ee-7m7ApH-s5VA"/>
+    <contextParameter comment="" name="DWH_STAGE_SCHEMA" prompt="DWH_STAGE_SCHEMA?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="STG" internalId="_irUjlLF9Ee-7m7ApH-s5VA"/>
+    <contextParameter comment="" name="DWH_STAGE_DATABASE" prompt="DWH_STAGE_DATABASE?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="DWH" internalId="_irUjlbF9Ee-7m7ApH-s5VA"/>
+    <contextParameter comment="" name="DWH_STAGE_PASSWORD" prompt="DWH_STAGE_PASSWORD?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_Password" value="enc:system.encryption.key.v1:anKi8R/H5AJLIZMt0QhH4UW3TkH6k4quNT/gooFYVr0pR9zaKg==" internalId="_irVKoLF9Ee-7m7ApH-s5VA"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="400" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:I3AvJwJS/iYkabNb68DShviEv52hAN9HYOr/Q175" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;E:/Talend-Studio/Workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ECV0crzWlRULGI+MkbBNqhhyGC8pXeLlQgViYDPh" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_fB5FwISOEeayvK0D79Gaqg" name="DataOperation"/>
+    <routinesParameter id="_fC8OoISOEeayvK0D79Gaqg" name="Mathematical"/>
+    <routinesParameter id="_fDK4IISOEeayvK0D79Gaqg" name="Numeric"/>
+    <routinesParameter id="_fDaIsISOEeayvK0D79Gaqg" name="Relational"/>
+    <routinesParameter id="_fDnkEISOEeayvK0D79Gaqg" name="StringHandling"/>
+    <routinesParameter id="_fDtqsISOEeayvK0D79Gaqg" name="TalendDataGenerator"/>
+    <routinesParameter id="_fD3bsISOEeayvK0D79Gaqg" name="TalendDate"/>
+    <routinesParameter id="_fD-wcISOEeayvK0D79Gaqg" name="TalendString"/>
+    <routinesParameter id="_EeqWMLJvEeeZif3o8SvhfA" name="DataLoading"/>
+    <routinesParameter id="_yUa20ITEEea1D7eo1TFBjg" name="Utils"/>
+    <routinesParameter id="_qSCiIA9NEe2shNL2goCYFg" name="TalendStringUtil"/>
+    <routinesParameter id="__wkvQ-hKEe6bjtl1OUplwg" name="SQLike"/>
+  </parameters>
+  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-280" posY="80">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlConnection_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_FOgfsO2-Ee6LTJLMTmvwFA" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="context.DWH_PRESENTATION_SERVER"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.DWH_PRESENTATION_PORT"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.DWH_PRESENTATION_SCHEMA"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.DWH_PRESENTATION_DATABASE"/>
+    <elementParameter field="TEXT" name="USER" value="context.DWH_PRESENTATION_LOGIN"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:gzWQqTP9wAnd9jC4Pec98/R/u7vbBXvVXrAkpRzCozYHbzZRMRqt5/06puIJvroZtO/591UkJOjdGTT20w=="/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.DWH_PRESENTATION_ADDITIONAL_PARAM"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_ALWAYS_ENCRYPTED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="KEYSTORE_PRINCIPAL_ID" value="" show="false"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_SECRET" value="" show="false"/>
+    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Connection"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-280" posY="560">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_1" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
+    <elementParameter field="CHECK" name="CLOSE" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="Commit"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlCommit_1"/>
+  </node>
+  <node componentName="tMSSqlRollback" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-152" posY="560">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlRollback_1" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
+    <elementParameter field="CHECK" name="CLOSE" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="Rollback"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlRollback_1"/>
+  </node>
+  <node componentName="ERROR_LOG_PRESENTATION" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="200" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="ERROR_LOG_PRESENTATION_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="START" value="true" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="ERROR_LOG_PRESENTATION"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <node componentName="STATISTIC_LOG_PRESENTATION" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="200" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="STATISTIC_LOG_PRESENTATION_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="START" value="true" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="STATISTIC_LOG_PRESENTATION"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-280" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:oLjh1eZPNDl+jY33IBGYRUstuFcnJC7yfQ1wpShJ" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="context.TARGET_TABLE"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;TRUNCATE TABLE&#xD;&#xA;PRS.&quot; + context.TARGET_TABLE "/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_ALWAYS_ENCRYPTED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="KEYSTORE_PRINCIPAL_ID" value="" show="false"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_SECRET" value="" show="false"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Delete context.TARGET_TABLE"/>
+    <metadata connector="FLOW" name="tDBRow_1"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-280" posY="400">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:4oaeuhIwUu5f/fz7cs2m+7k6jQGF1Eah9yz86w0W" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="context.TARGET_TABLE"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xD;&#xA;&#xD;&#xA;/*Filterung auf BOM/Stückliste Kategory != K (Basis Tabelle STKO)*/&#xD;&#xA;WITH [CTE_VALID_FROM] AS&#xD;&#xA;(&#xD;&#xA;           SELECT     [STKO].*&#xD;&#xA;           FROM       dwh.stg.[s_sap_stko] [STKO]&#xD;&#xA;           INNER JOIN&#xD;&#xA;                      (&#xD;&#xA;                                      SELECT DISTINCT([STLNR]) ,&#xD;&#xA;                                                      last_value([STLTY]) OVER (partition BY [STLNR] ORDER BY [DATUV] rows BETWEEN UNBOUNDED PRECEDING AND             UNBOUNDED following) AS [STLTY]&#xD;&#xA;                                      FROM            dwh.stg.[s_sap_stko] [STKO]&#xD;&#xA;                                      WHERE           [STLTY] != 'K' ) [VALID]&#xD;&#xA;           ON         [VALID].[STLNR] = [STKO].[STLNR]&#xD;&#xA;           AND        [VALID].[STLTY] = [STKO].[STLTY] ), &#xD;&#xA;/*Aufbau Material-/Stückliste als Full-Hierachy Struktur */&#xD;&#xA;material_list AS&#xD;&#xA;(&#xD;&#xA;           SELECT     [MAST_1].[WERKS] AS [Plant_Id],&#xD;&#xA;                      [MAST_1].[MATNR] AS [Material_Id],&#xD;&#xA;                      [MAST_1].[STLNR] AS [Material_List_Level1_No],&#xD;&#xA;                      [STPO_1].[IDNRK] AS [Material_Level1_Id],&#xD;&#xA;                      [STPO_1].[MENGE] AS [Material_Level1_Quantity],&#xD;&#xA;                      stko_1.stlst     AS material_list_status_level1,&#xD;&#xA;                      stko_1.datuv     AS valid_from_level1,&#xD;&#xA;                      stko_1.valid_to  AS valid_to_level1,&#xD;&#xA;                      [MAST_2].[STLNR] AS [Material_List_Level2_No],&#xD;&#xA;                      [STPO_2].[IDNRK] AS [Material_Level2_Id],&#xD;&#xA;                      [STPO_2].[MENGE] AS [Material_Level2_Quantity],&#xD;&#xA;                      stko_2.stlst     AS material_list_status_level2,&#xD;&#xA;                      stko_2.datuv     AS valid_from_level2,&#xD;&#xA;                      stko_2.valid_to  AS valid_to_level2,&#xD;&#xA;                      [MAST_3].[STLNR] AS [Material_List_Level3_No],&#xD;&#xA;                      [STPO_3].[IDNRK] AS [Material_Level3_Id],&#xD;&#xA;                      [STPO_3].[MENGE] AS [Material_Level3_Quantity],&#xD;&#xA;                      stko_3.stlst     AS material_list_status_level3,&#xD;&#xA;                      stko_3.datuv     AS valid_from_level3,&#xD;&#xA;                      stko_3.valid_to  AS valid_to_level3,&#xD;&#xA;                      [MAST_4].[STLNR] AS [Material_List_Level4_No],&#xD;&#xA;                      [STPO_4].[IDNRK] AS [Material_Level4_Id],&#xD;&#xA;                      [STPO_4].[MENGE] AS [Material_Level4_Quantity],&#xD;&#xA;                      stko_4.stlst     AS material_list_status_level4,&#xD;&#xA;                      stko_4.datuv     AS valid_from_level4,&#xD;&#xA;                      stko_4.valid_to  AS valid_to_level4,&#xD;&#xA;                      [MAST_5].[STLNR] AS [Material_List_Level5_No],&#xD;&#xA;                      [STPO_5].[IDNRK] AS [Material_Level5_Id],&#xD;&#xA;                      [STPO_5].[MENGE] AS [Material_Level5_Quantity],&#xD;&#xA;                      stko_5.stlst     AS material_list_status_level5,&#xD;&#xA;                      stko_5.datuv     AS valid_from_level5,&#xD;&#xA;                      stko_5.valid_to  AS valid_to_level5,&#xD;&#xA;                      [MAST_6].[STLNR] AS [Material_List_Level6_No],&#xD;&#xA;                      [STPO_6].[IDNRK] AS [Material_Level6_Id],&#xD;&#xA;                      [STPO_6].[MENGE] AS [Material_Level6_Quantity],&#xD;&#xA;                      stko_6.stlst     AS material_list_status_level6,&#xD;&#xA;                      stko_6.datuv     AS valid_from_level6,&#xD;&#xA;                      stko_6.valid_to  AS valid_to_level6,&#xD;&#xA;                      [MAST_7].[STLNR] AS [Material_List_Level7_No],&#xD;&#xA;                      [STPO_7].[IDNRK] AS [Material_Level7_Id],&#xD;&#xA;                      [STPO_7].[MENGE] AS [Material_Level7_Quantity],&#xD;&#xA;                      stko_7.stlst     AS material_list_status_level7,&#xD;&#xA;                      stko_7.datuv     AS valid_from_level7,&#xD;&#xA;                      stko_7.valid_to  AS valid_to_level7&#xD;&#xA;           FROM       dwh.stg.[s_sap_mast] [MAST_1]&#xD;&#xA;           INNER JOIN [CTE_VALID_FROM] [STKO_1]&#xD;&#xA;           ON         [MAST_1].[STLNR] = [STKO_1].[STLNR]&#xD;&#xA;           AND        [MAST_1].[STLAL] = [STKO_1].[STLAL]&#xD;&#xA;           INNER JOIN dwh.stg.[s_sap_stpo] [STPO_1]&#xD;&#xA;           ON         [STKO_1].[STLNR] = [STPO_1].[STLNR]&#xD;&#xA;           AND        [STKO_1].[STLTY] = [STPO_1].[STLTY]&#xD;&#xA;           LEFT JOIN  dwh.stg.[s_sap_mast] [MAST_2]&#xD;&#xA;           ON         [MAST_2].[MATNR] = [STPO_1].[IDNRK]&#xD;&#xA;           AND        [MAST_2].[WERKS] = [MAST_1].[WERKS]&#xD;&#xA;           LEFT JOIN  [CTE_VALID_FROM] [STKO_2]&#xD;&#xA;           ON         [MAST_2].[STLNR] = [STKO_2].[STLNR]&#xD;&#xA;           AND        [MAST_2].[STLAL] = [STKO_2].[STLAL]&#xD;&#xA;           LEFT JOIN  dwh.stg.[s_sap_stpo] [STPO_2]&#xD;&#xA;           ON         [STKO_2].[STLNR] = [STPO_2].[STLNR]&#xD;&#xA;           AND        [STKO_2].[STLTY] = [STPO_2].[STLTY]&#xD;&#xA;           LEFT JOIN  dwh.stg.[s_sap_mast] [MAST_3]&#xD;&#xA;           ON         [MAST_3].[MATNR] = [STPO_2].[IDNRK]&#xD;&#xA;           AND        [MAST_3].[WERKS] = [MAST_2].[WERKS]&#xD;&#xA;           LEFT JOIN  [CTE_VALID_FROM] [STKO_3]&#xD;&#xA;           ON         [MAST_3].[STLNR] = [STKO_3].[STLNR]&#xD;&#xA;           AND        [MAST_3].[STLAL] = [STKO_3].[STLAL]&#xD;&#xA;           LEFT JOIN  dwh.stg.[s_sap_stpo] [STPO_3]&#xD;&#xA;           ON         [STKO_3].[STLNR] = [STPO_3].[STLNR]&#xD;&#xA;           AND        [STKO_3].[STLTY] = [STPO_3].[STLTY]&#xD;&#xA;           LEFT JOIN  dwh.stg.[s_sap_mast] [MAST_4]&#xD;&#xA;           ON         [MAST_4].[MATNR] = [STPO_3].[IDNRK]&#xD;&#xA;           AND        [MAST_4].[WERKS] = [MAST_3].[WERKS]&#xD;&#xA;           LEFT JOIN  [CTE_VALID_FROM] [STKO_4]&#xD;&#xA;           ON         [MAST_4].[STLNR] = [STKO_4].[STLNR]&#xD;&#xA;           AND        [MAST_4].[STLAL] = [STKO_4].[STLAL]&#xD;&#xA;           LEFT JOIN  dwh.stg.[s_sap_stpo] [STPO_4]&#xD;&#xA;           ON         [STKO_4].[STLNR] = [STPO_4].[STLNR]&#xD;&#xA;           AND        [STKO_4].[STLTY] = [STPO_4].[STLTY]&#xD;&#xA;           LEFT JOIN  dwh.stg.[s_sap_mast] [MAST_5]&#xD;&#xA;           ON         [MAST_5].[MATNR] = [STPO_4].[IDNRK]&#xD;&#xA;           AND        [MAST_5].[WERKS] = [MAST_4].[WERKS]&#xD;&#xA;           LEFT JOIN  [CTE_VALID_FROM] [STKO_5]&#xD;&#xA;           ON         [MAST_5].[STLNR] = [STKO_5].[STLNR]&#xD;&#xA;           AND        [MAST_5].[STLAL] = [STKO_5].[STLAL]&#xD;&#xA;           LEFT JOIN  dwh.stg.[s_sap_stpo] [STPO_5]&#xD;&#xA;           ON         [STKO_5].[STLNR] = [STPO_5].[STLNR]&#xD;&#xA;           AND        [STKO_5].[STLTY] = [STPO_5].[STLTY]&#xD;&#xA;           LEFT JOIN  dwh.stg.[s_sap_mast] [MAST_6]&#xD;&#xA;           ON         [MAST_6].[MATNR] = [STPO_5].[IDNRK]&#xD;&#xA;           AND        [MAST_6].[WERKS] = [MAST_5].[WERKS]&#xD;&#xA;           LEFT JOIN  [CTE_VALID_FROM] [STKO_6]&#xD;&#xA;           ON         [MAST_6].[STLNR] = [STKO_6].[STLNR]&#xD;&#xA;           AND        [MAST_6].[STLAL] = [STKO_6].[STLAL]&#xD;&#xA;           LEFT JOIN  dwh.stg.[s_sap_stpo] [STPO_6]&#xD;&#xA;           ON         [STKO_6].[STLNR] = [STPO_6].[STLNR]&#xD;&#xA;           AND        [STKO_6].[STLTY] = [STPO_6].[STLTY]&#xD;&#xA;           LEFT JOIN  dwh.stg.[s_sap_mast] [MAST_7]&#xD;&#xA;           ON         [MAST_7].[MATNR] = [STPO_6].[IDNRK]&#xD;&#xA;           AND        [MAST_7].[WERKS] = [MAST_6].[WERKS]&#xD;&#xA;           LEFT JOIN  [CTE_VALID_FROM] [STKO_7]&#xD;&#xA;           ON         [MAST_7].[STLNR] = [STKO_7].[STLNR]&#xD;&#xA;           AND        [MAST_7].[STLAL] = [STKO_7].[STLAL]&#xD;&#xA;           LEFT JOIN  dwh.stg.[s_sap_stpo] [STPO_7]&#xD;&#xA;           ON         [STKO_7].[STLNR] = [STPO_7].[STLNR]&#xD;&#xA;           AND        [STKO_7].[STLTY] = [STPO_7].[STLTY])&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;/*Erstellung Material-/Stückliste als Parent-Child Struktur auf Basis der Full-Hierachy Struktur und Import in Tabelle*/&#xD;&#xA;INSERT INTO DWH.PRS.&quot;+context.TARGET_TABLE+&quot;&#xD;&#xA;&#xD;&#xA;SELECT DISTINCT PLANT_ID,&#xD;&#xA;                PLANT_ID + '_' + ROOT_MATERIAL_ID AS ROOT_MATERIAL_TID,&#xD;&#xA;                ROOT_MATERIAL_ID,&#xD;&#xA;                PLANT_ID + '_' + PARENT_MATERIAL_ID AS PARENT_MATERIAL_TID,&#xD;&#xA;                PARENT_MATERIAL_ID,&#xD;&#xA;                PLANT_ID + '_' + MATERIAL_ID AS MATERIAL_TID,&#xD;&#xA;                MATERIAL_ID,&#xD;&#xA;                MATERIAL_LIST_LEVEL,&#xD;&#xA;                QUANTITY,&#xD;&#xA;                MATERIAL_LIST_STATUS,&#xD;&#xA;                VALID_FROM,&#xD;&#xA;                VALID_TO&#xD;&#xA;           &#xD;&#xA;FROM            (&#xD;&#xA;                       SELECT 1 AS material_list_level,&#xD;&#xA;                              plant_id,&#xD;&#xA;                              material_id                 AS root_material_id,&#xD;&#xA;                              material_id                 AS parent_material_id,&#xD;&#xA;                              material_level1_id          AS material_id,&#xD;&#xA;                              material_level1_quantity    AS quantity,&#xD;&#xA;                              material_list_status_level1 AS material_list_status,&#xD;&#xA;                              valid_from_level1           AS valid_from,&#xD;&#xA;                              valid_to_level1             AS valid_to&#xD;&#xA;                       FROM   material_list&#xD;&#xA;                       UNION ALL&#xD;&#xA;                       SELECT 2 AS material_list_level,&#xD;&#xA;                              plant_id,&#xD;&#xA;                              material_id                 AS root_material_id,&#xD;&#xA;                              material_level1_id          AS parent_material_id,&#xD;&#xA;                              material_level2_id          AS material_id,&#xD;&#xA;                              material_level2_quantity    AS quantity,&#xD;&#xA;                              material_list_status_level2 AS material_list_status,&#xD;&#xA;                              valid_from_level2           AS valid_from,&#xD;&#xA;                              valid_to_level2             AS valid_to&#xD;&#xA;                       FROM   material_list&#xD;&#xA;                       UNION ALL&#xD;&#xA;                       SELECT 3 AS material_list_level,&#xD;&#xA;                              plant_id,&#xD;&#xA;                              material_id                 AS root_material_id,&#xD;&#xA;                              material_level2_id          AS parent_material_id,&#xD;&#xA;                              material_level3_id          AS material_id,&#xD;&#xA;                              material_level3_quantity    AS quantity,&#xD;&#xA;                              material_list_status_level3 AS material_list_status,&#xD;&#xA;                              valid_from_level3           AS valid_from,&#xD;&#xA;                              valid_to_level3             AS valid_to&#xD;&#xA;                       FROM   material_list&#xD;&#xA;                       UNION ALL&#xD;&#xA;                       SELECT 4 AS material_list_level,&#xD;&#xA;                              plant_id,&#xD;&#xA;                              material_id                 AS root_material_id,&#xD;&#xA;                              material_level3_id          AS parent_material_id,&#xD;&#xA;                              material_level4_id          AS material_id,&#xD;&#xA;                              material_level4_quantity    AS quantity,&#xD;&#xA;                              material_list_status_level4 AS material_list_status,&#xD;&#xA;                              valid_from_level4           AS valid_from,&#xD;&#xA;                              valid_to_level4             AS valid_to&#xD;&#xA;                       FROM   material_list&#xD;&#xA;                       UNION ALL&#xD;&#xA;                       SELECT 5 AS material_list_level,&#xD;&#xA;                              plant_id,&#xD;&#xA;                              material_id                 AS root_material_id,&#xD;&#xA;                              material_level4_id          AS parent_material_id,&#xD;&#xA;                              material_level5_id          AS material_id,&#xD;&#xA;                              material_level5_quantity    AS quantity,&#xD;&#xA;                              material_list_status_level5 AS material_list_status,&#xD;&#xA;                              valid_from_level5           AS valid_from,&#xD;&#xA;                              valid_to_level5             AS valid_to&#xD;&#xA;                       FROM   material_list&#xD;&#xA;                       UNION ALL&#xD;&#xA;                       SELECT 6 AS material_list_level,&#xD;&#xA;                              plant_id,&#xD;&#xA;                              material_id                 AS root_material_id,&#xD;&#xA;                              material_level5_id          AS parent_material_id,&#xD;&#xA;                              material_level6_id          AS material_id,&#xD;&#xA;                              material_level6_quantity    AS quantity,&#xD;&#xA;                              material_list_status_level6 AS material_list_status,&#xD;&#xA;                              valid_from_level6           AS valid_from,&#xD;&#xA;                              valid_to_level6             AS valid_to&#xD;&#xA;                       FROM   material_list ) tab&#xD;&#xA;WHERE           material_id IS NOT NULL&#xD;&#xA;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_ALWAYS_ENCRYPTED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="KEYSTORE_PRINCIPAL_ID" value="" show="false"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_SECRET" value="" show="false"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Befülle Tabelle context.TARGET_TABLE"/>
+    <metadata connector="FLOW" name="tDBRow_2"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlConnection_1" offsetLabelX="0" offsetLabelY="0" source="tMSSqlConnection_1" target="tDBRow_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_1" offsetLabelX="0" offsetLabelY="0" source="tDBRow_1" target="tDBRow_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk5" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_2" offsetLabelX="0" offsetLabelY="0" source="tDBRow_2" target="tMSSqlCommit_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tDBRow_2" offsetLabelX="0" offsetLabelY="0" source="tDBRow_2" target="tMSSqlRollback_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError1" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlRollback_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="ERROR_LOG_PRESENTATION_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="STATISTIC_LOG_PRESENTATION_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+</talendfile:ProcessType>

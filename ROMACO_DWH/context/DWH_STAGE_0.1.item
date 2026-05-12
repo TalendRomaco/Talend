@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_q_bHMO2-Ee6LTJLMTmvwFA" confirmationNeeded="false" hide="false" name="PROD">
+  <contextParameter xmi:id="_q_bHMe2-Ee6LTJLMTmvwFA" comment="" name="DWH_STAGE_PASSWORD" prompt="DWH_STAGE_PASSWORD?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:uzEP2BlQcMZ7juUgPEhyqUb36JqT/2Ver+Dnq+iUgTcv/w70lw=="/>
+  <contextParameter xmi:id="_q_bHMu2-Ee6LTJLMTmvwFA" comment="" name="DWH_STAGE_LOGIN" prompt="DWH_STAGE_LOGIN?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="adm_bi"/>
+  <contextParameter xmi:id="_q_bHM-2-Ee6LTJLMTmvwFA" comment="" name="DWH_STAGE_SERVER" prompt="DWH_STAGE_SERVER?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="KASV-SQL01"/>
+  <contextParameter xmi:id="_q_bHNO2-Ee6LTJLMTmvwFA" comment="" name="DWH_STAGE_SCHEMA" prompt="DWH_STAGE_SCHEMA?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="STG"/>
+  <contextParameter xmi:id="_q_bHNe2-Ee6LTJLMTmvwFA" comment="" name="DWH_STAGE_PORT" prompt="DWH_STAGE_PORT?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+  <contextParameter xmi:id="_q_bHNu2-Ee6LTJLMTmvwFA" comment="" name="DWH_STAGE_ADDITIONAL_PARAM" prompt="DWH_STAGE_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="instance=DWH;useNTLMv2=true;domain=ad42;integratedSecurity=false"/>
+  <contextParameter xmi:id="_q_bHN-2-Ee6LTJLMTmvwFA" comment="" name="DWH_STAGE_DATABASE" prompt="DWH_STAGE_DATABASE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DWH"/>
+</talendfile:ContextType>

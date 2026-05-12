@@ -1,0 +1,145 @@
+{
+  "itemId" : "_H9BF0PyPEe6Bb5kExJljsQ",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_NMth0O29Ee6LTJLMTmvwFA",
+    "parameterList" : [ {
+      "id" : "_q_bHNu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_q_bHN-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_DATABASE"
+    }, {
+      "id" : "_q_bHMu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_LOGIN"
+    }, {
+      "id" : "_q_bHMe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_PASSWORD"
+    }, {
+      "id" : "_q_bHNe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_PORT"
+    }, {
+      "id" : "_q_bHNO2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_SCHEMA"
+    }, {
+      "id" : "_q_bHM-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_SERVER"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_yY2xIBHUEe-yhejSmGGM_Q",
+    "parameterList" : [ {
+      "id" : "_yZAiIhHUEe-yhejSmGGM_Q",
+      "name" : "SAP_MANDANT100_HOST"
+    }, {
+      "id" : "_yZAiIRHUEe-yhejSmGGM_Q",
+      "name" : "SAP_MANDANT100_USER"
+    }, {
+      "id" : "_yZAiJhHUEe-yhejSmGGM_Q",
+      "name" : "SAP_MANDANT100_SYSTEM_NUMBER"
+    }, {
+      "id" : "_yZAiIxHUEe-yhejSmGGM_Q",
+      "name" : "SAP_MANDANT100_LANGUAGE"
+    }, {
+      "id" : "_yZAiJBHUEe-yhejSmGGM_Q",
+      "name" : "SAP_MANDANT100_CLIENT"
+    }, {
+      "id" : "_yZAiJRHUEe-yhejSmGGM_Q",
+      "name" : "SAP_MANDANT100_PASSWORD"
+    } ]
+  }, {
+    "contextName" : "PROD",
+    "repoId" : "_NMth0O29Ee6LTJLMTmvwFA",
+    "parameterList" : [ {
+      "id" : "_q_bHNu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_q_bHN-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_DATABASE"
+    }, {
+      "id" : "_q_bHMu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_LOGIN"
+    }, {
+      "id" : "_q_bHMe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_PASSWORD"
+    }, {
+      "id" : "_q_bHNe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_PORT"
+    }, {
+      "id" : "_q_bHNO2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_SCHEMA"
+    }, {
+      "id" : "_q_bHM-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_SERVER"
+    } ]
+  }, {
+    "contextName" : "PROD",
+    "repoId" : "_yY2xIBHUEe-yhejSmGGM_Q",
+    "parameterList" : [ {
+      "id" : "_yZAiIhHUEe-yhejSmGGM_Q",
+      "name" : "SAP_MANDANT100_HOST"
+    }, {
+      "id" : "_yZAiIRHUEe-yhejSmGGM_Q",
+      "name" : "SAP_MANDANT100_USER"
+    }, {
+      "id" : "_yZAiJhHUEe-yhejSmGGM_Q",
+      "name" : "SAP_MANDANT100_SYSTEM_NUMBER"
+    }, {
+      "id" : "_yZAiIxHUEe-yhejSmGGM_Q",
+      "name" : "SAP_MANDANT100_LANGUAGE"
+    }, {
+      "id" : "_yZAiJBHUEe-yhejSmGGM_Q",
+      "name" : "SAP_MANDANT100_CLIENT"
+    }, {
+      "id" : "_yZAiJRHUEe-yhejSmGGM_Q",
+      "name" : "SAP_MANDANT100_PASSWORD"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_NMth0O29Ee6LTJLMTmvwFA",
+    "parameterList" : [ {
+      "id" : "_q_bHNu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_q_bHN-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_DATABASE"
+    }, {
+      "id" : "_q_bHMu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_LOGIN"
+    }, {
+      "id" : "_q_bHMe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_PASSWORD"
+    }, {
+      "id" : "_q_bHNe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_PORT"
+    }, {
+      "id" : "_q_bHNO2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_SCHEMA"
+    }, {
+      "id" : "_q_bHM-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_SERVER"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_yY2xIBHUEe-yhejSmGGM_Q",
+    "parameterList" : [ {
+      "id" : "_h-wgQTLQEe-ZYteWlLKUMg",
+      "name" : "SAP_MANDANT100_USER"
+    }, {
+      "id" : "_h-wgQjLQEe-ZYteWlLKUMg",
+      "name" : "SAP_MANDANT100_HOST"
+    }, {
+      "id" : "_h-wgQzLQEe-ZYteWlLKUMg",
+      "name" : "SAP_MANDANT100_LANGUAGE"
+    }, {
+      "id" : "_h-wgRDLQEe-ZYteWlLKUMg",
+      "name" : "SAP_MANDANT100_CLIENT"
+    }, {
+      "id" : "_h-wgRTLQEe-ZYteWlLKUMg",
+      "name" : "SAP_MANDANT100_PASSWORD"
+    }, {
+      "id" : "_h-wgRjLQEe-ZYteWlLKUMg",
+      "name" : "SAP_MANDANT100_SYSTEM_NUMBER"
+    } ]
+  } ]
+}

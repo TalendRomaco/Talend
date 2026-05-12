@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_lz3EcDIeEe-epOz61AJceA" confirmationNeeded="false" hide="false" name="PROD">
+  <contextParameter xmi:id="_lz3EcTIeEe-epOz61AJceA" comment="" name="DWH_ADMIN_ADDITIONAL_PARAM" prompt="DWH_ADMIN_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="instance=DWH;useNTLMv2=true;domain=ad42;Integrated Security=false"/>
+  <contextParameter xmi:id="_lz3EcjIeEe-epOz61AJceA" comment="" name="DWH_ADMIN_SERVER" prompt="DWH_ADMIN_SERVER?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="KASV-SQL01"/>
+  <contextParameter xmi:id="_lz3EczIeEe-epOz61AJceA" comment="" name="DWH_ADMIN_PORT" prompt="DWH_ADMIN_PORT?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+  <contextParameter xmi:id="_lz3EdDIeEe-epOz61AJceA" comment="" name="DWH_ADMIN_PASSWORD" prompt="DWH_ADMIN_PASSWORD?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:qiCQMzYIzdcbTVre5DiWYQGqmZTLNaM/2Mfy1DOgLRJdMvedog=="/>
+  <contextParameter xmi:id="_lz3EdTIeEe-epOz61AJceA" comment="" name="DWH_ADMIN_LOGIN" prompt="DWH_ADMIN_LOGIN?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="adm_bi"/>
+  <contextParameter xmi:id="_lz3EdjIeEe-epOz61AJceA" comment="" name="DWH_ADMIN_SCHEMA" prompt="DWH_ADMIN_SCHEMA?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="ADM"/>
+  <contextParameter xmi:id="_lz3EdzIeEe-epOz61AJceA" comment="" name="DWH_ADMIN_DATABASE" prompt="DWH_ADMIN_DATABASE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DWH"/>
+</talendfile:ContextType>

@@ -1,0 +1,79 @@
+{
+  "itemId" : "_HJVZkLO_Ee-7m7ApH-s5VA",
+  "contextList" : [ {
+    "contextName" : "Prod",
+    "repoId" : "_hRKSIO2-Ee6LTJLMTmvwFA",
+    "parameterList" : [ {
+      "id" : "_hRUqMe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_PRESENTATION_PASSWORD"
+    }, {
+      "id" : "_hRUqMu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_PRESENTATION_LOGIN"
+    }, {
+      "id" : "_hRUqM-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_PRESENTATION_SERVER"
+    }, {
+      "id" : "_hRUqNO2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_PRESENTATION_SCHEMA"
+    }, {
+      "id" : "_hRUqNe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_PRESENTATION_PORT"
+    }, {
+      "id" : "_hRUqNu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_PRESENTATION_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_hRUqN-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_PRESENTATION_DATABASE"
+    } ]
+  }, {
+    "contextName" : "Prod",
+    "repoId" : "_lzkJgDIeEe-epOz61AJceA",
+    "parameterList" : [ {
+      "id" : "_lz3EcTIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_lz3EcjIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_SERVER"
+    }, {
+      "id" : "_lz3EczIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_PORT"
+    }, {
+      "id" : "_lz3EdDIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_PASSWORD"
+    }, {
+      "id" : "_lz3EdTIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_LOGIN"
+    }, {
+      "id" : "_lz3EdjIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_SCHEMA"
+    }, {
+      "id" : "_lz3EdzIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_DATABASE"
+    } ]
+  }, {
+    "contextName" : "Prod",
+    "repoId" : "_NMth0O29Ee6LTJLMTmvwFA",
+    "parameterList" : [ {
+      "id" : "_q_bHMu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_LOGIN"
+    }, {
+      "id" : "_q_bHNu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_q_bHNe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_PORT"
+    }, {
+      "id" : "_q_bHM-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_SERVER"
+    }, {
+      "id" : "_q_bHNO2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_SCHEMA"
+    }, {
+      "id" : "_q_bHN-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_DATABASE"
+    }, {
+      "id" : "_q_bHMe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_PASSWORD"
+    } ]
+  } ]
+}

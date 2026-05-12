@@ -1,0 +1,29 @@
+{
+  "itemId" : "_MF5SEB9OEeu4evOLuCTfoQ",
+  "contextList" : [ {
+    "contextName" : "Prod",
+    "repoId" : "_U-ng4B87Eeu4evOLuCTfoQ",
+    "parameterList" : [ {
+      "id" : "_wNSEQRP9Ee2TTJGNDagvgA",
+      "name" : "ABAS_BI_Login"
+    }, {
+      "id" : "_wNSEQhP9Ee2TTJGNDagvgA",
+      "name" : "ABAS_BI_Database"
+    }, {
+      "id" : "_wNSEQxP9Ee2TTJGNDagvgA",
+      "name" : "ABAS_BI_AdditionalParams"
+    }, {
+      "id" : "_wNSERBP9Ee2TTJGNDagvgA",
+      "name" : "ABAS_BI_Port"
+    }, {
+      "id" : "_wNSERRP9Ee2TTJGNDagvgA",
+      "name" : "ABAS_BI_Schema"
+    }, {
+      "id" : "_wNSERhP9Ee2TTJGNDagvgA",
+      "name" : "ABAS_BI_Server"
+    }, {
+      "id" : "_wNSERxP9Ee2TTJGNDagvgA",
+      "name" : "ABAS_BI_Password"
+    } ]
+  } ]
+}

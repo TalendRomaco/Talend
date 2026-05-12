@@ -1,0 +1,136 @@
+{
+  "itemId" : "_9xM9gHT9EeaxZ-6fRU7rfg",
+  "contextList" : [ {
+    "contextName" : "PROD",
+    "repoId" : "_VSavoJcrEe2AR4f9Fyc4mA",
+    "parameterList" : [ {
+      "id" : "_iecPkJcsEe2AR4f9Fyc4mA",
+      "name" : "SMTP_Port"
+    }, {
+      "id" : "_2TakAZcuEe2AR4f9Fyc4mA",
+      "name" : "SMTP_User_Password"
+    }, {
+      "id" : "_Zn-lMZcsEe2AR4f9Fyc4mA",
+      "name" : "SMTP_Host"
+    }, {
+      "id" : "_2TakAJcuEe2AR4f9Fyc4mA",
+      "name" : "SMTP_User"
+    } ]
+  }, {
+    "contextName" : "PROD",
+    "repoId" : "_NMth0O29Ee6LTJLMTmvwFA",
+    "parameterList" : [ {
+      "id" : "_q_bHM-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_SERVER"
+    }, {
+      "id" : "_q_bHNu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_q_bHNe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_PORT"
+    }, {
+      "id" : "_q_bHMu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_LOGIN"
+    }, {
+      "id" : "_q_bHN-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_DATABASE"
+    }, {
+      "id" : "_q_bHNO2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_SCHEMA"
+    }, {
+      "id" : "_q_bHMe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_PASSWORD"
+    } ]
+  }, {
+    "contextName" : "PROD",
+    "repoId" : "_hRKSIO2-Ee6LTJLMTmvwFA",
+    "parameterList" : [ {
+      "id" : "_hRUqNe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_PRESENTATION_PORT"
+    }, {
+      "id" : "_hRUqN-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_PRESENTATION_DATABASE"
+    }, {
+      "id" : "_hRUqNu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_PRESENTATION_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_hRUqM-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_PRESENTATION_SERVER"
+    }, {
+      "id" : "_hRUqNO2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_PRESENTATION_SCHEMA"
+    }, {
+      "id" : "_hRUqMe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_PRESENTATION_PASSWORD"
+    }, {
+      "id" : "_hRUqMu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_PRESENTATION_LOGIN"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_VSavoJcrEe2AR4f9Fyc4mA",
+    "parameterList" : [ {
+      "id" : "_yaivEleLEe6OX5b3c_wNSw",
+      "name" : "SMTP_Port"
+    }, {
+      "id" : "_yaivFFeLEe6OX5b3c_wNSw",
+      "name" : "SMTP_User_Password"
+    }, {
+      "id" : "_yaivEVeLEe6OX5b3c_wNSw",
+      "name" : "SMTP_Host"
+    }, {
+      "id" : "_yaivE1eLEe6OX5b3c_wNSw",
+      "name" : "SMTP_User"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_NMth0O29Ee6LTJLMTmvwFA",
+    "parameterList" : [ {
+      "id" : "_q_bHM-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_SERVER"
+    }, {
+      "id" : "_q_bHNu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_q_bHNe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_PORT"
+    }, {
+      "id" : "_q_bHMu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_LOGIN"
+    }, {
+      "id" : "_q_bHN-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_DATABASE"
+    }, {
+      "id" : "_q_bHNO2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_SCHEMA"
+    }, {
+      "id" : "_q_bHMe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_PASSWORD"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_hRKSIO2-Ee6LTJLMTmvwFA",
+    "parameterList" : [ {
+      "id" : "_hRUqNe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_PRESENTATION_PORT"
+    }, {
+      "id" : "_hRUqN-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_PRESENTATION_DATABASE"
+    }, {
+      "id" : "_hRUqNu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_PRESENTATION_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_hRUqM-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_PRESENTATION_SERVER"
+    }, {
+      "id" : "_hRUqNO2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_PRESENTATION_SCHEMA"
+    }, {
+      "id" : "_hRUqMe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_PRESENTATION_PASSWORD"
+    }, {
+      "id" : "_hRUqMu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_PRESENTATION_LOGIN"
+    } ]
+  } ]
+}

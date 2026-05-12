@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_iMEFEEEiEfClZdZq5U7F7A" confirmationNeeded="false" hide="false" name="PROD">
+  <contextParameter xmi:id="_iMEFEUEiEfClZdZq5U7F7A" comment="" name="DOCUWARE_SCHEMA" prompt="DOCUWARE_SCHEMA?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dbo"/>
+  <contextParameter xmi:id="_iMEFEkEiEfClZdZq5U7F7A" comment="" name="DOCUWARE_DATABASE" prompt="DOCUWARE_DATABASE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dwdata"/>
+  <contextParameter xmi:id="_iMEFE0EiEfClZdZq5U7F7A" comment="" name="DOCUWARE_LOGIN" prompt="DOCUWARE_LOGIN?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DocuwareDBO"/>
+  <contextParameter xmi:id="_iMEFFEEiEfClZdZq5U7F7A" comment="" name="DOCUWARE_PORT" prompt="DOCUWARE_PORT?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+  <contextParameter xmi:id="_iMEFFUEiEfClZdZq5U7F7A" comment="" name="DOCUWARE_ADDITIONAL_PARAM" prompt="DOCUWARE_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="instance=docuware"/>
+  <contextParameter xmi:id="_iMEFFkEiEfClZdZq5U7F7A" comment="" name="DOCUWARE_PASSWORD" prompt="DOCUWARE_PASSWORD?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:TurSe10wtcfhmPIasDe1alJiCLS9ZyedPlk6lqOWxLaxs1lMeTfMKzY+nFsW"/>
+  <contextParameter xmi:id="_iMEFF0EiEfClZdZq5U7F7A" comment="" name="DOCUWARE_SERVER" prompt="DOCUWARE_SERVER?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="kasv-sql01"/>
+</talendfile:ContextType>

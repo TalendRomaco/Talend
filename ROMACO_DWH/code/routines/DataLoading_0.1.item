@@ -1,0 +1,290 @@
+package routines;
+
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.TimeZone;
+
+public class DataLoading {
+
+	public static String getPer(Date dateFrom, Date dateTo, int period){
+		String[] periods = new String[100];
+    
+		Calendar cal = Calendar.getInstance(TimeZone.getTimeZone("Europe/Berlin"));
+
+		
+    	cal.setTime(dateFrom);
+
+     	Date fenceDate = cal.getTime();
+     	
+     	// long anzahlMonate = TalendDate.diffDate(dateTo, dateFrom, "MM");
+     	     	
+     	
+     	int i = 0;
+     	
+     	while(TalendDate.compareDate(fenceDate, dateTo) < 0){
+     		
+     		periods[i] = StringHandling.RIGHT("0" + (cal.get(Calendar.MONTH) + 1), 2) + cal.get(Calendar.YEAR);
+        	
+     		
+        	cal.add(Calendar.MONTH, 1);
+        
+        	fenceDate = cal.getTime();
+     		i++;
+     	}
+    	
+      	periods[i] = StringHandling.RIGHT("0" + (cal.get(Calendar.MONTH) + 1), 2) + cal.get(Calendar.YEAR);
+    	
+      	
+    	return (periods[period] == null ? "N/A" : periods[period]);
+	}
+	
+	
+	// period index 0 - 12 0: = actual month of start date, 1 = next month ...
+	public static Integer getDays(Date dateFrom, Date dateTo, int period){
+
+		Calendar beginDate = Calendar.getInstance(TimeZone.getTimeZone("Europe/Berlin"));
+		beginDate.setTime(dateFrom); // reference date: From date
+		beginDate.set(Calendar.HOUR_OF_DAY, 0);   // ignore time completely!
+		beginDate.set(Calendar.MINUTE, 0);
+		beginDate.set(Calendar.SECOND, 0);
+
+		
+		Calendar endDate = Calendar.getInstance(TimeZone.getTimeZone("Europe/Berlin"));
+		endDate.setTime(dateTo);
+		endDate.set(Calendar.HOUR_OF_DAY, 0);   // ignore time completely!
+		endDate.set(Calendar.MINUTE, 0);
+		endDate.set(Calendar.SECOND, 0);
+
+		// end of first month
+		Calendar eofmDate = Calendar.getInstance(TimeZone.getTimeZone("Europe/Berlin"));
+		eofmDate.setTime(dateFrom); // use start date and set it to last day of this month		
+		eofmDate.set(Calendar.DAY_OF_MONTH, eofmDate.getActualMaximum(Calendar.DAY_OF_MONTH));
+		eofmDate.set(Calendar.HOUR_OF_DAY, 0);   // ignore time completely!
+		eofmDate.set(Calendar.MINUTE, 0);
+		eofmDate.set(Calendar.SECOND, 0);
+		
+		// first day of last month
+		Calendar folDate = Calendar.getInstance(TimeZone.getTimeZone("Europe/Berlin"));
+		folDate.setTime(dateTo); // use end date and set it to first day of this month		
+		folDate.set(Calendar.DAY_OF_MONTH, folDate.getActualMinimum(Calendar.DAY_OF_MONTH));
+		folDate.set(Calendar.HOUR_OF_DAY, 0);   // ignore time completely!
+		folDate.set(Calendar.MINUTE, 0);
+		folDate.set(Calendar.SECOND, 0);
+		
+		// how many month are affected?
+		long nMonth =    endDate.get(Calendar.MONTH) +   endDate.get(Calendar.YEAR) * 12 
+				   - ( beginDate.get(Calendar.MONTH) + beginDate.get(Calendar.YEAR) * 12 ) + 1;
+		
+		/*
+		System.out.println("Period: " + period + ", Month: " +  nMonth + ", eofmDate" + eofmDate.getTime() + ", folDate " + folDate.getTime());
+		System.out.println("eofmDate - endDate: " + 1 + (int)TalendDate.compareDate(eofmDate.getTime(), endDate.getTime()) );
+		System.out.println("endDate - beginDate: " + 1 + (int)TalendDate.compareDate(endDate.getTime(), beginDate.getTime()) );
+		*/
+		
+     	if (period == 0)  // the beginning (first period)
+     		// end date in next month?
+     		if ( TalendDate.compareDate(eofmDate.getTime(), endDate.getTime()) < 0 )
+     			return 1 + (int)TalendDate.diffDate(eofmDate.getTime(), beginDate.getTime(), "dd");  // take only partial period
+     		else
+     			return 1 + (int)TalendDate.diffDate(endDate.getTime(), beginDate.getTime(), "dd");   // same month: take begin and end date
+     	else 
+     		if (period + 1 == nMonth)  // last period: first day till end date?
+     			return 1 + (int)TalendDate.diffDate(endDate.getTime(), folDate.getTime(), "dd");
+     		else  // month in the middle
+     		{
+     			Calendar lopDate = Calendar.getInstance(TimeZone.getTimeZone("Europe/Berlin"));
+     			lopDate = beginDate;
+         		
+     			lopDate.set(Calendar.DAY_OF_MONTH, 1);   // starting with 1st day
+     			lopDate.add(Calendar.MONTH, period);     // now add period (all month have 1st day!)
+     			lopDate.set(Calendar.DAY_OF_MONTH, lopDate.getActualMaximum(Calendar.DAY_OF_MONTH));  // to last day of this month
+				
+				
+         		// end date in next month?
+         		if ( TalendDate.compareDate(endDate.getTime(), lopDate.getTime()) < 0 )
+         			return 0;  // outside period
+         		else
+         			return lopDate.getActualMaximum(Calendar.DAY_OF_MONTH);   // complete month
+     			}
+	}
+	
+	 public static double calcHours(Date dateFrom, Date dateTo, int period) {   	
+	    	Double[] hours = new Double[1000];
+	    	
+	    	//Fence Date
+	    	Calendar cal = Calendar.getInstance(TimeZone.getTimeZone("Europe/Berlin"));
+	    	
+	    	cal.setTime(dateFrom); // reference date: From date
+	    	
+	    	// next month 1.MM midnight (00:00)
+	    	cal.add(Calendar.MONTH, 1);
+	    	cal.set(Calendar.DAY_OF_MONTH, cal.getActualMinimum(Calendar.DAY_OF_MONTH));
+	    	cal.set(Calendar.HOUR_OF_DAY, cal.getActualMinimum(Calendar.HOUR_OF_DAY));
+	     	cal.set(Calendar.MINUTE, 0);
+	     	cal.set(Calendar.SECOND, 0);
+	     	
+	     	Date fenceDate1 = dateFrom;
+	     	Date fenceDate2 = cal.getTime();
+	     	
+	     	//long anzahlMonate = TalendDate.diffDate(fenceDate2, fenceDate1, "MM");
+	     	
+	     	int i = 0;
+	     	
+	     	while(TalendDate.compareDate(fenceDate2, dateTo) < 0){
+	     		
+	        	hours[i] = Math.abs(new Double(TalendDate.diffDate(fenceDate1, fenceDate2, "mm")) / 60);
+	        	hours[i] = new BigDecimal(hours[i].toString()).setScale(2,RoundingMode.HALF_EVEN).doubleValue();
+	        	
+	        	fenceDate1 = fenceDate2;
+	        	cal.add(Calendar.MONTH, 1);
+	        	cal.set(Calendar.DAY_OF_MONTH, cal.getActualMinimum(Calendar.DAY_OF_MONTH));
+	        	cal.set(Calendar.HOUR_OF_DAY, cal.getActualMinimum(Calendar.HOUR_OF_DAY));
+	         	cal.set(Calendar.MINUTE, 0);
+	         	cal.set(Calendar.SECOND, 0);
+	        
+	        	fenceDate2 = cal.getTime();
+	     		i++;
+	     	}
+	    	
+	     	if(i>0)
+	     		hours[i] = Math.abs(new Double(TalendDate.diffDate(fenceDate1, dateTo, "mm")) / 60);
+	     	else
+	     		hours[i] = Math.abs(new Double(TalendDate.diffDate(dateFrom, dateTo, "mm")) / 60);
+	     	
+	    	hours[i] = new BigDecimal(hours[i].toString()).setScale(2,RoundingMode.HALF_EVEN).doubleValue();
+	    	
+	    	return (hours[period] == null ? 0 : hours[period]);
+	    }
+	 
+	 
+	 public static Integer getDaysOffwork(Date dateFrom, Date dateTo, int offworkFlag) {
+
+		    Calendar start = Calendar.getInstance(TimeZone.getTimeZone("Europe/Berlin"));
+		    start.setTime(dateFrom);
+		    Calendar end = Calendar.getInstance(TimeZone.getTimeZone("Europe/Berlin"));
+		    end.setTime(dateTo);
+
+		    int numberOfDays = 0;
+		    while (start.before(end) || start.equals(end)) {
+
+		        if (offworkFlag == 0) {
+		            if (start.get(Calendar.DAY_OF_WEEK) == Calendar.SATURDAY || start.get(Calendar.DAY_OF_WEEK) == Calendar.SUNDAY) {
+		                numberOfDays++;
+		            }
+		        } else if (offworkFlag == 2) {
+		            if (start.get(Calendar.DAY_OF_WEEK) == Calendar.SATURDAY) {
+		                numberOfDays++;
+		            }
+		        } else if (offworkFlag == 3) {
+		            if (start.get(Calendar.DAY_OF_WEEK) == Calendar.SUNDAY) {
+		                numberOfDays++;
+		            }
+		        } else {
+		            numberOfDays = 0;
+		        }
+		        start.add(Calendar.DATE, 1);
+		    }
+		    return numberOfDays;
+		}
+
+	 
+	 
+	 
+	 
+	 
+	 public static Integer getDaysWoOffwork(Date dateFrom, Date dateTo, int period, int weekendFlag){
+
+			Calendar beginDate = Calendar.getInstance(TimeZone.getTimeZone("Europe/Berlin"));
+			beginDate.setTime(dateFrom); // reference date: From date
+			beginDate.set(Calendar.HOUR_OF_DAY, 0);   // ignore time completely!
+			beginDate.set(Calendar.MINUTE, 0);
+			beginDate.set(Calendar.SECOND, 0);
+			
+
+			
+			Calendar endDate = Calendar.getInstance(TimeZone.getTimeZone("Europe/Berlin"));
+			endDate.setTime(dateTo);
+			endDate.set(Calendar.HOUR_OF_DAY, 0);   // ignore time completely!
+			endDate.set(Calendar.MINUTE, 0);
+			endDate.set(Calendar.SECOND, 0);
+			
+			// end of first month
+			Calendar eofmDate = Calendar.getInstance(TimeZone.getTimeZone("Europe/Berlin"));
+			eofmDate.setTime(dateFrom); // use start date and set it to last day of this month		
+			eofmDate.set(Calendar.DAY_OF_MONTH, eofmDate.getActualMaximum(Calendar.DAY_OF_MONTH));
+			eofmDate.set(Calendar.HOUR_OF_DAY, 0);   // ignore time completely!
+			eofmDate.set(Calendar.MINUTE, 0);
+			eofmDate.set(Calendar.SECOND, 0);
+			//System.out.println("eofmDate: " + eofmDate);
+			
+			// first day of last month
+			Calendar folDate = Calendar.getInstance(TimeZone.getTimeZone("Europe/Berlin"));
+			folDate.setTime(dateTo); // use end date and set it to first day of this month		
+			folDate.set(Calendar.DAY_OF_MONTH, folDate.getActualMinimum(Calendar.DAY_OF_MONTH));
+			folDate.set(Calendar.HOUR_OF_DAY, 0);   // ignore time completely!
+			folDate.set(Calendar.MINUTE, 0);
+			folDate.set(Calendar.SECOND, 0);
+			//System.out.println("folDate: " + folDate);
+			
+			// how many month are affected?
+			long nMonth =    endDate.get(Calendar.MONTH) +   endDate.get(Calendar.YEAR) * 12 
+					   - ( beginDate.get(Calendar.MONTH) + beginDate.get(Calendar.YEAR) * 12 ) + 1;
+
+			//System.out.println("nMonth: " + nMonth);
+			/*
+			System.out.println("Period: " + period + ", Month: " +  nMonth + ", eofmDate" + eofmDate.getTime() + ", folDate " + folDate.getTime());
+			System.out.println("eofmDate - endDate: " + 1 + (int)TalendDate.compareDate(eofmDate.getTime(), endDate.getTime()) );
+			System.out.println("endDate - beginDate: " + 1 + (int)TalendDate.compareDate(endDate.getTime(), beginDate.getTime()) );
+			*/
+			
+	     	if (period == 0)  // the beginning (first period)
+	     		// end date in next month?
+	     		if ( TalendDate.compareDate(eofmDate.getTime(), endDate.getTime()) < 0 )
+	     			return 1 + (int)TalendDate.diffDate(eofmDate.getTime(), beginDate.getTime(), "dd") - getDaysOffwork(beginDate.getTime(), eofmDate.getTime(), weekendFlag);  // take only partial period
+	     		else
+	     			return 1 + (int)TalendDate.diffDate(endDate.getTime(), beginDate.getTime(), "dd") - getDaysOffwork(beginDate.getTime(), endDate.getTime(), weekendFlag);   // same month: take begin and end date
+	     	else 
+	     		if (period + 1 == nMonth) 
+	     			// last period: first day till end date?
+	     			return 1 + (int)TalendDate.diffDate(endDate.getTime(), folDate.getTime(), "dd")  - getDaysOffwork(folDate.getTime(), endDate.getTime(), weekendFlag);
+	     		else  // month in the middle
+	     		{
+	     			Calendar lopDate = Calendar.getInstance(TimeZone.getTimeZone("Europe/Berlin"));
+	     			lopDate = beginDate;
+	         		
+	     			//Last Day of reference month (according period)
+	     			lopDate.set(Calendar.DAY_OF_MONTH, 1);   // starting with 1st day
+	     			lopDate.add(Calendar.MONTH, period);     // now add period (all month have 1st day!)
+	     			lopDate.set(Calendar.DAY_OF_MONTH, lopDate.getActualMaximum(Calendar.DAY_OF_MONTH));  // to last day of this month		
+	     			
+	     			//First Day of reference month (according period)
+					Calendar beginDate2 = Calendar.getInstance(TimeZone.getTimeZone("Europe/Berlin"));
+					beginDate2.setTime(dateFrom); // reference date: From date
+					beginDate2.set(Calendar.HOUR_OF_DAY, 0);   // ignore time completely!
+					beginDate2.set(Calendar.MINUTE, 0);
+					beginDate2.set(Calendar.SECOND, 0);
+					
+	     			Calendar fopDate = Calendar.getInstance(TimeZone.getTimeZone("Europe/Berlin"));
+	     			fopDate = beginDate2;
+	     			fopDate.set(Calendar.DAY_OF_MONTH, 1);   // starting with 1st day
+	     			fopDate.add(Calendar.MONTH, period); 
+	     								
+	         		// end date in next month?
+	         		if ( TalendDate.compareDate(endDate.getTime(), lopDate.getTime()) < 0 )
+	         			return 0;  // outside period
+	         		else        		         		
+	         		
+	         		return lopDate.getActualMaximum(Calendar.DAY_OF_MONTH) - getDaysOffwork(fopDate.getTime(), lopDate.getTime(), weekendFlag);   // complete month
+	         		
+	         		}
+		}
+	 
+	 
+	 
+	 
+	 
+	
+	    
+}

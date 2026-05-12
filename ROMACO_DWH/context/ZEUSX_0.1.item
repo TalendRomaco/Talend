@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_LH-3gBP7Ee2TTJGNDagvgA" confirmationNeeded="false" hide="false" name="Prod">
+  <contextParameter xmi:id="_d14T8CpMEe-nmpxPcdNtAQ" comment="" name="ZEUSX_SERVER" prompt="ZEUSX_SERVER?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="KASV-SAGE-DB"/>
+  <contextParameter xmi:id="_d14T8SpMEe-nmpxPcdNtAQ" comment="" name="ZEUSX_DATABASE" prompt="ZEUSX_DATABASE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="ZEUSX_EXPORT"/>
+  <contextParameter xmi:id="_d14T8ipMEe-nmpxPcdNtAQ" comment="" name="ZEUSX_ADDITIONAL_PARAM" prompt="ZEUSX_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="instance=ZEUS;useNTLMv2=true;domain=ad42;Integrated Security=false"/>
+  <contextParameter xmi:id="_d14T8ypMEe-nmpxPcdNtAQ" comment="" name="ZEUSX_PASSWORD" prompt="ZEUSX_PASSWORD?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:cOqhrPNcKaBF7yc5Ti6P2V7kaGm/asIVslKc88Dv75kiS3rJpw=="/>
+  <contextParameter xmi:id="_d14T9CpMEe-nmpxPcdNtAQ" comment="" name="ZEUSX_LOGIN" prompt="ZEUSX_LOGIN?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="adm_bi"/>
+  <contextParameter xmi:id="_d14T9SpMEe-nmpxPcdNtAQ" comment="" name="ZEUSX_SCHEMA" prompt="ZEUSX_SCHEMA?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_d14T9ipMEe-nmpxPcdNtAQ" comment="" name="ZEUSX_PORT" prompt="ZEUSX_PORT?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+</talendfile:ContextType>

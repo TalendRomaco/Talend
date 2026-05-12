@@ -1,0 +1,348 @@
+package routines;
+
+import java.util.Map;
+
+/*
+ * The purpose of this class is to generate dynamic queries for a generic staging process
+ * 
+ */
+public class TtaQueryGenerator {
+	
+	private static TtaQueryGenerator instance = new TtaQueryGenerator();
+	
+	private String chore;
+	private String sourceStructureName;
+	private String sourceStructureType;
+	private String targetTableName;
+	private String fields;
+	private String param;
+	private String deltaField;
+	private String deltaFieldType;
+	private String deltaMethod;
+	private String deltaLastKey;
+	private int deltaOffset;
+	private String deltaOffsetType;
+	private Map<String, Object> advancedParams;
+
+	private boolean debug;
+	
+	// Constructor using Super Class
+	private TtaQueryGenerator() {
+		super();
+	}
+	
+	// Get Instance
+	public static TtaQueryGenerator getInstance(){
+		return instance;
+	}
+	
+	// Get a Source Query
+	
+	public String getQuery(){
+	
+		String query = ""; 
+		
+		switch(sourceStructureType.toLowerCase()){
+		
+			case "sql" :
+				
+				query = getSqlQuery();
+				break;
+				
+			case "sap" :
+				
+				query = getSqlQuery();
+				break;
+			
+			case "file" :
+				
+				query = getFileQuery();
+				break;
+				
+			case "addisondw" :
+				
+				query = getAddisonDwQuery();
+				break;
+				
+		}
+		
+		if(debug)
+			System.out.println(" Select for Chore " + chore + ": " + query);
+	
+		return query;
+	
+	}
+	
+	// Type File: Generate a Select Statement for SQL
+	public String getFileQuery(){
+		
+		String query = sourceStructureName;
+		
+		return query;
+		
+	}
+	
+	// Type File: Generate a Select Statement for SQL
+	public String getSapQuery(){
+		
+		String query = sourceStructureName;
+		
+		return query;
+		
+	}
+	
+	// Type File: Generate a Select Statement for Addison DW
+		public String getAddisonDwQuery(){
+			
+			String query = sourceStructureName;
+			
+			return query;
+			
+		}
+	
+	// Type SQL: Generate a Select Statement for SQL
+		
+	public String getSqlQuery(){
+		
+		String lastKey = deltaLastKey == null ? "0" : deltaLastKey;
+		String query ="Select -1";
+		int offset = 0;
+		
+		switch (deltaMethod.toLowerCase()) {
+		
+		/// Typ Key
+		
+		case "key":
+		
+			query = 	    "Select " + fields + " " + 
+							"FROM "	+ sourceStructureName + " " +
+							(param != null && param.length() > 0 ? "WHERE " + param : "") + 
+							(param == null ? "WHERE " + deltaField + " >= " + Integer.valueOf(deltaLastKey) :
+							(param != null && param.length() > 0 ? " AND " + deltaField + " >= " + Integer.valueOf(deltaLastKey) : ""));
+			break;
+		
+		/// Typ Datenscheibe mit Offset
+			
+		case "slice":
+			
+			switch (deltaFieldType.toLowerCase()) {
+			
+			/// Subtyp Schlüssel Integer
+			
+			case "int":
+				
+				offset = deltaOffset;
+			
+				query = 	    "Select " + fields + " " + 
+								"FROM "	+ sourceStructureName + " " +
+								(param != null && param.length() > 0 ? "WHERE " + param : "") + 
+								(param == null ? "WHERE " + deltaField + " >= " + (Integer.valueOf(lastKey) + offset) :
+								(param != null && param.length() > 0 ? " AND " + deltaField + " >= " + Integer.valueOf(lastKey) + offset : ""));
+				
+				break;
+				
+			case "date":
+				
+				offset = deltaOffset;
+			
+				query = 	    "Select " + fields + " " + 
+								"FROM "	+ sourceStructureName + " " +
+								(param != null && param.length() > 0 ? "WHERE " + param : "") + 
+								(param == null ? "WHERE date_trunc('day'," + deltaField + ") >= date_trunc('day',to_date('" + lastKey +"','yyyy-MM-dd HH24:MI:SS')) + '" + offset+ " day'" :
+								(param != null && param.length() > 0 ? " AND date_trunc('day'," + deltaField + ") >= date_trunc('day',to_date('" + lastKey +"','yyyy-MM-dd HH24:MI:SS')) + '" + offset+ " day'" :""));
+						
+				break;
+				
+				case "datetime":
+				
+				offset = deltaOffset;
+			
+				query = 	    "Select " + fields + " " + 
+								"FROM "	+ sourceStructureName + " " +
+								(param != null && param.length() > 0 ? "WHERE " + param : "") + 
+								(param == null ? "WHERE date_trunc('day'," + deltaField + ") >= date_trunc('day',to_date('" + lastKey +"','yyyy-MM-dd HH24:MI:SS')) + '" + offset+ " day'" :
+								(param != null && param.length() > 0 ? " AND date_trunc('day'," + deltaField + ") >= date_trunc('day',to_date('" + lastKey +"','yyyy-MM-dd HH24:MI:SS')) + '" + offset+ " day'" :""));
+								
+				break;
+				
+				}
+			
+			break;
+		
+		case "full":
+			
+			query = 	    "Select " + fields + " " + 
+							"FROM "	+ sourceStructureName + " " +
+							(param != null && param.length() > 0 ? "WHERE " + param : "");
+			break;
+			
+		}
+		
+		return query;
+	}
+	
+	// Generate Chore Receipt
+	public String getStagingReceiptQuery(){
+		
+		String query = 	"Update [adm].[Admin_Param_Staging]" + 
+						"Set Load_Last_Run = getdate() " +
+						"Where Chore_Id = " + chore;
+		
+		if(debug)
+			System.out.println(" Receipt for Chore " + chore + ": " + query);
+		
+		return query;
+	}
+		
+	// Generate Chore Receipt
+	public String getStagingDeltaReceiptQuery(){
+		String query = "";
+		
+		switch (deltaFieldType.toLowerCase()) {
+			
+		case "date":
+				
+		 query = 	"Update [adm].[Admin_Param_Staging]" + 
+						"Set Load_Last_Delta_Key = " +
+						"'' + Convert(varchar,(SELECT MAX(" + deltaField + ") From dwh.stg." + targetTableName + "),120)" +
+						"Where Chore_Id = " + chore;
+		
+		break;
+		
+		case "datetime":
+			
+			 query = 	"Update [adm].[Admin_Param_Staging]" + 
+							"Set Load_Last_Delta_Key = " +
+							"'' + Convert(varchar,(SELECT MAX(" + deltaField + ") From dwh.stg." + targetTableName + "),120)" +
+							"Where Chore_Id = " + chore;
+			
+			break;
+				
+		default:
+			
+			 query = 	"Update [adm].[Admin_Param_Staging]" + 
+					"Set Load_Last_Delta_Key = " +
+					"'' + Convert(varchar,(SELECT MAX(" + deltaField + ") From dwh.stg." + targetTableName + "))" +
+					"Where Chore_Id = " + chore;
+		if(debug)
+			System.out.println(" Receipt for Chore " + chore + ": " + query);
+		}
+		return query;
+	}
+	
+	// Getters & Setters
+		
+	public String getSourceStructureName() {
+		return sourceStructureName;
+	}
+
+	public void setSourceStructureName(String tableName) {
+		this.sourceStructureName = tableName;
+	}
+
+	public String getFields() {
+		return fields;
+	}
+
+	public void setFields(String fields) {
+		this.fields = fields;
+	}
+
+	public String getParam() {
+		return param;
+	}
+
+	public void setParam(String param) {
+		this.param = param;
+	}
+
+	public boolean isDebug() {
+		return debug;
+	}
+
+	public void setDebug(boolean debug) {
+		this.debug = debug;
+	}
+
+	public String getChore() {
+		return chore;
+	}
+
+	public void setChore(String chore) {
+		this.chore = chore;
+	}
+
+	public String getTargetTableName() {
+		return targetTableName;
+	}
+
+	public void setTargetTableName(String targetTableName) {
+		this.targetTableName = targetTableName;
+	}
+
+	public String getDeltaField() {
+		return deltaField;
+	}
+
+	public void setDeltaField(String deltaField) {
+		this.deltaField = deltaField;
+	}
+
+	public String getDeltaMethod() {
+		return deltaMethod;
+	}
+
+	public void setDeltaMethod(String deltaMethod) {
+		this.deltaMethod = deltaMethod;
+	}
+
+	public String getDeltaLastKey() {
+		return deltaLastKey;
+	}
+
+	public void setDeltaLastKey(String deltaLastKey) {
+		this.deltaLastKey = deltaLastKey;
+	}  
+	
+	public String getSourceStructureType() {
+		return sourceStructureType;
+	}
+
+	public void setSourceStructureType(String sourceStructureType) {
+		this.sourceStructureType = sourceStructureType;
+	}
+	
+	public Map<String, Object> getAdvancedParams() {
+		return advancedParams;
+	}
+
+	public void setAdvancedParams(String jsonString) {
+		Map<String, Object> paramMap = (Map<String, Object>)routines.TtaSerialization.parseAdvancedParam(jsonString);
+		this.advancedParams = paramMap;
+	}
+
+	public int getDeltaOffset() {
+		return deltaOffset;
+	}
+
+	public void setDeltaOffset(int deltaOffset) {
+		this.deltaOffset = deltaOffset;
+	}
+
+	public String getDeltaOffsetType() {
+		return deltaOffsetType;
+	}
+
+	public void setDeltaOffsetType(String deltaOffsetType) {
+		this.deltaOffsetType = deltaOffsetType;
+	}
+
+	public String getDeltaFieldType() {
+		return deltaFieldType;
+	}
+
+	public void setDeltaFieldType(String deltaFieldType) {
+		this.deltaFieldType = deltaFieldType;
+	}
+	
+}

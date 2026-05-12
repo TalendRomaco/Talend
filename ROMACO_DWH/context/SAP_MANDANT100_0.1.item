@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_yZAiIBHUEe-yhejSmGGM_Q" confirmationNeeded="false" hide="false" name="PROD">
+    <contextParameter xmi:id="_yZAiIRHUEe-yhejSmGGM_Q" comment="" name="SAP_MANDANT100_USER" prompt="SAP_MANDANT100_USER?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="RFC4TALEND"/>
+    <contextParameter xmi:id="_yZAiIhHUEe-yhejSmGGM_Q" comment="" name="SAP_MANDANT100_HOST" prompt="SAP_MANDANT100_HOST?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="10.33.57.15"/>
+    <contextParameter xmi:id="_yZAiIxHUEe-yhejSmGGM_Q" comment="" name="SAP_MANDANT100_LANGUAGE" prompt="SAP_MANDANT100_LANGUAGE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DE"/>
+    <contextParameter xmi:id="_yZAiJBHUEe-yhejSmGGM_Q" comment="" name="SAP_MANDANT100_CLIENT" prompt="SAP_MANDANT100_CLIENT?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="100"/>
+    <contextParameter xmi:id="_yZAiJRHUEe-yhejSmGGM_Q" comment="" name="SAP_MANDANT100_PASSWORD" prompt="SAP_MANDANT100_PASSWORD?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:qQDlxSb37Z4UDprV1xRbrP+V2GpZQa/JbZin3iOwmFKk2AJLh3qTUYFEHHN7ikuPyRCX/05Bh7HO05nIVSNsRdrMnzY="/>
+    <contextParameter xmi:id="_yZAiJhHUEe-yhejSmGGM_Q" comment="" name="SAP_MANDANT100_SYSTEM_NUMBER" prompt="SAP_MANDANT100_SYSTEM_NUMBER?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="00"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_h-wgQDLQEe-ZYteWlLKUMg" confirmationNeeded="false" hide="false" name="DEV">
+    <contextParameter xmi:id="_h-wgQTLQEe-ZYteWlLKUMg" comment="" name="SAP_MANDANT100_USER" prompt="SAP_MANDANT100_USER?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="RFC4TALEND"/>
+    <contextParameter xmi:id="_h-wgQjLQEe-ZYteWlLKUMg" comment="" name="SAP_MANDANT100_HOST" prompt="SAP_MANDANT100_HOST?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="10.33.57.13"/>
+    <contextParameter xmi:id="_h-wgQzLQEe-ZYteWlLKUMg" comment="" name="SAP_MANDANT100_LANGUAGE" prompt="SAP_MANDANT100_LANGUAGE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DE"/>
+    <contextParameter xmi:id="_h-wgRDLQEe-ZYteWlLKUMg" comment="" name="SAP_MANDANT100_CLIENT" prompt="SAP_MANDANT100_CLIENT?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="100"/>
+    <contextParameter xmi:id="_h-wgRTLQEe-ZYteWlLKUMg" comment="" name="SAP_MANDANT100_PASSWORD" prompt="SAP_MANDANT100_PASSWORD?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:qQDlxSb37Z4UDprV1xRbrP+V2GpZQa/JbZin3iOwmFKk2AJLh3qTUYFEHHN7ikuPyRCX/05Bh7HO05nIVSNsRdrMnzY="/>
+    <contextParameter xmi:id="_h-wgRjLQEe-ZYteWlLKUMg" comment="" name="SAP_MANDANT100_SYSTEM_NUMBER" prompt="SAP_MANDANT100_SYSTEM_NUMBER?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="00"/>
+  </talendfile:ContextType>
+</xmi:XMI>

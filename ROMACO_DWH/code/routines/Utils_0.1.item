@@ -1,0 +1,66 @@
+package routines;
+
+import java.util.Date;
+
+
+public class Utils {
+
+   public static Date formatDate(Date date){
+	   if(date == null) {
+		   return null;
+	   }
+	   if((date.getYear()+1900 ) < 1900) {
+		   return null;
+	   }
+	   return date;
+	   
+   }
+
+   public static Integer booleanToInt(Boolean  b) {
+	   if(b != null) {
+		   if(b) {
+			   return -1;
+		   }
+		   else {
+			   return 0;
+		   }
+	   }
+	   return null;
+   }
+   
+   public static String addStrings(String... s) {
+	   String returnValue = " ";
+	   for (int i = 0; i < s.length; i++) {
+		   if(s[i]!= null && !s[i].equals("")) {
+			   returnValue += s[i] + "; ";
+		
+		   }
+	}
+	  
+	   returnValue =  returnValue.trim();
+	   
+	   if(returnValue.endsWith(";")) {
+		   returnValue = returnValue.substring(0,returnValue.length()-1);
+	   }
+	   
+	return returnValue;
+	   
+   }
+   
+   public static int countOccurence(String str, char ch) {
+	   
+	   int count = 0;
+	    
+	   for (int i = 0; i < str.length(); i++) {
+	       if (str.charAt(i) == ch) {
+	           count++;
+	       }
+	   }
+	   
+	   return count;
+	   
+   }
+   
+   
+
+}

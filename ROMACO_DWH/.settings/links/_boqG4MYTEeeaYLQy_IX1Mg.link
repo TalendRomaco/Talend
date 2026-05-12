@@ -1,0 +1,75 @@
+{
+  "itemId" : "_boqG4MYTEeeaYLQy_IX1Mg",
+  "contextList" : [ {
+    "contextName" : "Prod",
+    "repoId" : "_hRKSIO2-Ee6LTJLMTmvwFA",
+    "parameterList" : [ {
+      "id" : "_hRUqNe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_PRESENTATION_PORT"
+    }, {
+      "id" : "_hRUqN-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_PRESENTATION_DATABASE"
+    }, {
+      "id" : "_hRUqNu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_PRESENTATION_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_hRUqM-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_PRESENTATION_SERVER"
+    }, {
+      "id" : "_hRUqNO2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_PRESENTATION_SCHEMA"
+    }, {
+      "id" : "_hRUqMe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_PRESENTATION_PASSWORD"
+    }, {
+      "id" : "_hRUqMu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_PRESENTATION_LOGIN"
+    } ]
+  }, {
+    "contextName" : "Prod",
+    "repoId" : "_lzkJgDIeEe-epOz61AJceA",
+    "parameterList" : [ {
+      "id" : "_4VZF8DIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_AdditionalParams"
+    }, {
+      "id" : "_4VZF8TIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_Server"
+    }, {
+      "id" : "_4VZF8jIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_Port"
+    }, {
+      "id" : "_4VZF8zIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_Password"
+    }, {
+      "id" : "_4VZF9DIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_Login"
+    }, {
+      "id" : "_4VZF9TIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_Schema"
+    }, {
+      "id" : "_4VZF9jIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_Database"
+    }, {
+      "id" : "_lz3EcTIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_lz3EcjIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_SERVER"
+    }, {
+      "id" : "_lz3EczIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_PORT"
+    }, {
+      "id" : "_lz3EdDIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_PASSWORD"
+    }, {
+      "id" : "_lz3EdTIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_LOGIN"
+    }, {
+      "id" : "_lz3EdjIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_SCHEMA"
+    }, {
+      "id" : "_lz3EdzIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_DATABASE"
+    } ]
+  } ]
+}

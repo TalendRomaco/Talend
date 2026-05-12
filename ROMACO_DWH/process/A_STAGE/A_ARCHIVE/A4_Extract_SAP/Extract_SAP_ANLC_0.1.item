@@ -1,0 +1,1561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="new1" prompt="new1?" promptNeeded="false" type="id_String" value="" internalId="_SGiCYO27Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="MySQL_Port" prompt="MySQL_Port?" promptNeeded="false" repositoryContextId="_YFGEMJQREeiiq7TuAo5wZQ" type="id_String" value="3306"/>
+    <contextParameter comment="" name="MySQL_Login" prompt="MySQL_Login?" promptNeeded="false" repositoryContextId="_YFGEMJQREeiiq7TuAo5wZQ" type="id_String" value="root"/>
+    <contextParameter comment="" name="MySQL_Database" prompt="MySQL_Database?" promptNeeded="false" repositoryContextId="_YFGEMJQREeiiq7TuAo5wZQ" type="id_String" value="DWH"/>
+    <contextParameter comment="" name="MySQL_Password" prompt="MySQL_Password?" promptNeeded="false" repositoryContextId="_YFGEMJQREeiiq7TuAo5wZQ" type="id_Password" value="enc:system.encryption.key.v1:UcN+obE0FuJrJnmSdhOufx9wZ62n9YXzl9A0YbrM79w="/>
+    <contextParameter comment="" name="MySQL_AdditionalParams" prompt="MySQL_AdditionalParams?" promptNeeded="false" repositoryContextId="_YFGEMJQREeiiq7TuAo5wZQ" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="MySQL_Server" prompt="MySQL_Server?" promptNeeded="false" repositoryContextId="_YFGEMJQREeiiq7TuAo5wZQ" type="id_String" value="localhost"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:D/0qbJSOYvlmwxScduWo1FG6+dbt7y2WasK4ZVfe" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend/TOS_DI-20160704_1411-V6.2.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:EE+fgNRAOXxmppCjDhpAAuYuuxlZ3+g8RKZJRfuV" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_fB5FwISOEeayvK0D79Gaqg" name="DataOperation"/>
+    <routinesParameter id="_fC8OoISOEeayvK0D79Gaqg" name="Mathematical"/>
+    <routinesParameter id="_fDK4IISOEeayvK0D79Gaqg" name="Numeric"/>
+    <routinesParameter id="_fDaIsISOEeayvK0D79Gaqg" name="Relational"/>
+    <routinesParameter id="_fDnkEISOEeayvK0D79Gaqg" name="StringHandling"/>
+    <routinesParameter id="_fDtqsISOEeayvK0D79Gaqg" name="TalendDataGenerator"/>
+    <routinesParameter id="_fD3bsISOEeayvK0D79Gaqg" name="TalendDate"/>
+    <routinesParameter id="_fD-wcISOEeayvK0D79Gaqg" name="TalendString"/>
+    <routinesParameter id="_EeqWMLJvEeeZif3o8SvhfA" name="DataLoading"/>
+    <routinesParameter id="_yUa20ITEEea1D7eo1TFBjg" name="Utils"/>
+    <routinesParameter id="_5T6s8G4nEeiEgfHJe4e74A" name="RomacoConversion"/>
+  </parameters>
+  <node componentName="tSAPInput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSAPInput_2" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="(To use this component, you need first to add the SAP Java Connector (sapjco.jar or sapjco3.jar) in the Modules view)"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tSAPConnection_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="sapjco3.jar"/>
+    <elementParameter field="CLOSED_LIST" name="SERVERTYPE" value="ApplicationServer"/>
+    <elementParameter field="TEXT" name="CLIENT" value="&quot;300&quot;"/>
+    <elementParameter field="TEXT" name="USERID" value="&quot;USERTECH&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:wYPSVcn3z7K7L3MXRU7XYlLdJSA58eNrtwIdW80e+f2CQTU5tyE="/>
+    <elementParameter field="TEXT" name="LANGUAGE" value="&quot;DE&quot;"/>
+    <elementParameter field="TEXT" name="HOSTNAME" value="&quot;192.168.9.60&quot;"/>
+    <elementParameter field="TEXT" name="SYSTEMNUMBER" value="&quot;20&quot;"/>
+    <elementParameter field="TEXT" name="SYSTEMID" value="&quot;PRD&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GROUPNAME" value="&quot;tGroup&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SAP_FUNCTION" value="&quot;RFC_READ_TABLE&quot;"/>
+    <elementParameter field="TABLE" name="MAPPING_INPUT">
+      <elementValue elementRef="SAP_PARAMETER_VALUE" value="&quot;ANLC&quot;"/>
+      <elementValue elementRef="SAP_PARAMETER_TYPE" value="input_single"/>
+      <elementValue elementRef="SAP_TABLE_NAME" value="&quot;&quot;"/>
+      <elementValue elementRef="SAP_PARAMETER_NAME" value="&quot;QUERY_TABLE&quot;"/>
+      <elementValue elementRef="SAP_PARAMETER_VALUE" value="&quot;\t&quot;"/>
+      <elementValue elementRef="SAP_PARAMETER_TYPE" value="input_single"/>
+      <elementValue elementRef="SAP_TABLE_NAME" value="&quot;&quot;"/>
+      <elementValue elementRef="SAP_PARAMETER_NAME" value="&quot;DELIMITER&quot;"/>
+      <elementValue elementRef="SAP_PARAMETER_VALUE" value="&quot;MANDT&quot;,&quot;BUKRS&quot;,&quot;ANLN1&quot;,&quot;ANLN2&quot;,&quot;GJAHR&quot;,&quot;AFABE&quot;,&quot;ZUJHR&quot;,&quot;ZUCOD&quot;,&quot;AFBLPE&quot;,&quot;AFBANZ&quot;,&quot;XAFAR&quot;,&quot;NDABJ&quot;,&quot;NDABP&quot;,&quot;ANDSJ&quot;,&quot;ANDSP&quot;,&quot;RSTCK&quot;,&quot;KANSW&quot;,&quot;KAUFW&quot;,&quot;KINVZ&quot;,&quot;KNAFA&quot;,&quot;KSAFA&quot;,&quot;KAAFA&quot;,&quot;KMAFA&quot;,&quot;KZINW&quot;,&quot;KAUFN&quot;,&quot;KANZA&quot;,&quot;KVOST&quot;,&quot;AUFWP&quot;,&quot;NAFAP&quot;,&quot;SAFAP&quot;,&quot;AAFAP&quot;,&quot;MAFAP&quot;,&quot;ZINSP&quot;,&quot;AUFNP&quot;,&quot;AUFWB&quot;,&quot;NAFAG&quot;,&quot;SAFAG&quot;,&quot;AAFAG&quot;,&quot;MAFAG&quot;,&quot;ZINSG&quot;,&quot;AUFNG&quot;,&quot;ANSWL&quot;,&quot;ABGAN&quot;"/>
+      <elementValue elementRef="SAP_PARAMETER_TYPE" value="table_input"/>
+      <elementValue elementRef="SAP_TABLE_NAME" value="&quot;FIELDS&quot;"/>
+      <elementValue elementRef="SAP_PARAMETER_NAME" value="&quot;FIELDNAME&quot;"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="SCHEMAS">
+      <elementValue elementRef="SCHEMA" value="out1"/>
+      <elementValue elementRef="SAP_ITERATE_OUT_TYPE" value="table_output"/>
+      <elementValue elementRef="SAP_TABLE_NAME" value="&quot;DATA&quot;"/>
+      <elementValue elementRef="MAPPING" value="&quot;WA&quot;"/>
+    </elementParameter>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="SAP_DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="SAP_PROPERTIES"/>
+    <elementParameter field="CHECK" name="FTP_HTTP_FUNCTION" value="false"/>
+    <elementParameter field="CHECK" name="CLOSE" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="ANLC_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Output" name="out1">
+      <column comment="" key="false" length="100000" name="WA" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100000" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tExtractDelimitedFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractDelimitedFields_1" show="false"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="FIELD" value="WA"/>
+    <elementParameter field="CHECK" name="IGNORE_SOURCE_NULL" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;\t&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="TRIM" value="true"/>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Output" name="tExtractDelimitedFields_1">
+      <column comment="" key="true" length="9" name="MANDT" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="9" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="BUKRS" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="12" usefulColumn="true"/>
+      <column comment="" key="true" length="36" name="ANLN1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="36" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="ANLN2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="12" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="GJAHR" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="12" usefulColumn="true"/>
+      <column comment="" key="true" length="6" name="AFABE" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="ZUJHR" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="12" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="ZUCOD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="12" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="AFBLPE" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="9" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="AFBANZ" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="XAFAR" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="NDABJ" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="9" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="NDABP" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="9" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="ANDSJ" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="9" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="ANDSP" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="9" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="RSTCK" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="KANSW" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="KAUFW" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="KINVZ" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="KNAFA" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="KSAFA" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="KAAFA" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="KMAFA" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="KZINW" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="KAUFN" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="KANZA" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="KVOST" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="AUFWP" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="NAFAP" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="SAFAP" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="AAFAP" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="MAFAP" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="ZINSP" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="AUFNP" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="AUFWB" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="NAFAG" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="SAFAG" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="AAFAG" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="MAFAG" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="ZINSG" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="AUFNG" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="ANSWL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="ABGAN" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="Output" name="REJECT">
+      <column comment="" key="true" length="9" name="MANDT" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="9" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="BUKRS" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="12" usefulColumn="true"/>
+      <column comment="" key="true" length="36" name="ANLN1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="36" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="ANLN2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="12" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="GJAHR" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="12" usefulColumn="true"/>
+      <column comment="" key="true" length="6" name="AFABE" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="ZUJHR" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="12" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="ZUCOD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="12" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="AFBLPE" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="9" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="AFBANZ" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="XAFAR" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="NDABJ" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="9" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="NDABP" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="9" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="ANDSJ" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="9" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="ANDSP" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="9" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="RSTCK" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="KANSW" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="KAUFW" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="KINVZ" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="KNAFA" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="KSAFA" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="KAAFA" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="KMAFA" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="KZINW" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="KAUFN" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="KANZA" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="KVOST" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="AUFWP" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="NAFAP" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="SAFAP" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="AAFAP" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="MAFAP" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="ZINSP" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="AUFNP" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="AUFWB" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="NAFAG" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="SAFAG" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="AAFAG" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="MAFAG" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="ZINSG" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="AUFNG" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="ANSWL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="ABGAN" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_tuJ5wHPEEeib-YhttkTbPA-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Join"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="outAll">
+      <column comment="" key="true" length="9" name="MANDT" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="BUKRS" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="true" length="36" name="ANLN1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="12" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="ANLN2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="GJAHR" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="true" length="6" name="AFABE" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="ZUJHR" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="ZUCOD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="AFBLPE" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="AFBANZ" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="XAFAR" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="NDABJ" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="NDABP" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="ANDSJ" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="ANDSP" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="RSTCK" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KANSW" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KAUFW" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KINVZ" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KNAFA" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KSAFA" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KAAFA" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KMAFA" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KZINW" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KAUFN" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KANZA" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KVOST" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFWP" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="NAFAP" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SAFAP" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AAFAP" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="MAFAP" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ZINSP" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFNP" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFWB" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="NAFAG" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SAFAG" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AAFAG" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="MAFAG" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ZINSG" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFNG" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ANSWL" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ABGAN" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ANSAZ" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFWM" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="INVZM" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="NAFAM" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SAFAM" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AAFAM" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="MAFAM" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ZINSM" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFNM" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ZUSNA" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ZUSSA" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ZUSAA" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ZUSMA" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFWV" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="INVZV" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="NAFAV" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SAFAV" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AAFAV" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="MAFAV" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFNV" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFWL" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="INVZL" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="NAFAL" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SAFAL" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AAFAL" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="MAFAL" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFNL" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="ANUPD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KSANS" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SANSL" nullable="true" pattern="" precision="2" sourceType="" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="PSTBEG" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="PSTEND" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="PSTCALC" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="PSTPER" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="3" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="outAll">
+        <mapperTableEntries name="MANDT" expression="r1.MANDT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BUKRS" expression="r1.BUKRS" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ANLN1" expression="r1.ANLN1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ANLN2" expression="r1.ANLN2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GJAHR" expression="r1.GJAHR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AFABE" expression="r1.AFABE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZUJHR" expression="r1.ZUJHR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZUCOD" expression="r1.ZUCOD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AFBLPE" expression="r1.AFBLPE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AFBANZ" expression="r1.AFBANZ" type="id_String" nullable="true"/>
+        <mapperTableEntries name="XAFAR" expression="r1.XAFAR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NDABJ" expression="r1.NDABJ" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NDABP" expression="r1.NDABP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ANDSJ" expression="r1.ANDSJ" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ANDSP" expression="r1.ANDSP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RSTCK" expression="r1.RSTCK == null || r1.RSTCK == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r1.RSTCK)) " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="KANSW" expression="r1.KANSW == null || r1.KANSW == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r1.KANSW)) " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="KAUFW" expression="r1.KAUFW == null || r1.KAUFW == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r1.KAUFW)) " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="KINVZ" expression="r1.KINVZ == null || r1.KINVZ == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r1.KINVZ)) " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="KNAFA" expression="r1.KNAFA == null || r1.KNAFA == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r1.KNAFA)) " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="KSAFA" expression="r1.KSAFA == null || r1.KSAFA == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r1.KSAFA)) " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="KAAFA" expression="r1.KAAFA == null || r1.KAAFA == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r1.KAAFA)) " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="KMAFA" expression="r1.KMAFA == null || r1.KMAFA == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r1.KMAFA)) " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="KZINW" expression="r1.KZINW == null || r1.KZINW == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r1.KZINW)) " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="KAUFN" expression="r1.KAUFN == null || r1.KAUFN == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r1.KAUFN)) " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="KANZA" expression="r1.KANZA == null || r1.KANZA == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r1.KANZA)) " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="KVOST" expression="r1.KVOST == null || r1.KVOST == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r1.KVOST)) " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="AUFWP" expression="r1.AUFWP == null || r1.AUFWP == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r1.AUFWP)) " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="NAFAP" expression="r1.NAFAP == null || r1.NAFAP == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r1.NAFAP))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="SAFAP" expression="r1.SAFAP == null || r1.SAFAP == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r1.SAFAP))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="AAFAP" expression="r1.AAFAP == null || r1.AAFAP == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r1.AAFAP))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="MAFAP" expression="r1.MAFAP == null || r1.MAFAP == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r1.MAFAP))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="ZINSP" expression="r1.ZINSP == null || r1.ZINSP == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r1.ZINSP))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="AUFNP" expression="r1.AUFNP == null || r1.AUFNP == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r1.AUFNP))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="AUFWB" expression="r1.AUFWB == null || r1.AUFWB == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r1.AUFWB))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="NAFAG" expression="r1.NAFAG == null || r1.NAFAG == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r1.NAFAG))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="SAFAG" expression="r1.SAFAG == null || r1.SAFAG == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r1.SAFAG))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="AAFAG" expression="r1.AAFAG == null || r1.AAFAG == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r1.AAFAG))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="MAFAG" expression="r1.MAFAG == null || r1.MAFAG == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r1.MAFAG))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="ZINSG" expression="r1.ZINSG == null || r1.ZINSG == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r1.ZINSG))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="AUFNG" expression="r1.AUFNG == null || r1.AUFNG == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r1.AUFNG))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="ANSWL" expression="r1.ANSWL == null || r1.ANSWL == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r1.ANSWL))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="ABGAN" expression="r1.ABGAN == null || r1.ABGAN == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r1.ABGAN))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="ANSAZ" expression="r2.ANSAZ == null || r2.ANSAZ == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r2.ANSAZ))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="AUFWM" expression="r2.AUFWM == null || r2.AUFWM == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r2.AUFWM))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="INVZM" expression="r2.INVZM == null || r2.INVZM == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r2.INVZM))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="NAFAM" expression="r2.NAFAM == null || r2.NAFAM == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r2.NAFAM))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="SAFAM" expression="r2.SAFAM == null || r2.SAFAM == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r2.SAFAM))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="AAFAM" expression="r2.AAFAM == null || r2.AAFAM == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r2.AAFAM))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="MAFAM" expression="r2.MAFAM == null || r2.MAFAM == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r2.MAFAM))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="ZINSM" expression="r2.ZINSM == null || r2.ZINSM == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r2.ZINSM))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="AUFNM" expression="r2.AUFNM == null || r2.AUFNM == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r2.AUFNM))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="ZUSNA" expression="r2.ZUSNA == null || r2.ZUSNA == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r2.ZUSNA))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="ZUSSA" expression="r2.ZUSSA == null || r2.ZUSSA == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r2.ZUSSA))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="ZUSAA" expression="r2.ZUSAA == null || r2.ZUSAA == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r2.ZUSAA))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="ZUSMA" expression="r2.ZUSMA == null || r2.ZUSMA == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r2.ZUSMA))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="AUFWV" expression="r2.AUFWV == null || r2.AUFWV == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r2.AUFWV))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="INVZV" expression="r2.INVZV == null || r2.INVZV == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r2.INVZV))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="NAFAV" expression="r2.NAFAV == null || r2.NAFAV == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r2.NAFAV))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="SAFAV" expression="r2.SAFAV == null || r2.SAFAV == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r2.SAFAV))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="AAFAV" expression="r2.AAFAV == null || r2.AAFAV == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r2.AAFAV))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="MAFAV" expression="r2.MAFAV == null || r2.MAFAV == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r2.MAFAV))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="AUFNV" expression="r2.AUFNV == null || r2.AUFNV == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r2.AUFNV))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="AUFWL" expression="r2.AUFWL == null || r2.AUFWL == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r2.AUFWL))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="INVZL" expression="r2.INVZL == null || r2.INVZL == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r2.INVZL))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="NAFAL" expression="r2.NAFAL == null || r2.NAFAL == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r2.NAFAL))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="SAFAL" expression="r2.SAFAL == null || r2.SAFAL == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r2.SAFAL))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="AAFAL" expression="r2.AAFAL == null || r2.AAFAL == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r2.AAFAL))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="MAFAL" expression="r2.MAFAL == null || r2.MAFAL == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r2.MAFAL))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="AUFNL" expression="r2.AUFNL == null || r2.AUFNL == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r2.AUFNL))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="ANUPD" expression="r2.ANUPD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KSANS" expression="r2.KSANS == null || r2.KSANS == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r2.KSANS))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="SANSL" expression="r2.SANSL == null || r2.SANSL == &quot;&quot; ? null : BigDecimal.valueOf(routines.RomacoConversion.getSapValue(r2.SANSL))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="PSTBEG" expression="r2.PSTBEG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PSTEND" expression="r2.PSTEND" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PSTCALC" expression="r2.PSTCALC" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PSTPER" expression="r2.PSTPER" type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="r1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="MANDT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BUKRS" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ANLN1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ANLN2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GJAHR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AFABE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZUJHR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZUCOD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AFBLPE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AFBANZ" type="id_String" nullable="true"/>
+        <mapperTableEntries name="XAFAR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NDABJ" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NDABP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ANDSJ" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ANDSP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RSTCK" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KANSW" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KAUFW" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KINVZ" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KNAFA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KSAFA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KAAFA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KMAFA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KZINW" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KAUFN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KANZA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KVOST" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AUFWP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAFAP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SAFAP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AAFAP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MAFAP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZINSP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AUFNP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AUFWB" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAFAG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SAFAG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AAFAG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MAFAG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZINSG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AUFNG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ANSWL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ABGAN" type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="r2" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
+        <mapperTableEntries name="MANDT" expression="r1.MANDT " type="id_String" nullable="true"/>
+        <mapperTableEntries name="BUKRS" expression="r1.BUKRS " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ANLN1" expression="r1.ANLN1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ANLN2" expression="r1.ANLN2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="GJAHR" expression="r1.GJAHR " type="id_String" nullable="true"/>
+        <mapperTableEntries name="AFABE" expression="r1.AFABE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZUJHR" expression="r1.ZUJHR " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZUCOD" expression="r1.ZUCOD " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ANSAZ" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AUFWM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVZM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAFAM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SAFAM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AAFAM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MAFAM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZINSM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AUFNM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZUSNA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZUSSA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZUSAA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZUSMA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AUFWV" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVZV" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAFAV" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SAFAV" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AAFAV" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MAFAV" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AUFNV" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AUFWL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVZL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAFAL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SAFAL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AAFAL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MAFAL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AUFNL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ANUPD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KSANS" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SANSL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PSTBEG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PSTEND" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PSTCALC" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PSTPER" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlOutput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_pKiCgIS2Eea1D7eo1TFBjg" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.MySQL_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.MySQL_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.MySQL_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.MySQL_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:6uvzLbdSIL+4knFJes/Z5/DNCp9hT7VA3Q1Az7ODdYcmzwfWzpc/D4dcWYt5N0SdBBo="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;SAP_ANLC&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.MySQL_AdditionalParams"/>
+    <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
+    <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
+    <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="100" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="MANDT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BUKRS"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ANLN1"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ANLN2"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GJAHR"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AFABE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ZUJHR"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ZUCOD"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AFBLPE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AFBANZ"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="XAFAR"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NDABJ"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NDABP"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ANDSJ"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ANDSP"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RSTCK"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KANSW"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KAUFW"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KINVZ"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KNAFA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KSAFA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KAAFA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KMAFA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KZINW"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KAUFN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KANZA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KVOST"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUFWP"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAFAP"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SAFAP"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AAFAP"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MAFAP"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ZINSP"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUFNP"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUFWB"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAFAG"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SAFAG"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AAFAG"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MAFAG"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ZINSG"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUFNG"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ANSWL"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ABGAN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ANSAZ"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUFWM"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVZM"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAFAM"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SAFAM"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AAFAM"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MAFAM"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ZINSM"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUFNM"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ZUSNA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ZUSSA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ZUSAA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ZUSMA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUFWV"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVZV"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAFAV"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SAFAV"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AAFAV"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MAFAV"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUFNV"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUFWL"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVZL"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAFAL"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SAFAL"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AAFAL"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MAFAL"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUFNL"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ANUPD"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KSANS"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SANSL"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PSTBEG"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PSTEND"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PSTCALC"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PSTPER"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" value="false"/>
+    <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMysqlOutput_1">
+      <column comment="" key="true" length="9" name="MANDT" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="BUKRS" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="true" length="36" name="ANLN1" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="12" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="ANLN2" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="GJAHR" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="true" length="6" name="AFABE" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="2" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="ZUJHR" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="ZUCOD" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="AFBLPE" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="AFBANZ" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="2" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="XAFAR" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="NDABJ" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="NDABP" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="ANDSJ" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="ANDSP" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="RSTCK" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KANSW" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KAUFW" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KINVZ" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KNAFA" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KSAFA" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KAAFA" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KMAFA" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KZINW" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KAUFN" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KANZA" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KVOST" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFWP" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="NAFAP" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SAFAP" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AAFAP" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="MAFAP" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ZINSP" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFNP" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFWB" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="NAFAG" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SAFAG" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AAFAG" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="MAFAG" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ZINSG" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFNG" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ANSWL" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ABGAN" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ANSAZ" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFWM" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="INVZM" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="NAFAM" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SAFAM" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AAFAM" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="MAFAM" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ZINSM" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFNM" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ZUSNA" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ZUSSA" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ZUSAA" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ZUSMA" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFWV" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="INVZV" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="NAFAV" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SAFAV" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AAFAV" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="MAFAV" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFNV" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFWL" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="INVZL" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="NAFAL" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SAFAL" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AAFAL" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="MAFAL" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFNL" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="ANUPD" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KSANS" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SANSL" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="PSTBEG" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="PSTEND" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="PSTCALC" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="PSTPER" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="3" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="true" length="9" name="MANDT" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="BUKRS" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="true" length="36" name="ANLN1" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="12" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="ANLN2" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="GJAHR" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="true" length="6" name="AFABE" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="2" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="ZUJHR" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="ZUCOD" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="AFBLPE" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="AFBANZ" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="2" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="XAFAR" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="NDABJ" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="NDABP" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="ANDSJ" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="ANDSP" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="RSTCK" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KANSW" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KAUFW" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KINVZ" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KNAFA" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KSAFA" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KAAFA" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KMAFA" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KZINW" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KAUFN" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KANZA" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KVOST" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFWP" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="NAFAP" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SAFAP" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AAFAP" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="MAFAP" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ZINSP" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFNP" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFWB" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="NAFAG" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SAFAG" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AAFAG" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="MAFAG" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ZINSG" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFNG" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ANSWL" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ABGAN" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ANSAZ" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFWM" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="INVZM" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="NAFAM" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SAFAM" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AAFAM" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="MAFAM" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ZINSM" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFNM" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ZUSNA" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ZUSSA" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ZUSAA" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ZUSMA" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFWV" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="INVZV" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="NAFAV" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SAFAV" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AAFAV" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="MAFAV" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFNV" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFWL" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="INVZL" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="NAFAL" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SAFAL" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AAFAL" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="MAFAL" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFNL" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="ANUPD" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KSANS" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SANSL" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="PSTBEG" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="PSTEND" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="PSTCALC" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="PSTPER" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/data/ANLC_out.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="true"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__FILENAME__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_1">
+      <column comment="" key="true" length="9" name="MANDT" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="BUKRS" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="true" length="36" name="ANLN1" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="12" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="ANLN2" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="GJAHR" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="true" length="6" name="AFABE" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="2" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="ZUJHR" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="ZUCOD" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="AFBLPE" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="AFBANZ" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="2" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="XAFAR" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="NDABJ" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="NDABP" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="ANDSJ" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="ANDSP" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="RSTCK" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KANSW" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KAUFW" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KINVZ" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KNAFA" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KSAFA" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KAAFA" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KMAFA" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KZINW" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KAUFN" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KANZA" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KVOST" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFWP" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="NAFAP" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SAFAP" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AAFAP" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="MAFAP" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ZINSP" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFNP" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFWB" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="NAFAG" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SAFAG" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AAFAG" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="MAFAG" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ZINSG" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFNG" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ANSWL" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ABGAN" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ANSAZ" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFWM" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="INVZM" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="NAFAM" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SAFAM" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AAFAM" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="MAFAM" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ZINSM" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFNM" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ZUSNA" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ZUSSA" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ZUSAA" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ZUSMA" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFWV" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="INVZV" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="NAFAV" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SAFAV" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AAFAV" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="MAFAV" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFNV" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFWL" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="INVZL" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="NAFAL" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SAFAL" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AAFAL" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="MAFAL" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="AUFNL" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="ANUPD" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="KSANS" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SANSL" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="PSTBEG" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="PSTEND" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="PSTCALC" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="PSTPER" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="3" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tSAPInput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSAPInput_1" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="(To use this component, you need first to add the SAP Java Connector (sapjco.jar or sapjco3.jar) in the Modules view)"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tSAPConnection_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="sapjco3.jar"/>
+    <elementParameter field="CLOSED_LIST" name="SERVERTYPE" value="ApplicationServer"/>
+    <elementParameter field="TEXT" name="CLIENT" value="&quot;300&quot;"/>
+    <elementParameter field="TEXT" name="USERID" value="&quot;USERTECH&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:EZCaeNfActhSCYNPZADhYP2UPcRQKrIFe6r6Ivy3j0AZ/90MyUQ="/>
+    <elementParameter field="TEXT" name="LANGUAGE" value="&quot;DE&quot;"/>
+    <elementParameter field="TEXT" name="HOSTNAME" value="&quot;192.168.9.60&quot;"/>
+    <elementParameter field="TEXT" name="SYSTEMNUMBER" value="&quot;20&quot;"/>
+    <elementParameter field="TEXT" name="SYSTEMID" value="&quot;PRD&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GROUPNAME" value="&quot;tGroup&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SAP_FUNCTION" value="&quot;RFC_READ_TABLE&quot;"/>
+    <elementParameter field="TABLE" name="MAPPING_INPUT">
+      <elementValue elementRef="SAP_PARAMETER_VALUE" value="&quot;ANLC&quot;"/>
+      <elementValue elementRef="SAP_PARAMETER_TYPE" value="input_single"/>
+      <elementValue elementRef="SAP_TABLE_NAME" value="&quot;&quot;"/>
+      <elementValue elementRef="SAP_PARAMETER_NAME" value="&quot;QUERY_TABLE&quot;"/>
+      <elementValue elementRef="SAP_PARAMETER_VALUE" value="&quot;\t&quot;"/>
+      <elementValue elementRef="SAP_PARAMETER_TYPE" value="input_single"/>
+      <elementValue elementRef="SAP_TABLE_NAME" value="&quot;&quot;"/>
+      <elementValue elementRef="SAP_PARAMETER_NAME" value="&quot;DELIMITER&quot;"/>
+      <elementValue elementRef="SAP_PARAMETER_VALUE" value="&quot;MANDT&quot;,&quot;BUKRS&quot;,&quot;ANLN1&quot;,&quot;ANLN2&quot;,&quot;GJAHR&quot;,&quot;AFABE&quot;,&quot;ZUJHR&quot;,&quot;ZUCOD&quot;,&quot;ZUSSA&quot;,&quot;ZUSAA&quot;,&quot;ZUSMA&quot;,&quot;AUFWV&quot;,&quot;INVZV&quot;,&quot;NAFAV&quot;,&quot;SAFAV&quot;,&quot;AAFAV&quot;,&quot;MAFAV&quot;,&quot;AUFNV&quot;,&quot;AUFWL&quot;,&quot;INVZL&quot;,&quot;NAFAL&quot;,&quot;SAFAL&quot;,&quot;AAFAL&quot;,&quot;MAFAL&quot;,&quot;AUFNL&quot;,&quot;ANUPD&quot;,&quot;KSANS&quot;,&quot;SANSL&quot;,&quot;PSTBEG&quot;,&quot;PSTEND&quot;,&quot;PSTCALC&quot;,&quot;PSTPER&quot;"/>
+      <elementValue elementRef="SAP_PARAMETER_TYPE" value="table_input"/>
+      <elementValue elementRef="SAP_TABLE_NAME" value="&quot;FIELDS&quot;"/>
+      <elementValue elementRef="SAP_PARAMETER_NAME" value="&quot;FIELDNAME&quot;"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="SCHEMAS">
+      <elementValue elementRef="SCHEMA" value="out2"/>
+      <elementValue elementRef="SAP_ITERATE_OUT_TYPE" value="table_output"/>
+      <elementValue elementRef="SAP_TABLE_NAME" value="&quot;DATA&quot;"/>
+      <elementValue elementRef="MAPPING" value="&quot;WA&quot;"/>
+    </elementParameter>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="SAP_DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="SAP_PROPERTIES"/>
+    <elementParameter field="CHECK" name="FTP_HTTP_FUNCTION" value="false"/>
+    <elementParameter field="CHECK" name="CLOSE" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="ANLC_2"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Output" name="out2">
+      <column comment="" key="false" length="100000" name="WA" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100000" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tExtractDelimitedFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractDelimitedFields_2" show="false"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="FIELD" value="WA"/>
+    <elementParameter field="CHECK" name="IGNORE_SOURCE_NULL" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;\t&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="TRIM" value="true"/>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Output" name="tExtractDelimitedFields_2">
+      <column comment="" key="true" length="9" name="MANDT" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="9" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="BUKRS" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="12" usefulColumn="true"/>
+      <column comment="" key="true" length="36" name="ANLN1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="36" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="ANLN2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="12" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="GJAHR" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="12" usefulColumn="true"/>
+      <column comment="" key="true" length="6" name="AFABE" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="ZUJHR" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="12" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="ZUCOD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="12" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="ANSAZ" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="AUFWM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="INVZM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="NAFAM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="SAFAM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="AAFAM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="MAFAM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="ZINSM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="AUFNM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="ZUSNA" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="ZUSSA" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="ZUSAA" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="ZUSMA" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="AUFWV" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="INVZV" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="NAFAV" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="SAFAV" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="AAFAV" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="MAFAV" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="AUFNV" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="AUFWL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="INVZL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="NAFAL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="SAFAL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="AAFAL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="MAFAL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="AUFNL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="ANUPD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="KSANS" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="SANSL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="PSTBEG" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="9" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="PSTEND" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="9" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="PSTCALC" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="PSTPER" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="9" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="Output" name="REJECT">
+      <column comment="" key="true" length="9" name="MANDT" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="9" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="BUKRS" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="12" usefulColumn="true"/>
+      <column comment="" key="true" length="36" name="ANLN1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="36" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="ANLN2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="12" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="GJAHR" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="12" usefulColumn="true"/>
+      <column comment="" key="true" length="6" name="AFABE" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="ZUJHR" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="12" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="ZUCOD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="12" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="ANSAZ" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="AUFWM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="INVZM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="NAFAM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="SAFAM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="AAFAM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="MAFAM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="ZINSM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="AUFNM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="ZUSNA" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="ZUSSA" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="ZUSAA" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="ZUSMA" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="AUFWV" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="INVZV" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="NAFAV" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="SAFAV" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="AAFAV" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="MAFAV" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="AUFNV" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="AUFWL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="INVZL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="NAFAL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="SAFAL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="AAFAL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="MAFAL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="AUFNL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="ANUPD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="KSANS" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="SANSL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="PSTBEG" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="9" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="PSTEND" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="9" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="PSTCALC" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="PSTPER" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="9" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tSAPInput_2" target="tExtractDelimitedFields_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="r1" lineStyle="0" metaname="tExtractDelimitedFields_1" offsetLabelX="0" offsetLabelY="0" source="tExtractDelimitedFields_1" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="r1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="outAll" lineStyle="0" metaname="outAll" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tMysqlOutput_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="NAFAV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AUFNM_1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ZUSAA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ANUPD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MAFAL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AUFWV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ANSAZ_1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVZM_1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ZUSMA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PSTPER"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SAFAL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PSTCALC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PSTEND"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="KSANS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ZUSSA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NAFAM_1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AUFWL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AAFAM_1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SAFAV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AUFWM_1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SAFAM_1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AUFNV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AAFAL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVZV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AAFAV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SANSL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVZL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AUFNL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ZUSNA_1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PSTBEG"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MAFAM_1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NAFAL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MAFAV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ZINSM_1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="outAll" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="rowCSV" lineStyle="0" metaname="tMysqlOutput_1" offsetLabelX="0" offsetLabelY="0" source="tMysqlOutput_1" target="tFileOutputDelimited_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="rowCSV" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out2" lineStyle="0" metaname="out2" offsetLabelX="0" offsetLabelY="0" source="tSAPInput_1" target="tExtractDelimitedFields_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="r2" lineStyle="8" metaname="tExtractDelimitedFields_2" offsetLabelX="0" offsetLabelY="0" source="tExtractDelimitedFields_2" target="tMap_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="MANDT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AAFAM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AUFWM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SAFAM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MAFAM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NAFAM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ANSAZ"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ZUSNA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AUFNM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVZM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ZINSM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="r2" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSAPInput_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

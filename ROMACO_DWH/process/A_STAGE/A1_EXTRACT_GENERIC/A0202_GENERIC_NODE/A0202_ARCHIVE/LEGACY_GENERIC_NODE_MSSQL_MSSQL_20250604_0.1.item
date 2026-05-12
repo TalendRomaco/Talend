@@ -1,0 +1,1258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="PROD" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="PROD">
+    <contextParameter comment="" name="CHORE_ID" prompt="CHORE_ID?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_KwhIoQI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DEBUG" prompt="DEBUG?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_Boolean" value="" internalId="_KwhIogI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DELTA_FIELD_NAME" prompt="DELTA_FIELD_NAME?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_KwhIowI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DELTA_LAST_KEY" prompt="DELTA_LAST_KEY?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_KwhIpAI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DELTA_METHOD" prompt="DELTA_METHOD?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_KwhIpQI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="JOB_ID" prompt="JOB_ID?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_Long" value="" internalId="_KwhIpgI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="SOURCE_ADVANCED_PARAM" prompt="SOURCE_ADVANCED_PARAM?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_KwhIpwI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="SOURCE_FIELD" prompt="SOURCE_FIELD?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_KwhIqAI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="SOURCE_PARAM" prompt="SOURCE_PARAM?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_KwhIqQI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="SOURCE_QUERY" prompt="SOURCE_QUERY?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_KwhIqgI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="SOURCE_STRUCTURE" prompt="SOURCE_STRUCTURE?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_KwhIqwI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="SOURCE_TYPE" prompt="SOURCE_TYPE?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_KwhIrAI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="STAGING_NODE" prompt="STAGING_NODE?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_KwhIrQI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="TARGET_RECREATE" prompt="TARGET_RECREATE?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_Boolean" value="" internalId="_KwhIrgI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="TARGET_TABLE" prompt="TARGET_TABLE?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_KwhIrwI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="TARGET_TRUNCATE" prompt="TARGET_TRUNCATE?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_Boolean" value="" internalId="_KwhIsAI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DELTA_FIELD_TYPE" prompt="DELTA_FIELD_TYPE?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_KwhItwI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DELTA_OFFSET" prompt="DELTA_OFFSET?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_Integer" value="" internalId="_KwhIuAI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="IS_PERSISTENT" prompt="IS_PERSISTENT?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_Boolean" value="" internalId="_KwhIuQI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="IS_PERSISTENT_SYSTEM" prompt="IS_PERSISTENT_SYSTEM?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_KwhIugI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="PERSISTENT_TABLE" prompt="PERSISTENT_TABLE?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_KwhIuwI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="PERSISTENT_TABLE_PK1" prompt="PERSISTENT_TABLE_PK1?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_KwhIvAI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="PERSISTENT_TABLE_PK2" prompt="PERSISTENT_TABLE_PK2?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_KwhIvQI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="PERSISTENT_TABLE_PK3" prompt="PERSISTENT_TABLE_PK3?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_KwhIvgI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="TARGET_POST_SQL" prompt="TARGET_POST_SQL?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_KwhIvwI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="TARGET_SWITCH" prompt="TARGET_SWITCH?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_Boolean" value="" internalId="_KwhIwAI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="TARGET_SYSTEM" prompt="TARGET_SYSTEM?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_KwhIwQI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="TARGET_TABLE_PK1" prompt="TARGET_TABLE_PK1?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_KwhIwgI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="TARGET_TABLE_PK2" prompt="TARGET_TABLE_PK2?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_KwhIwwI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="TARGET_TABLE_PK3" prompt="TARGET_TABLE_PK3?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_KwhIxAI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DWH_STAGE_SERVER" prompt="DWH_STAGE_SERVER?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="KASV-SQL01" internalId="_J90gBQI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DWH_STAGE_ADDITIONAL_PARAM" prompt="DWH_STAGE_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="instance=DWH;useNTLMv2=true;domain=ad42;integratedSecurity=false" internalId="_J90gBgI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DWH_STAGE_PORT" prompt="DWH_STAGE_PORT?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="1433" internalId="_J90gBwI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DWH_STAGE_LOGIN" prompt="DWH_STAGE_LOGIN?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="adm_bi" internalId="_J90gCAI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DWH_STAGE_DATABASE" prompt="DWH_STAGE_DATABASE?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="DWH" internalId="_J90gCQI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DWH_STAGE_SCHEMA" prompt="DWH_STAGE_SCHEMA?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="STG" internalId="_J90gCgI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DWH_STAGE_PASSWORD" prompt="DWH_STAGE_PASSWORD?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_Password" value="enc:system.encryption.key.v1:4274y57nssdKwm2ODwrb+kAKOzhiv94pQ8CzcF9DZuFrx/hQAw==" internalId="_J90gCwI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="INNOSOFT_LOGIN" prompt="INNOSOFT_LOGIN?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="SQL_Talend-Reader" internalId="_goxejRwLEe-jyKEeUw-1JQ"/>
+    <contextParameter comment="" name="SOURCE_SYSTEM" prompt="SOURCE_SYSTEM?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_goxejxwLEe-jyKEeUw-1JQ"/>
+    <contextParameter comment="" name="ZEUSX_SERVER" prompt="ZEUSX_SERVER?" promptNeeded="false" repositoryContextId="_nZfJMH9ZEeyZfMeOF10yTw" type="id_String" value="KASV-SAGE-DB" internalId="_kDMN8CpQEe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="ZEUSX_PASSWORD" prompt="ZEUSX_PASSWORD?" promptNeeded="false" repositoryContextId="_nZfJMH9ZEeyZfMeOF10yTw" type="id_Password" value="enc:system.encryption.key.v1:bM6gGz7+qcNZvGrv2WG3TFdxRc+FTj6X2GEo61POt37uKbRnJQ==" internalId="_kDM1ACpQEe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="ZEUSX_DATABASE" prompt="ZEUSX_DATABASE?" promptNeeded="false" repositoryContextId="_nZfJMH9ZEeyZfMeOF10yTw" type="id_String" value="ZEUSX_EXPORT" internalId="_kDM1ASpQEe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="ZEUSX_PORT" prompt="ZEUSX_PORT?" promptNeeded="false" repositoryContextId="_nZfJMH9ZEeyZfMeOF10yTw" type="id_String" value="1433" internalId="_kDM1AipQEe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="ZEUSX_SCHEMA" prompt="ZEUSX_SCHEMA?" promptNeeded="false" repositoryContextId="_nZfJMH9ZEeyZfMeOF10yTw" type="id_String" value="" internalId="_kDM1AypQEe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="ZEUSX_LOGIN" prompt="ZEUSX_LOGIN?" promptNeeded="false" repositoryContextId="_nZfJMH9ZEeyZfMeOF10yTw" type="id_String" value="adm_bi" internalId="_kDM1BCpQEe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="ZEUSX_ADDITIONAL_PARAM" prompt="ZEUSX_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="_nZfJMH9ZEeyZfMeOF10yTw" type="id_String" value="instance=ZEUS;useNTLMv2=true;domain=ad42;Integrated Security=false" internalId="_kDM1BSpQEe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="INNOSOFT_SERVER" prompt="INNOSOFT_SERVER?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="rho-hub-p-weu-sqlmi-001.57b5257f5e00.database.windows.net" internalId="_cfFt4CpREe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="INNOSOFT_ADDITIONAL_PARAM" prompt="INNOSOFT_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="" internalId="_cfFt4SpREe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="INNOSOFT_DATABASE" prompt="INNOSOFT_DATABASE?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="P_Innosoft" internalId="_cfFt4ipREe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="INNOSOFT_PASSWORD" prompt="INNOSOFT_PASSWORD?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_Password" value="enc:system.encryption.key.v1:piFGMOwjVY/DvxA3SIW0HBrTF41CX1Q6iv9fxFQCcc+S3+ctE1Ym4w==" internalId="_cfGU8CpREe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="INNOSOFT_PORT" prompt="INNOSOFT_PORT?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="1433" internalId="_cfGU8SpREe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="INNOSOFT_SCHEMA" prompt="INNOSOFT_SCHEMA?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="" internalId="_cfGU8ipREe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="DWH_ADMIN_ADDITIONAL_PARAM" prompt="DWH_ADMIN_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="_lzkJgDIeEe-epOz61AJceA" type="id_String" value="instance=DWH;useNTLMv2=true;domain=ad42;Integrated Security=false" internalId="_Gl4vEDIqEe-FrJG7KSKyVw"/>
+    <contextParameter comment="" name="DWH_ADMIN_DATABASE" prompt="DWH_ADMIN_DATABASE?" promptNeeded="false" repositoryContextId="_lzkJgDIeEe-epOz61AJceA" type="id_String" value="DWH" internalId="_Gl4vETIqEe-FrJG7KSKyVw"/>
+    <contextParameter comment="" name="DWH_ADMIN_PASSWORD" prompt="DWH_ADMIN_PASSWORD?" promptNeeded="false" repositoryContextId="_lzkJgDIeEe-epOz61AJceA" type="id_Password" value="enc:system.encryption.key.v1:dBcv6QY8P7WPGtj+Ym0kYvjPb+Q57R9CQgjqbbhIH2a6eoRLsA==" internalId="_Gl4vEjIqEe-FrJG7KSKyVw"/>
+    <contextParameter comment="" name="DWH_ADMIN_SERVER" prompt="DWH_ADMIN_SERVER?" promptNeeded="false" repositoryContextId="_lzkJgDIeEe-epOz61AJceA" type="id_String" value="KASV-SQL01" internalId="_Gl4vEzIqEe-FrJG7KSKyVw"/>
+    <contextParameter comment="" name="DWH_ADMIN_LOGIN" prompt="DWH_ADMIN_LOGIN?" promptNeeded="false" repositoryContextId="_lzkJgDIeEe-epOz61AJceA" type="id_String" value="adm_bi" internalId="_Gl4vFDIqEe-FrJG7KSKyVw"/>
+    <contextParameter comment="" name="DWH_ADMIN_SCHEMA" prompt="DWH_ADMIN_SCHEMA?" promptNeeded="false" repositoryContextId="_lzkJgDIeEe-epOz61AJceA" type="id_String" value="ADM" internalId="_Gl4vFTIqEe-FrJG7KSKyVw"/>
+    <contextParameter comment="" name="DWH_ADMIN_PORT" prompt="DWH_ADMIN_PORT?" promptNeeded="false" repositoryContextId="_lzkJgDIeEe-epOz61AJceA" type="id_String" value="1433" internalId="_Gl4vFjIqEe-FrJG7KSKyVw"/>
+    <contextParameter comment="" name="ABAS_BI_ADDITIONAL_PARAM" prompt="ABAS_BI_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="_U-ng4B87Eeu4evOLuCTfoQ" type="id_String" value="" internalId="_FZfQUDevEe-rn-6NwZVhCA"/>
+    <contextParameter comment="" name="ABAS_BI_LOGIN" prompt="ABAS_BI_LOGIN?" promptNeeded="false" repositoryContextId="_U-ng4B87Eeu4evOLuCTfoQ" type="id_String" value="sa" internalId="_j69ZIDewEe-rn-6NwZVhCA"/>
+    <contextParameter comment="" name="ABAS_BI_SCHEMA" prompt="ABAS_BI_SCHEMA?" promptNeeded="false" repositoryContextId="_U-ng4B87Eeu4evOLuCTfoQ" type="id_String" value="dbo" internalId="_j69ZITewEe-rn-6NwZVhCA"/>
+    <contextParameter comment="" name="ABAS_BI_SERVER" prompt="ABAS_BI_SERVER?" promptNeeded="false" repositoryContextId="_U-ng4B87Eeu4evOLuCTfoQ" type="id_String" value="192.168.10.27" internalId="_j69ZIjewEe-rn-6NwZVhCA"/>
+    <contextParameter comment="" name="ABAS_BI_PASSWORD" prompt="ABAS_BI_PASSWORD?" promptNeeded="false" repositoryContextId="_U-ng4B87Eeu4evOLuCTfoQ" type="id_Password" value="enc:system.encryption.key.v1:ZJNmrALQVT1TqLjpnR0cD8UPW6mB5rlnnRRa3/K3CSoWfuPkfw==" internalId="_j69ZIzewEe-rn-6NwZVhCA"/>
+    <contextParameter comment="" name="ABAS_BI_DATABASE" prompt="ABAS_BI_DATABASE?" promptNeeded="false" repositoryContextId="_U-ng4B87Eeu4evOLuCTfoQ" type="id_String" value="abasBI" internalId="_j69ZJDewEe-rn-6NwZVhCA"/>
+    <contextParameter comment="" name="ABAS_BI_PORT" prompt="ABAS_BI_PORT?" promptNeeded="false" repositoryContextId="_U-ng4B87Eeu4evOLuCTfoQ" type="id_String" value="1433" internalId="_j69ZJTewEe-rn-6NwZVhCA"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="TEST">
+    <contextParameter comment="" name="INNOSOFT_ADDITIONAL_PARAM" prompt="INNOSOFT_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="" internalId="_cfGU-ipREe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="INNOSOFT_LOGIN" prompt="INNOSOFT_LOGIN?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="SQL_Talend-Reader" internalId="_cfGU-ypREe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="INNOSOFT_PASSWORD" prompt="INNOSOFT_PASSWORD?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_Password" value="enc:system.encryption.key.v1:wxz6o/LHa3KhPrMpawZ9ES0JZ20fHRkF7uuz51CP9XGPOLIpOAO2mw==" internalId="_cfGU_CpREe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="INNOSOFT_SCHEMA" prompt="INNOSOFT_SCHEMA?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="" internalId="_cfGU_SpREe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="INNOSOFT_PORT" prompt="INNOSOFT_PORT?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="1433" internalId="_cfGU_ipREe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="INNOSOFT_SERVER" prompt="INNOSOFT_SERVER?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="rho-hub-p-weu-sqlmi-001.57b5257f5e00.database.windows.net" internalId="_cfGU_ypREe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="INNOSOFT_DATABASE" prompt="INNOSOFT_DATABASE?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="P_Innosoft" internalId="_cfGVACpREe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="CHORE_ID" prompt="CHORE_ID?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f4AI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DEBUG" prompt="DEBUG?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_Boolean" value="" internalId="_J90f4QI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DELTA_FIELD_NAME" prompt="DELTA_FIELD_NAME?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f4gI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DELTA_FIELD_TYPE" prompt="DELTA_FIELD_TYPE?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f4wI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DELTA_LAST_KEY" prompt="DELTA_LAST_KEY?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f5AI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DELTA_METHOD" prompt="DELTA_METHOD?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f5QI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DELTA_OFFSET" prompt="DELTA_OFFSET?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_Integer" value="" internalId="_J90f5gI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="IS_PERSISTENT" prompt="IS_PERSISTENT?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_Boolean" value="" internalId="_J90f5wI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="JOB_ID" prompt="JOB_ID?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_Long" value="" internalId="_J90f6AI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="IS_PERSISTENT_SYSTEM" prompt="IS_PERSISTENT_SYSTEM?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f6QI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="PERSISTENT_TABLE" prompt="PERSISTENT_TABLE?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f6gI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="PERSISTENT_TABLE_PK1" prompt="PERSISTENT_TABLE_PK1?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f6wI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="PERSISTENT_TABLE_PK2" prompt="PERSISTENT_TABLE_PK2?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f7AI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="PERSISTENT_TABLE_PK3" prompt="PERSISTENT_TABLE_PK3?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f7QI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="SOURCE_ADVANCED_PARAM" prompt="SOURCE_ADVANCED_PARAM?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f7gI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="SOURCE_FIELD" prompt="SOURCE_FIELD?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f7wI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="SOURCE_PARAM" prompt="SOURCE_PARAM?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f8AI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="SOURCE_QUERY" prompt="SOURCE_QUERY?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f8QI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="SOURCE_STRUCTURE" prompt="SOURCE_STRUCTURE?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f8gI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="SOURCE_TYPE" prompt="SOURCE_TYPE?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f8wI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="STAGING_NODE" prompt="STAGING_NODE?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f9AI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="TARGET_POST_SQL" prompt="TARGET_POST_SQL?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f9QI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="TARGET_RECREATE" prompt="TARGET_RECREATE?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_Boolean" value="" internalId="_J90f9gI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="TARGET_SWITCH" prompt="TARGET_SWITCH?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_Boolean" value="" internalId="_J90f9wI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="TARGET_SYSTEM" prompt="TARGET_SYSTEM?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f-AI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="TARGET_TABLE" prompt="TARGET_TABLE?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f-QI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="TARGET_TABLE_PK1" prompt="TARGET_TABLE_PK1?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f-gI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="TARGET_TABLE_PK2" prompt="TARGET_TABLE_PK2?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f-wI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="TARGET_TABLE_PK3" prompt="TARGET_TABLE_PK3?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f_AI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="TARGET_TRUNCATE" prompt="TARGET_TRUNCATE?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_Boolean" value="" internalId="_J90f_QI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DWH_STAGE_SERVER" prompt="DWH_STAGE_SERVER?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="KASV-SQL01" internalId="_J90gBQI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DWH_STAGE_ADDITIONAL_PARAM" prompt="DWH_STAGE_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="instance=DWH;useNTLMv2=true;domain=ad42;integratedSecurity=false" internalId="_J90gBgI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DWH_STAGE_PORT" prompt="DWH_STAGE_PORT?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="1433" internalId="_J90gBwI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DWH_STAGE_LOGIN" prompt="DWH_STAGE_LOGIN?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="adm_bi" internalId="_J90gCAI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DWH_STAGE_DATABASE" prompt="DWH_STAGE_DATABASE?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="DWH" internalId="_J90gCQI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DWH_STAGE_SCHEMA" prompt="DWH_STAGE_SCHEMA?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="STG" internalId="_J90gCgI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DWH_STAGE_PASSWORD" prompt="DWH_STAGE_PASSWORD?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_Password" value="enc:system.encryption.key.v1:vMaMcdXeh2qfB/dCXn/cAmNwshFrhq2URrGeNWzONALNb4W1Og==" internalId="_J90gCwI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="ZEUSX_SERVER" prompt="ZEUSX_SERVER?" promptNeeded="false" repositoryContextId="_nZfJMH9ZEeyZfMeOF10yTw" type="id_String" value="KASV-SAGE-DB" internalId="_gf_XgCpREe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="ZEUSX_PASSWORD" prompt="ZEUSX_PASSWORD?" promptNeeded="false" repositoryContextId="_nZfJMH9ZEeyZfMeOF10yTw" type="id_Password" value="enc:system.encryption.key.v1:UtVkd5PUFutq+fK8KO1j6QS8QE4fbeSQPJgrT3ZN5zVXdyxBUQ==" internalId="_gf_XgSpREe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="ZEUSX_DATABASE" prompt="ZEUSX_DATABASE?" promptNeeded="false" repositoryContextId="_nZfJMH9ZEeyZfMeOF10yTw" type="id_String" value="ZEUSX_EXPORT" internalId="_gf_XgipREe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="ZEUSX_PORT" prompt="ZEUSX_PORT?" promptNeeded="false" repositoryContextId="_nZfJMH9ZEeyZfMeOF10yTw" type="id_String" value="1433" internalId="_gf_XgypREe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="ZEUSX_SCHEMA" prompt="ZEUSX_SCHEMA?" promptNeeded="false" repositoryContextId="_nZfJMH9ZEeyZfMeOF10yTw" type="id_String" value="" internalId="_gf_XhCpREe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="ZEUSX_LOGIN" prompt="ZEUSX_LOGIN?" promptNeeded="false" repositoryContextId="_nZfJMH9ZEeyZfMeOF10yTw" type="id_String" value="adm_bi" internalId="_gf_XhSpREe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="ZEUSX_ADDITIONAL_PARAM" prompt="ZEUSX_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="_nZfJMH9ZEeyZfMeOF10yTw" type="id_String" value="instance=ZEUS;useNTLMv2=true;domain=ad42;Integrated Security=false" internalId="_gf_XhipREe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="SOURCE_SYSTEM" prompt="SOURCE_SYSTEM?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_dunTfi4zEe-SyPm50CRN4w"/>
+    <contextParameter comment="" name="DWH_ADMIN_ADDITIONAL_PARAM" prompt="DWH_ADMIN_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="_lzkJgDIeEe-epOz61AJceA" type="id_String" value="instance=DWH;useNTLMv2=true;domain=ad42;Integrated Security=false" internalId="_Gl4vEDIqEe-FrJG7KSKyVw"/>
+    <contextParameter comment="" name="DWH_ADMIN_DATABASE" prompt="DWH_ADMIN_DATABASE?" promptNeeded="false" repositoryContextId="_lzkJgDIeEe-epOz61AJceA" type="id_String" value="DWH" internalId="_Gl4vETIqEe-FrJG7KSKyVw"/>
+    <contextParameter comment="" name="DWH_ADMIN_PASSWORD" prompt="DWH_ADMIN_PASSWORD?" promptNeeded="false" repositoryContextId="_lzkJgDIeEe-epOz61AJceA" type="id_Password" value="enc:system.encryption.key.v1:a1mFqsYYE8W1C8q38xkJj8Tw3hPDOcij1diNN1+g3Ex/RixAsA==" internalId="_Gl4vEjIqEe-FrJG7KSKyVw"/>
+    <contextParameter comment="" name="DWH_ADMIN_SERVER" prompt="DWH_ADMIN_SERVER?" promptNeeded="false" repositoryContextId="_lzkJgDIeEe-epOz61AJceA" type="id_String" value="KASV-SQL01" internalId="_Gl4vEzIqEe-FrJG7KSKyVw"/>
+    <contextParameter comment="" name="DWH_ADMIN_LOGIN" prompt="DWH_ADMIN_LOGIN?" promptNeeded="false" repositoryContextId="_lzkJgDIeEe-epOz61AJceA" type="id_String" value="adm_bi" internalId="_Gl4vFDIqEe-FrJG7KSKyVw"/>
+    <contextParameter comment="" name="DWH_ADMIN_SCHEMA" prompt="DWH_ADMIN_SCHEMA?" promptNeeded="false" repositoryContextId="_lzkJgDIeEe-epOz61AJceA" type="id_String" value="ADM" internalId="_Gl4vFTIqEe-FrJG7KSKyVw"/>
+    <contextParameter comment="" name="DWH_ADMIN_PORT" prompt="DWH_ADMIN_PORT?" promptNeeded="false" repositoryContextId="_lzkJgDIeEe-epOz61AJceA" type="id_String" value="1433" internalId="_Gl4vFjIqEe-FrJG7KSKyVw"/>
+    <contextParameter comment="" name="ABAS_BI_ADDITIONAL_PARAM" prompt="ABAS_BI_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="_U-ng4B87Eeu4evOLuCTfoQ" type="id_String" value="" internalId="_FZf3YDevEe-rn-6NwZVhCA"/>
+    <contextParameter comment="" name="ABAS_BI_LOGIN" prompt="ABAS_BI_LOGIN?" promptNeeded="false" repositoryContextId="_U-ng4B87Eeu4evOLuCTfoQ" type="id_String" value="sa" internalId="_j6-AMDewEe-rn-6NwZVhCA"/>
+    <contextParameter comment="" name="ABAS_BI_SCHEMA" prompt="ABAS_BI_SCHEMA?" promptNeeded="false" repositoryContextId="_U-ng4B87Eeu4evOLuCTfoQ" type="id_String" value="dbo" internalId="_j6-AMTewEe-rn-6NwZVhCA"/>
+    <contextParameter comment="" name="ABAS_BI_SERVER" prompt="ABAS_BI_SERVER?" promptNeeded="false" repositoryContextId="_U-ng4B87Eeu4evOLuCTfoQ" type="id_String" value="192.168.10.27" internalId="_j6-AMjewEe-rn-6NwZVhCA"/>
+    <contextParameter comment="" name="ABAS_BI_PASSWORD" prompt="ABAS_BI_PASSWORD?" promptNeeded="false" repositoryContextId="_U-ng4B87Eeu4evOLuCTfoQ" type="id_Password" value="enc:system.encryption.key.v1:63VgmTxYw1mRJoU9cINt5WS+0CH0Tkti4rQkSV8bYiAys4WC4Q==" internalId="_j6-AMzewEe-rn-6NwZVhCA"/>
+    <contextParameter comment="" name="ABAS_BI_DATABASE" prompt="ABAS_BI_DATABASE?" promptNeeded="false" repositoryContextId="_U-ng4B87Eeu4evOLuCTfoQ" type="id_String" value="abasBI" internalId="_j6-ANDewEe-rn-6NwZVhCA"/>
+    <contextParameter comment="" name="ABAS_BI_PORT" prompt="ABAS_BI_PORT?" promptNeeded="false" repositoryContextId="_U-ng4B87Eeu4evOLuCTfoQ" type="id_String" value="1433" internalId="_j6-ANTewEe-rn-6NwZVhCA"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="ON_PREM">
+    <contextParameter comment="" name="INNOSOFT_ADDITIONAL_PARAM" prompt="INNOSOFT_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="" internalId="_cfGVASpREe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="INNOSOFT_LOGIN" prompt="INNOSOFT_LOGIN?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="DBReader" internalId="_cfGVAipREe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="INNOSOFT_PASSWORD" prompt="INNOSOFT_PASSWORD?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_Password" value="enc:system.encryption.key.v1:AE1qF+5G3ivG8R9Pw4aQkeT7YkZj8m/90ebGBseFeg9ELcjD+d8=" internalId="_cfGVAypREe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="INNOSOFT_SCHEMA" prompt="INNOSOFT_SCHEMA?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="" internalId="_cfGVBCpREe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="INNOSOFT_PORT" prompt="INNOSOFT_PORT?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="1433" internalId="_cfGVBSpREe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="INNOSOFT_SERVER" prompt="INNOSOFT_SERVER?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="KOSVINNOSOFT01" internalId="_cfGVBipREe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="INNOSOFT_DATABASE" prompt="INNOSOFT_DATABASE?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="" internalId="_cfGVBypREe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="CHORE_ID" prompt="CHORE_ID?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f4AI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DEBUG" prompt="DEBUG?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_Boolean" value="" internalId="_J90f4QI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DELTA_FIELD_NAME" prompt="DELTA_FIELD_NAME?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f4gI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DELTA_FIELD_TYPE" prompt="DELTA_FIELD_TYPE?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f4wI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DELTA_LAST_KEY" prompt="DELTA_LAST_KEY?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f5AI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DELTA_METHOD" prompt="DELTA_METHOD?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f5QI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DELTA_OFFSET" prompt="DELTA_OFFSET?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_Integer" value="" internalId="_J90f5gI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="IS_PERSISTENT" prompt="IS_PERSISTENT?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_Boolean" value="" internalId="_J90f5wI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="JOB_ID" prompt="JOB_ID?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_Long" value="" internalId="_J90f6AI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="IS_PERSISTENT_SYSTEM" prompt="IS_PERSISTENT_SYSTEM?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f6QI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="PERSISTENT_TABLE" prompt="PERSISTENT_TABLE?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f6gI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="PERSISTENT_TABLE_PK1" prompt="PERSISTENT_TABLE_PK1?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f6wI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="PERSISTENT_TABLE_PK2" prompt="PERSISTENT_TABLE_PK2?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f7AI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="PERSISTENT_TABLE_PK3" prompt="PERSISTENT_TABLE_PK3?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f7QI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="SOURCE_ADVANCED_PARAM" prompt="SOURCE_ADVANCED_PARAM?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f7gI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="SOURCE_FIELD" prompt="SOURCE_FIELD?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f7wI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="SOURCE_PARAM" prompt="SOURCE_PARAM?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f8AI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="SOURCE_QUERY" prompt="SOURCE_QUERY?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f8QI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="SOURCE_STRUCTURE" prompt="SOURCE_STRUCTURE?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f8gI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="SOURCE_TYPE" prompt="SOURCE_TYPE?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f8wI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="STAGING_NODE" prompt="STAGING_NODE?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f9AI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="TARGET_POST_SQL" prompt="TARGET_POST_SQL?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f9QI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="TARGET_RECREATE" prompt="TARGET_RECREATE?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_Boolean" value="" internalId="_J90f9gI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="TARGET_SWITCH" prompt="TARGET_SWITCH?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_Boolean" value="" internalId="_J90f9wI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="TARGET_SYSTEM" prompt="TARGET_SYSTEM?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f-AI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="TARGET_TABLE" prompt="TARGET_TABLE?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f-QI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="TARGET_TABLE_PK1" prompt="TARGET_TABLE_PK1?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f-gI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="TARGET_TABLE_PK2" prompt="TARGET_TABLE_PK2?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f-wI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="TARGET_TABLE_PK3" prompt="TARGET_TABLE_PK3?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_J90f_AI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="TARGET_TRUNCATE" prompt="TARGET_TRUNCATE?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_Boolean" value="" internalId="_J90f_QI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DWH_STAGE_SERVER" prompt="DWH_STAGE_SERVER?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="KASV-SQL01" internalId="_J90gBQI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DWH_STAGE_ADDITIONAL_PARAM" prompt="DWH_STAGE_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="instance=DWH;useNTLMv2=true;domain=ad42;integratedSecurity=false" internalId="_J90gBgI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DWH_STAGE_PORT" prompt="DWH_STAGE_PORT?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="1433" internalId="_J90gBwI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DWH_STAGE_LOGIN" prompt="DWH_STAGE_LOGIN?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="adm_bi" internalId="_J90gCAI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DWH_STAGE_DATABASE" prompt="DWH_STAGE_DATABASE?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="DWH" internalId="_J90gCQI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DWH_STAGE_SCHEMA" prompt="DWH_STAGE_SCHEMA?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="STG" internalId="_J90gCgI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="DWH_STAGE_PASSWORD" prompt="DWH_STAGE_PASSWORD?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_Password" value="enc:system.encryption.key.v1:1gKXOXo03EIEFLDbeYPSbXUVMuuGmcULNe8tPSSRisZJ8DN9fw==" internalId="_J90gCwI1Ee-hw6eqocfYFg"/>
+    <contextParameter comment="" name="ZEUSX_SERVER" prompt="ZEUSX_SERVER?" promptNeeded="false" repositoryContextId="_nZfJMH9ZEeyZfMeOF10yTw" type="id_String" value="KASV-SAGE-DB" internalId="_gf_XhypREe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="ZEUSX_PASSWORD" prompt="ZEUSX_PASSWORD?" promptNeeded="false" repositoryContextId="_nZfJMH9ZEeyZfMeOF10yTw" type="id_Password" value="enc:system.encryption.key.v1:i4USn7ffeRrcFzRlubfQ8ygnh8f8G7Ur5S2Ic41fd2Ip+jnICA==" internalId="_gf_XiCpREe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="ZEUSX_DATABASE" prompt="ZEUSX_DATABASE?" promptNeeded="false" repositoryContextId="_nZfJMH9ZEeyZfMeOF10yTw" type="id_String" value="ZEUSX_EXPORT" internalId="_gf_XiSpREe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="ZEUSX_PORT" prompt="ZEUSX_PORT?" promptNeeded="false" repositoryContextId="_nZfJMH9ZEeyZfMeOF10yTw" type="id_String" value="1433" internalId="_gf_XiipREe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="ZEUSX_SCHEMA" prompt="ZEUSX_SCHEMA?" promptNeeded="false" repositoryContextId="_nZfJMH9ZEeyZfMeOF10yTw" type="id_String" value="" internalId="_gf_XiypREe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="ZEUSX_LOGIN" prompt="ZEUSX_LOGIN?" promptNeeded="false" repositoryContextId="_nZfJMH9ZEeyZfMeOF10yTw" type="id_String" value="adm_bi" internalId="_gf_XjCpREe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="ZEUSX_ADDITIONAL_PARAM" prompt="ZEUSX_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="_nZfJMH9ZEeyZfMeOF10yTw" type="id_String" value="instance=ZEUS;useNTLMv2=true;domain=ad42;Integrated Security=false" internalId="_gf_XjSpREe-nmpxPcdNtAQ"/>
+    <contextParameter comment="" name="SOURCE_SYSTEM" prompt="SOURCE_SYSTEM?" promptNeeded="false" repositoryContextId="_UArd8JygEeiBApmxvXln_g" type="id_String" value="" internalId="_dunTfi4zEe-SyPm50CRN4w"/>
+    <contextParameter comment="" name="DWH_ADMIN_ADDITIONAL_PARAM" prompt="DWH_ADMIN_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="_lzkJgDIeEe-epOz61AJceA" type="id_String" value="instance=DWH;useNTLMv2=true;domain=ad42;Integrated Security=false" internalId="_Gl4vEDIqEe-FrJG7KSKyVw"/>
+    <contextParameter comment="" name="DWH_ADMIN_DATABASE" prompt="DWH_ADMIN_DATABASE?" promptNeeded="false" repositoryContextId="_lzkJgDIeEe-epOz61AJceA" type="id_String" value="DWH" internalId="_Gl4vETIqEe-FrJG7KSKyVw"/>
+    <contextParameter comment="" name="DWH_ADMIN_PASSWORD" prompt="DWH_ADMIN_PASSWORD?" promptNeeded="false" repositoryContextId="_lzkJgDIeEe-epOz61AJceA" type="id_Password" value="enc:system.encryption.key.v1:BZkauY/lIB7M8iGcAK3WQFsHPt3AuGhSlJp4toSaXat6U7Kg5w==" internalId="_Gl4vEjIqEe-FrJG7KSKyVw"/>
+    <contextParameter comment="" name="DWH_ADMIN_SERVER" prompt="DWH_ADMIN_SERVER?" promptNeeded="false" repositoryContextId="_lzkJgDIeEe-epOz61AJceA" type="id_String" value="KASV-SQL01" internalId="_Gl4vEzIqEe-FrJG7KSKyVw"/>
+    <contextParameter comment="" name="DWH_ADMIN_LOGIN" prompt="DWH_ADMIN_LOGIN?" promptNeeded="false" repositoryContextId="_lzkJgDIeEe-epOz61AJceA" type="id_String" value="adm_bi" internalId="_Gl4vFDIqEe-FrJG7KSKyVw"/>
+    <contextParameter comment="" name="DWH_ADMIN_SCHEMA" prompt="DWH_ADMIN_SCHEMA?" promptNeeded="false" repositoryContextId="_lzkJgDIeEe-epOz61AJceA" type="id_String" value="ADM" internalId="_Gl4vFTIqEe-FrJG7KSKyVw"/>
+    <contextParameter comment="" name="DWH_ADMIN_PORT" prompt="DWH_ADMIN_PORT?" promptNeeded="false" repositoryContextId="_lzkJgDIeEe-epOz61AJceA" type="id_String" value="1433" internalId="_Gl4vFjIqEe-FrJG7KSKyVw"/>
+    <contextParameter comment="" name="ABAS_BI_ADDITIONAL_PARAM" prompt="ABAS_BI_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="_U-ng4B87Eeu4evOLuCTfoQ" type="id_String" value="" internalId="_FZf3YTevEe-rn-6NwZVhCA"/>
+    <contextParameter comment="" name="ABAS_BI_LOGIN" prompt="ABAS_BI_LOGIN?" promptNeeded="false" repositoryContextId="_U-ng4B87Eeu4evOLuCTfoQ" type="id_String" value="sa" internalId="_j6-ANjewEe-rn-6NwZVhCA"/>
+    <contextParameter comment="" name="ABAS_BI_SCHEMA" prompt="ABAS_BI_SCHEMA?" promptNeeded="false" repositoryContextId="_U-ng4B87Eeu4evOLuCTfoQ" type="id_String" value="dbo" internalId="_j6-ANzewEe-rn-6NwZVhCA"/>
+    <contextParameter comment="" name="ABAS_BI_SERVER" prompt="ABAS_BI_SERVER?" promptNeeded="false" repositoryContextId="_U-ng4B87Eeu4evOLuCTfoQ" type="id_String" value="192.168.10.27" internalId="_j6-AODewEe-rn-6NwZVhCA"/>
+    <contextParameter comment="" name="ABAS_BI_PASSWORD" prompt="ABAS_BI_PASSWORD?" promptNeeded="false" repositoryContextId="_U-ng4B87Eeu4evOLuCTfoQ" type="id_Password" value="enc:system.encryption.key.v1:9mbGRIi6iEC0gNaqPFADqay2ZhGKuB5WI0XbVTU/+x8lfFyAxA==" internalId="_j6-AOTewEe-rn-6NwZVhCA"/>
+    <contextParameter comment="" name="ABAS_BI_DATABASE" prompt="ABAS_BI_DATABASE?" promptNeeded="false" repositoryContextId="_U-ng4B87Eeu4evOLuCTfoQ" type="id_String" value="abasBI" internalId="_j6-AOjewEe-rn-6NwZVhCA"/>
+    <contextParameter comment="" name="ABAS_BI_PORT" prompt="ABAS_BI_PORT?" promptNeeded="false" repositoryContextId="_U-ng4B87Eeu4evOLuCTfoQ" type="id_String" value="1433" internalId="_j6-AOzewEe-rn-6NwZVhCA"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="280" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;C:/Users/tta/in.csv&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:7WANhbjWtrK0IHbzuJGpAoKelJAWAeMb36GrC8Ls" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="true" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/tta/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Bj2uTqbjlhD3p4IHEBxPHJlgpIJQyEo0FQ70UJcY" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_ZoodYC6hEeiDovfuYKs14w" name="DataOperation"/>
+    <routinesParameter id="_ZoxnUC6hEeiDovfuYKs14w" name="Mathematical"/>
+    <routinesParameter id="_ZoxnVC6hEeiDovfuYKs14w" name="Numeric"/>
+    <routinesParameter id="_Zo7YUy6hEeiDovfuYKs14w" name="Relational"/>
+    <routinesParameter id="_Zn42gi6hEeiDovfuYKs14w" name="SQLike"/>
+    <routinesParameter id="_Zo7YVy6hEeiDovfuYKs14w" name="StringHandling"/>
+    <routinesParameter id="_Zo7YWy6hEeiDovfuYKs14w" name="TalendDataGenerator"/>
+    <routinesParameter id="_ZpFJUC6hEeiDovfuYKs14w" name="TalendDate"/>
+    <routinesParameter id="_ZpFJWC6hEeiDovfuYKs14w" name="TalendStringUtil"/>
+    <routinesParameter id="_ZpFJVC6hEeiDovfuYKs14w" name="TalendString"/>
+    <routinesParameter id="_Kipm0FNuEeiyKbn4gXKnQQ" name="TtaQueryGenerator"/>
+    <routinesParameter id="_qRfuIMyDEeila_ysD5cASw" name="TtaSerialization"/>
+  </parameters>
+  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="-96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlConnection_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_eRpNoOjiEeiPup4IvSqYiw" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="context.DWH_STAGE_SERVER"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.DWH_STAGE_PORT"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.DWH_STAGE_SCHEMA"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.DWH_STAGE_DATABASE"/>
+    <elementParameter field="TEXT" name="USER" value="context.DWH_STAGE_LOGIN"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:kmX62dv/m/6Q6lownhpeUw3wYy1/bnXTaL9yoPL9OSVdKxN2IOK6K+oTljAIW80m0yHRyfTT"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.DWH_STAGE_ADDITIONAL_PARAM"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Open Target Connection"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="80" posY="840">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_1" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
+    <elementParameter field="CHECK" name="CLOSE" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="Commit and Close  "/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlCommit_1"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="80" posY="1120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="// Mapping of Stat Values&#xA;&#xA;&#xA;if(context.SOURCE_SYSTEM.equals(&quot;Innosoft&quot;)){&#xA;&#xA;&#x9;if(context.TARGET_RECREATE != null &amp;&amp; context.TARGET_RECREATE == true){&#xA;&#x9;globalMap.put(&quot;LinesRead&quot;, globalMap.get(&quot;tDBOutput_2_NB_LINE&quot;));&#xA;&#x9;globalMap.put(&quot;LinesWritten&quot;, globalMap.get(&quot;tDBOutput_2_NB_LINE_INSERTED&quot;));&#xA;&#x9;globalMap.put(&quot;LinesUpdated&quot;, globalMap.get(&quot;tDBOutput_2_NB_LINE_UPDATED&quot;));&#xA;&#x9;globalMap.put(&quot;LinesDeleted&quot;, globalMap.get(&quot;tDBOutput_2_NB_LINE_DELETED&quot;));&#xA;&#x9;globalMap.put(&quot;LinesRejected&quot;,globalMap.get(&quot;tDBOutput_2_NB_LINE_REJECTED&quot;));&#xA;&#x9;globalMap.put(&quot;ErrorRead&quot;, globalMap.get(&quot;tDBOutput_2_ERROR_MESSAGE&quot;));&#xA;&#x9;globalMap.put(&quot;ErrorWrite&quot;, globalMap.get(&quot;tDBOutput_2_ERROR_MESSAGE&quot;));&#xA;&#x9;}else if (context.TARGET_RECREATE == null || context.TARGET_RECREATE == false){&#xA;&#x9;globalMap.put(&quot;LinesRead&quot;, globalMap.get(&quot;tDBOutput_3_NB_LINE&quot;));&#xA;&#x9;globalMap.put(&quot;LinesWritten&quot;, globalMap.get(&quot;tDBOutput_3_NB_LINE_INSERTED&quot;));&#xA;&#x9;globalMap.put(&quot;LinesUpdated&quot;, globalMap.get(&quot;tDBOutput_3_NB_LINE_UPDATED&quot;));&#xA;&#x9;globalMap.put(&quot;LinesDeleted&quot;, globalMap.get(&quot;tDBOutput_3_NB_LINE_DELETED&quot;));&#xA;&#x9;globalMap.put(&quot;LinesRejected&quot;,globalMap.get(&quot;tDBOutput_3_NB_LINE_REJECTED&quot;));&#xA;&#x9;globalMap.put(&quot;ErrorRead&quot;, globalMap.get(&quot;tDBOutput_3_ERROR_MESSAGE&quot;));&#xA;&#x9;globalMap.put(&quot;ErrorWrite&quot;, globalMap.get(&quot;tDBOutput_3_ERROR_MESSAGE&quot;));&#xA;&#x9;}else{&#xA;&#x9;}&#xA;&#xA;}else if(context.SOURCE_SYSTEM.equals(&quot;ZeusX&quot;)){&#xA;&#xA;&#x9;if(context.TARGET_RECREATE != null &amp;&amp; context.TARGET_RECREATE == true){&#xA;&#x9;globalMap.put(&quot;LinesRead&quot;, globalMap.get(&quot;tDBOutput_1_NB_LINE&quot;));&#xA;&#x9;globalMap.put(&quot;LinesWritten&quot;, globalMap.get(&quot;tDBOutput_1_NB_LINE_INSERTED&quot;));&#xA;&#x9;globalMap.put(&quot;LinesUpdated&quot;, globalMap.get(&quot;tDBOutput_1_NB_LINE_UPDATED&quot;));&#xA;&#x9;globalMap.put(&quot;LinesDeleted&quot;, globalMap.get(&quot;tDBOutput_1_NB_LINE_DELETED&quot;));&#xA;&#x9;globalMap.put(&quot;LinesRejected&quot;,globalMap.get(&quot;tDBOutput_1_NB_LINE_REJECTED&quot;));&#xA;&#x9;globalMap.put(&quot;ErrorRead&quot;, globalMap.get(&quot;tDBOutput_1_ERROR_MESSAGE&quot;));&#xA;&#x9;globalMap.put(&quot;ErrorWrite&quot;, globalMap.get(&quot;tDBOutput_1_ERROR_MESSAGE&quot;));&#xA;&#x9;}else if (context.TARGET_RECREATE == null || context.TARGET_RECREATE == false){&#xA;&#x9;globalMap.put(&quot;LinesRead&quot;, globalMap.get(&quot;tDBOutput_4_NB_LINE&quot;));&#xA;&#x9;globalMap.put(&quot;LinesWritten&quot;, globalMap.get(&quot;tDBOutput_4_NB_LINE_INSERTED&quot;));&#xA;&#x9;globalMap.put(&quot;LinesUpdated&quot;, globalMap.get(&quot;tDBOutput_4_NB_LINE_UPDATED&quot;));&#xA;&#x9;globalMap.put(&quot;LinesDeleted&quot;, globalMap.get(&quot;tDBOutput_4_NB_LINE_DELETED&quot;));&#xA;&#x9;globalMap.put(&quot;LinesRejected&quot;,globalMap.get(&quot;tDBOutput_4_NB_LINE_REJECTED&quot;));&#xA;&#x9;globalMap.put(&quot;ErrorRead&quot;, globalMap.get(&quot;tDBOutput_4_ERROR_MESSAGE&quot;));&#xA;&#x9;globalMap.put(&quot;ErrorWrite&quot;, globalMap.get(&quot;tDBOutput_4_ERROR_MESSAGE&quot;));&#xA;&#x9;}else{&#xA;&#x9;}&#xA;&#x9;&#xA;}else if(context.SOURCE_SYSTEM.equals(&quot;Abas&quot;)){&#xA;&#xA;&#x9;if(context.TARGET_RECREATE != null &amp;&amp; context.TARGET_RECREATE == true){&#xA;&#x9;globalMap.put(&quot;LinesRead&quot;, globalMap.get(&quot;tDBOutput_5_NB_LINE&quot;));&#xA;&#x9;globalMap.put(&quot;LinesWritten&quot;, globalMap.get(&quot;tDBOutput_5_NB_LINE_INSERTED&quot;));&#xA;&#x9;globalMap.put(&quot;LinesUpdated&quot;, globalMap.get(&quot;tDBOutput_5_NB_LINE_UPDATED&quot;));&#xA;&#x9;globalMap.put(&quot;LinesDeleted&quot;, globalMap.get(&quot;tDBOutput_5_NB_LINE_DELETED&quot;));&#xA;&#x9;globalMap.put(&quot;LinesRejected&quot;,globalMap.get(&quot;tDBOutput_5_NB_LINE_REJECTED&quot;));&#xA;&#x9;globalMap.put(&quot;ErrorRead&quot;, globalMap.get(&quot;tDBOutput_5_ERROR_MESSAGE&quot;));&#xA;&#x9;globalMap.put(&quot;ErrorWrite&quot;, globalMap.get(&quot;tDBOutput_5_ERROR_MESSAGE&quot;));&#xA;&#x9;}else if (context.TARGET_RECREATE == null || context.TARGET_RECREATE == false){&#xA;&#x9;globalMap.put(&quot;LinesRead&quot;, globalMap.get(&quot;tDBOutput_6_NB_LINE&quot;));&#xA;&#x9;globalMap.put(&quot;LinesWritten&quot;, globalMap.get(&quot;tDBOutput_6_NB_LINE_INSERTED&quot;));&#xA;&#x9;globalMap.put(&quot;LinesUpdated&quot;, globalMap.get(&quot;tDBOutput_6_NB_LINE_UPDATED&quot;));&#xA;&#x9;globalMap.put(&quot;LinesDeleted&quot;, globalMap.get(&quot;tDBOutput_6_NB_LINE_DELETED&quot;));&#xA;&#x9;globalMap.put(&quot;LinesRejected&quot;,globalMap.get(&quot;tDBOutput_6_NB_LINE_REJECTED&quot;));&#xA;&#x9;globalMap.put(&quot;ErrorRead&quot;, globalMap.get(&quot;tDBOutput_6_ERROR_MESSAGE&quot;));&#xA;&#x9;globalMap.put(&quot;ErrorWrite&quot;, globalMap.get(&quot;tDBOutput_6_ERROR_MESSAGE&quot;));&#xA;&#x9;}else{&#xA;&#x9;}&#x9;&#xA;&#x9;&#xA;}&#xA;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="  Statistics Mapper "/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="STATISTIC_LOG_GENERIC_STAGING_POSTJOB" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="360" posY="1120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Stats_Generic_Staging_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="START" value="true" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="STATISTIC_LOG_GENERIC_STAGING_POSTJOB"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <node componentName="STATISTIC_LOG_GENERIC_STAGING_PREJOB" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="96" posY="-256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="PreJob_Generic_MsSql_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="START" value="true" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="STATISTIC_LOG_GENERIC_STAGING_PREJOB"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <node componentName="ERROR_LOG_STAGING" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="-240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Logs_Generic_Staging_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="START" value="true" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="ERROR_LOG_STAGING"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value=""/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_2"/>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="-112">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_U5IU8IStEeafAeGmwGbwig" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.INNOSOFT_SERVER"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.INNOSOFT_PORT"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.INNOSOFT_SCHEMA"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.INNOSOFT_DATABASE"/>
+    <elementParameter field="TEXT" name="USER" value="context.INNOSOFT_LOGIN"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:L2+wnh44a2W5jjOOCbTo631xMaQ6pWq2Bv5OTqSwzZ4AtLWOdMRmAQTbiiSPd0+KGbEnYMQ="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="context.SOURCE_QUERY"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.INNOSOFT_ADDITIONAL_PARAM"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Selected_Columns"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Innosoft Query"/>
+    <metadata connector="FLOW" name="tDBInput_1">
+      <column comment="" key="false" length="-1" name="Selected_Columns" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Dynamic" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="720" posY="-120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;SRV-WKS-DWDB&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;wks_dwh_staging&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;etl_usr&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:D4Q5by63XjZkOawJnrb5zsc63suxYRlAEi+1aw3WII9Se669kXGTFkjFHg==" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="context.TARGET_TABLE"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" value="Selected_Columns" show="false"/>
+    <elementParameter field="TEXT" name="START_VALUE" value="1" show="false"/>
+    <elementParameter field="TEXT" name="STEP" value="1" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_XkrlcDEOEeiU--9TEwlaeA - S_I_Dims_Werkurenarch" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Selected_Columns"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br>__COMMENT__&lt;br>__TABLE__&lt;br>__TABLE_ACTION__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBOutput_2">
+      <column comment="" key="false" length="-1" name="Selected_Columns" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Dynamic" originalLength="-1" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="Selected_Columns" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Dynamic" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="296">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_fD3-kH9YEeyZfMeOF10yTw" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.ZEUSX_SERVER"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.ZEUSX_PORT"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.ZEUSX_SCHEMA"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.ZEUSX_DATABASE"/>
+    <elementParameter field="TEXT" name="USER" value="context.ZEUSX_LOGIN"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:7zvwQtMNTb0YN9WaKBTgxwolytkvtfaTyIgYYARSNUbwc9Q3p2qHW5PGz7B/jczHIJ8="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="context.SOURCE_QUERY"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.ZEUSX_ADDITIONAL_PARAM"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Selected_Columns"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_2">
+      <column comment="" key="false" length="-1" name="Selected_Columns" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Dynamic" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="720" posY="280">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;SRV-WKS-DWDB&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;wks_dwh_staging&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;etl_usr&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:1OobeKbBDKUgPKt1er8b/QMqG7MneFhIR1W6Mq420Wcg1pnM9nmzU4djqg==" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="context.TARGET_TABLE"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" value="Selected_Columns" show="false"/>
+    <elementParameter field="TEXT" name="START_VALUE" value="1" show="false"/>
+    <elementParameter field="TEXT" name="STEP" value="1" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_XkrlcDEOEeiU--9TEwlaeA - S_I_Dims_Werkurenarch" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Selected_Columns"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br>__COMMENT__&lt;br>__TABLE__&lt;br>__TABLE_ACTION__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBOutput_1">
+      <column comment="" key="false" length="-1" name="Selected_Columns" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_Dynamic" originalLength="-1" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="Selected_Columns" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_Dynamic" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="280" posY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String foo = &quot;bar&quot;;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Dummy"/>
+    <metadata connector="FLOW" name="tJava_3"/>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="520" posY="120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_3" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_U5IU8IStEeafAeGmwGbwig" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.INNOSOFT_SERVER"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.INNOSOFT_PORT"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.INNOSOFT_SCHEMA"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.INNOSOFT_DATABASE"/>
+    <elementParameter field="TEXT" name="USER" value="context.INNOSOFT_LOGIN"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:hk4iguONouYselmVvpizdY7EcHPya8HK0O0kYVCEvVFoOcVWBRhBCj7X4MEKPvdanwxp6B8="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="context.SOURCE_QUERY"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.INNOSOFT_ADDITIONAL_PARAM"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Selected_Columns"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Innosoft Query"/>
+    <metadata connector="FLOW" name="tDBInput_3">
+      <column comment="" key="false" length="-1" name="Selected_Columns" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Dynamic" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="728" posY="112">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_3" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;SRV-WKS-DWDB&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;wks_dwh_staging&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;etl_usr&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:cWj6ddzxINOWw20H1OKipDR7JRPqXi3mRjhnfCuy9Hgp3evqk11lcZ2AwQ==" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="context.TARGET_TABLE"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" value="false" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" value="Selected_Columns" show="false"/>
+    <elementParameter field="TEXT" name="START_VALUE" value="1" show="false"/>
+    <elementParameter field="TEXT" name="STEP" value="1" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_XkrlcDEOEeiU--9TEwlaeA - S_I_Dims_Werkurenarch" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Selected_Columns"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br>__COMMENT__&lt;br>__TABLE__&lt;br>__TABLE_ACTION__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBOutput_3">
+      <column comment="" key="false" length="-1" name="Selected_Columns" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Dynamic" originalLength="-1" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="Selected_Columns" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Dynamic" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="280" posY="400">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String foo = &quot;bar&quot;;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Dummy"/>
+    <metadata connector="FLOW" name="tJava_4"/>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="520" posY="520">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_4" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_fD3-kH9YEeyZfMeOF10yTw" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.ZEUSX_SERVER"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.ZEUSX_PORT"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.ZEUSX_SCHEMA"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.ZEUSX_DATABASE"/>
+    <elementParameter field="TEXT" name="USER" value="context.ZEUSX_LOGIN"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:VgSigBNgxBZL8JqiBQ6/A4naIrTzjnzwCgieICQqnFVDJxFdAgfZApHC+zwwBHn22ys="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="context.SOURCE_QUERY"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.ZEUSX_ADDITIONAL_PARAM"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Selected_Columns"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_4">
+      <column comment="" key="false" length="-1" name="Selected_Columns" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Dynamic" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="728" posY="504">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_4" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;SRV-WKS-DWDB&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;wks_dwh_staging&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;etl_usr&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ovLsaDQNNFzTg/GzTXdNk5J3LI133G7B8zsKNa7E+2YRhqdKsohGnNzROg==" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="context.TARGET_TABLE"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" value="false" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" value="Selected_Columns" show="false"/>
+    <elementParameter field="TEXT" name="START_VALUE" value="1" show="false"/>
+    <elementParameter field="TEXT" name="STEP" value="1" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_XkrlcDEOEeiU--9TEwlaeA - S_I_Dims_Werkurenarch" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Selected_Columns"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br>__COMMENT__&lt;br>__TABLE__&lt;br>__TABLE_ACTION__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBOutput_4">
+      <column comment="" key="false" length="-1" name="Selected_Columns" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_Dynamic" originalLength="-1" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="Selected_Columns" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_Dynamic" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="736">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_5" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_yDBVkJVgEeiiq7TuAo5wZQ" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.ABAS_BI_SERVER"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.ABAS_BI_PORT"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.ABAS_BI_SCHEMA"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.ABAS_BI_DATABASE"/>
+    <elementParameter field="TEXT" name="USER" value="context.ABAS_BI_LOGIN"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:6zTkuXMUV0wRJdG+tP23fahd48/hESuRTzT+EpsEyyKA36ul7baJmHeSv3csBfoWxiiWAQ=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="context.SOURCE_QUERY"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.ABAS_BI_ADDITIONAL_PARAM"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Selected_Columns"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_5">
+      <column comment="" key="false" length="-1" name="Selected_Columns" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Dynamic" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="720" posY="720">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_5" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;SRV-WKS-DWDB&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;wks_dwh_staging&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;etl_usr&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:y2ef0NpMcpgm3aWkl9sGfL1VGq5bifSqH1oHEZsfvWeOaD0TuDReY4tqFQ==" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="context.TARGET_TABLE"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" value="Selected_Columns" show="false"/>
+    <elementParameter field="TEXT" name="START_VALUE" value="1" show="false"/>
+    <elementParameter field="TEXT" name="STEP" value="1" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_XkrlcDEOEeiU--9TEwlaeA - S_I_Dims_Werkurenarch" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Selected_Columns"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br>__COMMENT__&lt;br>__TABLE__&lt;br>__TABLE_ACTION__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBOutput_5">
+      <column comment="" key="false" length="-1" name="Selected_Columns" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_Dynamic" originalLength="-1" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="Selected_Columns" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_Dynamic" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="280" posY="840">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_5" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String foo = &quot;bar&quot;;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Dummy"/>
+    <metadata connector="FLOW" name="tJava_5"/>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="520" posY="960">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_6" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_yDBVkJVgEeiiq7TuAo5wZQ" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.ABAS_BI_SERVER"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.ABAS_BI_PORT"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.ABAS_BI_SCHEMA"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.ABAS_BI_DATABASE"/>
+    <elementParameter field="TEXT" name="USER" value="context.ABAS_BI_LOGIN"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:wibW9m30T0+/3E9p3SlFdnOpSmwNrOk2kIRBO9hVkGiajVAF6iLfGMOymy98VA1Ll41rZw=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="context.SOURCE_QUERY"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.ABAS_BI_ADDITIONAL_PARAM"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Selected_Columns"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_6">
+      <column comment="" key="false" length="-1" name="Selected_Columns" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Dynamic" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="728" posY="944">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_6" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;SRV-WKS-DWDB&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;wks_dwh_staging&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;etl_usr&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:fDCc2bsy4qfjP4+LrNp3CqFpQSWl9d2Ejd6j5HogxWYX+MEJe9ZlitqCbw==" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="context.TARGET_TABLE"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" value="false" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" value="Selected_Columns" show="false"/>
+    <elementParameter field="TEXT" name="START_VALUE" value="1" show="false"/>
+    <elementParameter field="TEXT" name="STEP" value="1" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_XkrlcDEOEeiU--9TEwlaeA - S_I_Dims_Werkurenarch" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Selected_Columns"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br>__COMMENT__&lt;br>__TABLE__&lt;br>__TABLE_ACTION__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBOutput_6">
+      <column comment="" key="false" length="-1" name="Selected_Columns" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_Dynamic" originalLength="-1" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="Selected_Columns" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_Dynamic" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlConnection_1" offsetLabelX="0" offsetLabelY="0" source="tMSSqlConnection_1" target="tJava_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlCommit_1" offsetLabelX="0" offsetLabelY="0" source="tMSSqlCommit_1" target="tJava_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If_Innosoft" lineStyle="6" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJava_2" target="tJava_3">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.SOURCE_SYSTEM.equals(&quot;Innosoft&quot;)"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If_Innosoft" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If_ZeusX" lineStyle="6" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tJava_2" target="tJava_4">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.SOURCE_SYSTEM.equals(&quot;ZeusX&quot;)"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If_ZeusX" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" source="tJava_2" target="tMSSqlCommit_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If_Abas" lineStyle="6" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tJava_2" target="tJava_5">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.SOURCE_SYSTEM.equals(&quot;Abas&quot;)"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If_Abas" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Selected_Rows" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tDBOutput_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Selected_Columns"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Selected_Rows" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tDBOutput_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Selected_Columns"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If_Recreate_True_Inno" lineStyle="6" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJava_3" target="tDBInput_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.TARGET_RECREATE != null &amp;&amp; context.TARGET_RECREATE == true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If_Recreate_True_Inno" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If_Recreate_False_Inno" lineStyle="6" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tJava_3" target="tDBInput_3">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.TARGET_RECREATE == null || context.TARGET_RECREATE == false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If_Recreate_False_Inno" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tDBInput_3" offsetLabelX="0" offsetLabelY="0" source="tDBInput_3" target="tDBOutput_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Selected_Columns"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If_Recreate_True_Zeus" lineStyle="6" metaname="tJava_4" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJava_4" target="tDBInput_2">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.TARGET_RECREATE != null &amp;&amp; context.TARGET_RECREATE == true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If_Recreate_True_Zeus" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If_Recreate_False_Zeus" lineStyle="6" metaname="tJava_4" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tJava_4" target="tDBInput_4">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.TARGET_RECREATE == null || context.TARGET_RECREATE == false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If_Recreate_False_Zeus" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tDBInput_4" offsetLabelX="0" offsetLabelY="0" source="tDBInput_4" target="tDBOutput_4">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Selected_Columns"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tDBInput_5" offsetLabelX="0" offsetLabelY="0" source="tDBInput_5" target="tDBOutput_5">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Selected_Columns"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If_Recreate_True_Abas" lineStyle="6" metaname="tJava_5" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJava_5" target="tDBInput_5">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.TARGET_RECREATE != null &amp;&amp; context.TARGET_RECREATE == true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If_Recreate_True_Abas" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If_Recreate_False_Abas" lineStyle="6" metaname="tJava_5" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tJava_5" target="tDBInput_6">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.TARGET_RECREATE == null || context.TARGET_RECREATE == false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If_Recreate_False_Abas" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tDBInput_6" offsetLabelX="0" offsetLabelY="0" source="tDBInput_6" target="tDBOutput_6">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Selected_Columns"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlConnection_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Connect"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Commit"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Statistics"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="COLLAPSED" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Stats_Generic_Staging_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Post Job Statistics"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="PreJob_Generic_MsSql_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Logs_Generic_Staging_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Transfer Generic Data (Innosoft)"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Transfer Generic Data (ZeusX)"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_3" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Transfer Generic Data (Innosoft)"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_4" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Transfer Generic Data (ZeusX)"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_5" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Transfer Generic Data (Abas)"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_5" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_6" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Transfer Generic Data (Abas)"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+</talendfile:ProcessType>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_Yb2ngBPeEe2shNL2goCYFg" confirmationNeeded="false" hide="false" name="ON_PREM">
+    <contextParameter xmi:id="_Yb2ngRPeEe2shNL2goCYFg" comment="" name="INNOSOFT_ADDITIONAL_PARAM" prompt="INNOSOFT_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Yb2nghPeEe2shNL2goCYFg" comment="" name="INNOSOFT_LOGIN" prompt="INNOSOFT_LOGIN?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DBReader"/>
+    <contextParameter xmi:id="_Yb2ngxPeEe2shNL2goCYFg" comment="" name="INNOSOFT_PASSWORD" prompt="INNOSOFT_PASSWORD?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:WqKDHnFf3Ity3WKoHyBA6mgY+1SfIKtH9+nifWa4+CbiNj3k4G0="/>
+    <contextParameter xmi:id="_Yb2nhBPeEe2shNL2goCYFg" comment="" name="INNOSOFT_SCHEMA" prompt="INNOSOFT_SCHEMA?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Yb2nhRPeEe2shNL2goCYFg" comment="" name="INNOSOFT_PORT" prompt="INNOSOFT_PORT?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+    <contextParameter xmi:id="_Yb2nhhPeEe2shNL2goCYFg" comment="" name="INNOSOFT_SERVER" prompt="INNOSOFT_SERVER?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="KOSVINNOSOFT01"/>
+    <contextParameter xmi:id="_Yb2nhxPeEe2shNL2goCYFg" comment="" name="INNOSOFT_DATABASE" prompt="INNOSOFT_DATABASE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_4Ww00CpQEe-nmpxPcdNtAQ" confirmationNeeded="false" hide="false" name="PROD">
+    <contextParameter xmi:id="_4Ww00SpQEe-nmpxPcdNtAQ" comment="" name="INNOSOFT_ADDITIONAL_PARAM" prompt="INNOSOFT_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_4Ww00ipQEe-nmpxPcdNtAQ" comment="" name="INNOSOFT_LOGIN" prompt="INNOSOFT_LOGIN?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="SQL_Talend-Reader"/>
+    <contextParameter xmi:id="_4Ww00ypQEe-nmpxPcdNtAQ" comment="" name="INNOSOFT_PASSWORD" prompt="INNOSOFT_PASSWORD?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:6yiY3/h8YPbdCkfOLDGDrBJGVKySdPlp+OwyC21ArkZfgjOxR4v3mg=="/>
+    <contextParameter xmi:id="_4Ww01CpQEe-nmpxPcdNtAQ" comment="" name="INNOSOFT_SCHEMA" prompt="INNOSOFT_SCHEMA?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_4Ww01SpQEe-nmpxPcdNtAQ" comment="" name="INNOSOFT_PORT" prompt="INNOSOFT_PORT?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+    <contextParameter xmi:id="_4Ww01ipQEe-nmpxPcdNtAQ" comment="" name="INNOSOFT_SERVER" prompt="INNOSOFT_SERVER?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="rho-hub-p-weu-sqlmi-001.57b5257f5e00.database.windows.net"/>
+    <contextParameter xmi:id="_4Ww01ypQEe-nmpxPcdNtAQ" comment="" name="INNOSOFT_DATABASE" prompt="INNOSOFT_DATABASE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="P_Innosoft"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_4Ww02CpQEe-nmpxPcdNtAQ" confirmationNeeded="false" hide="false" name="TEST">
+    <contextParameter xmi:id="_4Ww02SpQEe-nmpxPcdNtAQ" comment="" name="INNOSOFT_ADDITIONAL_PARAM" prompt="INNOSOFT_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_4Ww02ipQEe-nmpxPcdNtAQ" comment="" name="INNOSOFT_LOGIN" prompt="INNOSOFT_LOGIN?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="SQL_Talend-Reader"/>
+    <contextParameter xmi:id="_4Ww02ypQEe-nmpxPcdNtAQ" comment="" name="INNOSOFT_PASSWORD" prompt="INNOSOFT_PASSWORD?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:VVojYj3d7QTJsp9YBVLAb1dz+k7HJ5kvb3Lxv4sEkCHRrJ3/cUNBnA=="/>
+    <contextParameter xmi:id="_4Ww03CpQEe-nmpxPcdNtAQ" comment="" name="INNOSOFT_SCHEMA" prompt="INNOSOFT_SCHEMA?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_4Ww03SpQEe-nmpxPcdNtAQ" comment="" name="INNOSOFT_PORT" prompt="INNOSOFT_PORT?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+    <contextParameter xmi:id="_4Ww03ipQEe-nmpxPcdNtAQ" comment="" name="INNOSOFT_SERVER" prompt="INNOSOFT_SERVER?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="rho-hub-p-weu-sqlmi-001.57b5257f5e00.database.windows.net"/>
+    <contextParameter xmi:id="_4Ww03ypQEe-nmpxPcdNtAQ" comment="" name="INNOSOFT_DATABASE" prompt="INNOSOFT_DATABASE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="P_Innosoft"/>
+  </talendfile:ContextType>
+</xmi:XMI>

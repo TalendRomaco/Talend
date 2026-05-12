@@ -1,0 +1,392 @@
+{
+  "itemId" : "_yLpaoCSjEe-6n_VU2LNqWA",
+  "contextList" : [ {
+    "contextName" : "PROD",
+    "repoId" : "_UArd8JygEeiBApmxvXln_g",
+    "parameterList" : [ {
+      "id" : "_Rncq0ZyiEeiBApmxvXln_g",
+      "name" : "CHORE_ID"
+    }, {
+      "id" : "_TQoZsZyjEeiBApmxvXln_g",
+      "name" : "DEBUG"
+    }, {
+      "id" : "_TQoZsJyjEeiBApmxvXln_g",
+      "name" : "DELTA_FIELD_NAME"
+    }, {
+      "id" : "_yFiGw5yiEeiBApmxvXln_g",
+      "name" : "DELTA_LAST_KEY"
+    }, {
+      "id" : "_yFiGwpyiEeiBApmxvXln_g",
+      "name" : "DELTA_METHOD"
+    }, {
+      "id" : "_Rncq0JyiEeiBApmxvXln_g",
+      "name" : "JOB_ID"
+    }, {
+      "id" : "_ks9VQMyIEeila_ysD5cASw",
+      "name" : "SOURCE_ADVANCED_PARAM"
+    }, {
+      "id" : "_Rncq1ZyiEeiBApmxvXln_g",
+      "name" : "SOURCE_FIELD"
+    }, {
+      "id" : "_Rncq1pyiEeiBApmxvXln_g",
+      "name" : "SOURCE_PARAM"
+    }, {
+      "id" : "_jSX0cJyiEeiBApmxvXln_g",
+      "name" : "SOURCE_QUERY"
+    }, {
+      "id" : "_Rncq1JyiEeiBApmxvXln_g",
+      "name" : "SOURCE_STRUCTURE"
+    }, {
+      "id" : "_Rncq05yiEeiBApmxvXln_g",
+      "name" : "SOURCE_TYPE"
+    }, {
+      "id" : "_Rncq0pyiEeiBApmxvXln_g",
+      "name" : "STAGING_NODE"
+    }, {
+      "id" : "_ks9VQcyIEeila_ysD5cASw",
+      "name" : "TARGET_RECREATE"
+    }, {
+      "id" : "_yFiGwJyiEeiBApmxvXln_g",
+      "name" : "TARGET_TABLE"
+    }, {
+      "id" : "_yFiGwZyiEeiBApmxvXln_g",
+      "name" : "TARGET_TRUNCATE"
+    }, {
+      "id" : "_XGcwsNdnEeip-OV2NkoeFw",
+      "name" : "DELTA_FIELD_TYPE"
+    }, {
+      "id" : "_0R5l8NdhEeip-OV2NkoeFw",
+      "name" : "DELTA_OFFSET"
+    }, {
+      "id" : "_PfkGQCRzEemR1LcHo41m3w",
+      "name" : "IS_PERSISTENT"
+    }, {
+      "id" : "_PfkGQSRzEemR1LcHo41m3w",
+      "name" : "IS_PERSISTENT_SYSTEM"
+    }, {
+      "id" : "_PfkGQiRzEemR1LcHo41m3w",
+      "name" : "PERSISTENT_TABLE"
+    }, {
+      "id" : "_PfkGQyRzEemR1LcHo41m3w",
+      "name" : "PERSISTENT_TABLE_PK1"
+    }, {
+      "id" : "_PfkGRCRzEemR1LcHo41m3w",
+      "name" : "PERSISTENT_TABLE_PK2"
+    }, {
+      "id" : "_PfkGRSRzEemR1LcHo41m3w",
+      "name" : "PERSISTENT_TABLE_PK3"
+    }, {
+      "id" : "_yHPggb-OEeqdB6MsdeW8_w",
+      "name" : "TARGET_POST_SQL"
+    }, {
+      "id" : "_yHPggL-OEeqdB6MsdeW8_w",
+      "name" : "TARGET_SWITCH"
+    }, {
+      "id" : "_-_KHoCR1EemR1LcHo41m3w",
+      "name" : "TARGET_SYSTEM"
+    }, {
+      "id" : "_PfkGRiRzEemR1LcHo41m3w",
+      "name" : "TARGET_TABLE_PK1"
+    }, {
+      "id" : "_PfkGRyRzEemR1LcHo41m3w",
+      "name" : "TARGET_TABLE_PK2"
+    }, {
+      "id" : "_PfkGSCRzEemR1LcHo41m3w",
+      "name" : "TARGET_TABLE_PK3"
+    }, {
+      "id" : "_19oYoBwKEe-jyKEeUw-1JQ",
+      "name" : "SOURCE_SYSTEM"
+    } ]
+  }, {
+    "contextName" : "PROD",
+    "repoId" : "_NMth0O29Ee6LTJLMTmvwFA",
+    "parameterList" : [ {
+      "id" : "_q_bHM-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_SERVER"
+    }, {
+      "id" : "_q_bHNu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_q_bHNe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_PORT"
+    }, {
+      "id" : "_q_bHMu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_LOGIN"
+    }, {
+      "id" : "_q_bHN-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_DATABASE"
+    }, {
+      "id" : "_q_bHNO2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_SCHEMA"
+    }, {
+      "id" : "_q_bHMe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_PASSWORD"
+    } ]
+  }, {
+    "contextName" : "PROD",
+    "repoId" : "_yY2xIBHUEe-yhejSmGGM_Q",
+    "parameterList" : [ {
+      "id" : "_yZAiIhHUEe-yhejSmGGM_Q",
+      "name" : "SAP_MANDANT100_HOST"
+    }, {
+      "id" : "_yZAiIRHUEe-yhejSmGGM_Q",
+      "name" : "SAP_MANDANT100_USER"
+    }, {
+      "id" : "_yZAiJhHUEe-yhejSmGGM_Q",
+      "name" : "SAP_MANDANT100_SYSTEM_NUMBER"
+    }, {
+      "id" : "_yZAiIxHUEe-yhejSmGGM_Q",
+      "name" : "SAP_MANDANT100_LANGUAGE"
+    }, {
+      "id" : "_yZAiJBHUEe-yhejSmGGM_Q",
+      "name" : "SAP_MANDANT100_CLIENT"
+    }, {
+      "id" : "_yZAiJRHUEe-yhejSmGGM_Q",
+      "name" : "SAP_MANDANT100_PASSWORD"
+    } ]
+  }, {
+    "contextName" : "PROD",
+    "repoId" : "_nZfJMH9ZEeyZfMeOF10yTw",
+    "parameterList" : [ {
+      "id" : "_d14T8CpMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_SERVER"
+    }, {
+      "id" : "_d14T8ypMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_PASSWORD"
+    }, {
+      "id" : "_d14T8SpMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_DATABASE"
+    }, {
+      "id" : "_d14T9ipMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_PORT"
+    }, {
+      "id" : "_d14T9SpMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_SCHEMA"
+    }, {
+      "id" : "_d14T9CpMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_LOGIN"
+    }, {
+      "id" : "_d14T8ipMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_ADDITIONAL_PARAM"
+    } ]
+  }, {
+    "contextName" : "PROD",
+    "repoId" : "_lzkJgDIeEe-epOz61AJceA",
+    "parameterList" : [ {
+      "id" : "_lz3EcTIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_lz3EdzIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_DATABASE"
+    }, {
+      "id" : "_lz3EdDIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_PASSWORD"
+    }, {
+      "id" : "_lz3EcjIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_SERVER"
+    }, {
+      "id" : "_lz3EdTIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_LOGIN"
+    }, {
+      "id" : "_lz3EdjIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_SCHEMA"
+    }, {
+      "id" : "_lz3EczIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_PORT"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_UArd8JygEeiBApmxvXln_g",
+    "parameterList" : [ {
+      "id" : "_Rncq0ZyiEeiBApmxvXln_g",
+      "name" : "CHORE_ID"
+    }, {
+      "id" : "_TQoZsZyjEeiBApmxvXln_g",
+      "name" : "DEBUG"
+    }, {
+      "id" : "_TQoZsJyjEeiBApmxvXln_g",
+      "name" : "DELTA_FIELD_NAME"
+    }, {
+      "id" : "_yFiGw5yiEeiBApmxvXln_g",
+      "name" : "DELTA_LAST_KEY"
+    }, {
+      "id" : "_yFiGwpyiEeiBApmxvXln_g",
+      "name" : "DELTA_METHOD"
+    }, {
+      "id" : "_Rncq0JyiEeiBApmxvXln_g",
+      "name" : "JOB_ID"
+    }, {
+      "id" : "_ks9VQMyIEeila_ysD5cASw",
+      "name" : "SOURCE_ADVANCED_PARAM"
+    }, {
+      "id" : "_Rncq1ZyiEeiBApmxvXln_g",
+      "name" : "SOURCE_FIELD"
+    }, {
+      "id" : "_Rncq1pyiEeiBApmxvXln_g",
+      "name" : "SOURCE_PARAM"
+    }, {
+      "id" : "_jSX0cJyiEeiBApmxvXln_g",
+      "name" : "SOURCE_QUERY"
+    }, {
+      "id" : "_Rncq1JyiEeiBApmxvXln_g",
+      "name" : "SOURCE_STRUCTURE"
+    }, {
+      "id" : "_Rncq05yiEeiBApmxvXln_g",
+      "name" : "SOURCE_TYPE"
+    }, {
+      "id" : "_Rncq0pyiEeiBApmxvXln_g",
+      "name" : "STAGING_NODE"
+    }, {
+      "id" : "_ks9VQcyIEeila_ysD5cASw",
+      "name" : "TARGET_RECREATE"
+    }, {
+      "id" : "_yFiGwJyiEeiBApmxvXln_g",
+      "name" : "TARGET_TABLE"
+    }, {
+      "id" : "_yFiGwZyiEeiBApmxvXln_g",
+      "name" : "TARGET_TRUNCATE"
+    }, {
+      "id" : "_XGcwsNdnEeip-OV2NkoeFw",
+      "name" : "DELTA_FIELD_TYPE"
+    }, {
+      "id" : "_0R5l8NdhEeip-OV2NkoeFw",
+      "name" : "DELTA_OFFSET"
+    }, {
+      "id" : "_PfkGQCRzEemR1LcHo41m3w",
+      "name" : "IS_PERSISTENT"
+    }, {
+      "id" : "_PfkGQSRzEemR1LcHo41m3w",
+      "name" : "IS_PERSISTENT_SYSTEM"
+    }, {
+      "id" : "_PfkGQiRzEemR1LcHo41m3w",
+      "name" : "PERSISTENT_TABLE"
+    }, {
+      "id" : "_PfkGQyRzEemR1LcHo41m3w",
+      "name" : "PERSISTENT_TABLE_PK1"
+    }, {
+      "id" : "_PfkGRCRzEemR1LcHo41m3w",
+      "name" : "PERSISTENT_TABLE_PK2"
+    }, {
+      "id" : "_PfkGRSRzEemR1LcHo41m3w",
+      "name" : "PERSISTENT_TABLE_PK3"
+    }, {
+      "id" : "_yHPggb-OEeqdB6MsdeW8_w",
+      "name" : "TARGET_POST_SQL"
+    }, {
+      "id" : "_yHPggL-OEeqdB6MsdeW8_w",
+      "name" : "TARGET_SWITCH"
+    }, {
+      "id" : "_-_KHoCR1EemR1LcHo41m3w",
+      "name" : "TARGET_SYSTEM"
+    }, {
+      "id" : "_PfkGRiRzEemR1LcHo41m3w",
+      "name" : "TARGET_TABLE_PK1"
+    }, {
+      "id" : "_PfkGRyRzEemR1LcHo41m3w",
+      "name" : "TARGET_TABLE_PK2"
+    }, {
+      "id" : "_PfkGSCRzEemR1LcHo41m3w",
+      "name" : "TARGET_TABLE_PK3"
+    }, {
+      "id" : "_19oYoBwKEe-jyKEeUw-1JQ",
+      "name" : "SOURCE_SYSTEM"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_NMth0O29Ee6LTJLMTmvwFA",
+    "parameterList" : [ {
+      "id" : "_q_bHM-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_SERVER"
+    }, {
+      "id" : "_q_bHNu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_q_bHNe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_PORT"
+    }, {
+      "id" : "_q_bHMu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_LOGIN"
+    }, {
+      "id" : "_q_bHN-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_DATABASE"
+    }, {
+      "id" : "_q_bHNO2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_SCHEMA"
+    }, {
+      "id" : "_q_bHMe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_PASSWORD"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_nZfJMH9ZEeyZfMeOF10yTw",
+    "parameterList" : [ {
+      "id" : "_d14T8CpMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_SERVER"
+    }, {
+      "id" : "_d14T8ypMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_PASSWORD"
+    }, {
+      "id" : "_d14T8SpMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_DATABASE"
+    }, {
+      "id" : "_d14T9ipMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_PORT"
+    }, {
+      "id" : "_d14T9SpMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_SCHEMA"
+    }, {
+      "id" : "_d14T9CpMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_LOGIN"
+    }, {
+      "id" : "_d14T8ipMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_ADDITIONAL_PARAM"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_lzkJgDIeEe-epOz61AJceA",
+    "parameterList" : [ {
+      "id" : "_lz3EcTIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_lz3EdzIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_DATABASE"
+    }, {
+      "id" : "_lz3EdDIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_PASSWORD"
+    }, {
+      "id" : "_lz3EcjIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_SERVER"
+    }, {
+      "id" : "_lz3EdTIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_LOGIN"
+    }, {
+      "id" : "_lz3EdjIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_SCHEMA"
+    }, {
+      "id" : "_lz3EczIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_PORT"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_yY2xIBHUEe-yhejSmGGM_Q",
+    "parameterList" : [ {
+      "id" : "_h-wgQTLQEe-ZYteWlLKUMg",
+      "name" : "SAP_MANDANT100_USER"
+    }, {
+      "id" : "_h-wgQjLQEe-ZYteWlLKUMg",
+      "name" : "SAP_MANDANT100_HOST"
+    }, {
+      "id" : "_h-wgQzLQEe-ZYteWlLKUMg",
+      "name" : "SAP_MANDANT100_LANGUAGE"
+    }, {
+      "id" : "_h-wgRDLQEe-ZYteWlLKUMg",
+      "name" : "SAP_MANDANT100_CLIENT"
+    }, {
+      "id" : "_h-wgRTLQEe-ZYteWlLKUMg",
+      "name" : "SAP_MANDANT100_PASSWORD"
+    }, {
+      "id" : "_h-wgRjLQEe-ZYteWlLKUMg",
+      "name" : "SAP_MANDANT100_SYSTEM_NUMBER"
+    } ]
+  } ]
+}

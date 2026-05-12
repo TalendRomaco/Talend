@@ -1,0 +1,873 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Prod" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="Prod">
+    <contextParameter comment="" name="innosoft_AdditionalParams" prompt="innosoft_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_fywFUO28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="innosoft_Server" prompt="innosoft_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="rho-hub-p-weu-sqlmi-001.57b5257f5e00.database.windows.net" internalId="_fywFUe28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="innosoft_Schema" prompt="innosoft_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_fywFUu28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="innosoft_Database" prompt="innosoft_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="P_Innosoft" internalId="_fywFU-28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="innosoft_Password" prompt="innosoft_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:OsniindGtcsMknOvIcxsCi7mll8lRwjK6Xc99i7vR3bB0HRh4em7EA==" internalId="_fywFVO28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="INNOSOFT_LOGIN" prompt="INNOSOFT_LOGIN?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="SQL_Talend-Reader" internalId="_fywFVe28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="innosoft_Port" prompt="innosoft_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433" internalId="_fywFVu28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_Port" prompt="DWH_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433" internalId="_fywFV-28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_Server" prompt="DWH_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="KASV-ABAS-BI" internalId="_fywFWO28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_AdditionalParams" prompt="DWH_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="instance=mssql_Dwh" internalId="_fywFWe28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_Schema" prompt="DWH_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dwh" internalId="_fywFWu28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_Database" prompt="DWH_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="msdb" internalId="_fywFW-28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_Login" prompt="DWH_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="sa" internalId="_fywFXO28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_Password" prompt="DWH_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:2LDLENGjrjyKiIdfd4vYWH+r1gC4l704MObxBaUyjB7ZUN5X/Q==" internalId="_fywsYO28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_STAGE_Server" prompt="DWH_STAGE_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="KASV-SQL01" internalId="_Xw__8O29Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_STAGE_AdditionalParams" prompt="DWH_STAGE_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="instance=DWH;useNTLMv2=true;domain=ad42;integratedSecurity=false" internalId="_Xw__8e29Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_STAGE_Port" prompt="DWH_STAGE_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433" internalId="_Xw__8u29Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_STAGE_Login" prompt="DWH_STAGE_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="adm_bi" internalId="_Xw__8-29Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_STAGE_Database" prompt="DWH_STAGE_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DWH" internalId="_Xw__9O29Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_STAGE_Schema" prompt="DWH_STAGE_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="STG" internalId="_Xw__9e29Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_STAGE_Password" prompt="DWH_STAGE_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:Txe5JyBmj2NtEXLpfPBnYVx9SlBtergSWtLPurXkrFxdXWguRg==" internalId="_Xw__9u29Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_STAGE_ADDITIONAL_PARAM" prompt="DWH_STAGE_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="instance=DWH;useNTLMv2=true;domain=ad42;integratedSecurity=false" internalId="_U_VO0DO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="INNOSOFT_ADDITIONAL_PARAM" prompt="INNOSOFT_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="" internalId="_U_VO0TO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="DWH_STAGE_LOGIN" prompt="DWH_STAGE_LOGIN?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="adm_bi" internalId="_U_VO0jO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="DWH_STAGE_PORT" prompt="DWH_STAGE_PORT?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="1433" internalId="_U_VO0zO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="DWH_STAGE_SERVER" prompt="DWH_STAGE_SERVER?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="KASV-SQL01" internalId="_U_VO1DO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="DWH_STAGE_SCHEMA" prompt="DWH_STAGE_SCHEMA?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="STG" internalId="_U_VO1TO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="DWH_STAGE_DATABASE" prompt="DWH_STAGE_DATABASE?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="DWH" internalId="_U_VO1jO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="DWH_STAGE_PASSWORD" prompt="DWH_STAGE_PASSWORD?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_Password" value="enc:system.encryption.key.v1:x26o3VewLd/DVIl+ahXowcx/7dLsDE06RVA57Eqgzo19xBxyCw==" internalId="_U_VO1zO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="INNOSOFT_SERVER" prompt="INNOSOFT_SERVER?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="rho-hub-p-weu-sqlmi-001.57b5257f5e00.database.windows.net" internalId="_U_VO2DO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="INNOSOFT_DATABASE" prompt="INNOSOFT_DATABASE?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="P_Innosoft" internalId="_U_VO2TO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="INNOSOFT_PASSWORD" prompt="INNOSOFT_PASSWORD?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_Password" value="enc:system.encryption.key.v1:4y3XrE23TS6r6bRcc8f0GEFiPB5Wl3uGPwxcJ5G71z5T5IOO8t5AtA==" internalId="_U_VO2jO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="INNOSOFT_PORT" prompt="INNOSOFT_PORT?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="1433" internalId="_U_VO2zO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="INNOSOFT_SCHEMA" prompt="INNOSOFT_SCHEMA?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="" internalId="_U_VO3DO0Ee-S7_pzhMQq6w"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="Test">
+    <contextParameter comment="" name="innosoft_AdditionalParams" prompt="innosoft_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_fywsYe28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="innosoft_Server" prompt="innosoft_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="rho-hub-p-weu-sqlmi-001.57b5257f5e00.database.windows.net" internalId="_fywsYu28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="innosoft_Schema" prompt="innosoft_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_fywsY-28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="innosoft_Database" prompt="innosoft_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="P_Innosoft" internalId="_fywsZO28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="innosoft_Password" prompt="innosoft_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:w0NIuSDePbZ1OmrA1LLfLFvsC1coFLXmLkg9GV3G4h96EMixlKf35Q==" internalId="_fywsZe28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="INNOSOFT_LOGIN" prompt="INNOSOFT_LOGIN?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="SQL_Talend-Reader" internalId="_fywsZu28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="innosoft_Port" prompt="innosoft_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433" internalId="_fywsZ-28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_Port" prompt="DWH_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433" internalId="_fywsaO28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_Server" prompt="DWH_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="KASV-ABAS-BI" internalId="_fywsae28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_AdditionalParams" prompt="DWH_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="instance=mssql_Dwh" internalId="_fywsau28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_Schema" prompt="DWH_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dwh" internalId="_fywsa-28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_Database" prompt="DWH_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="msdb" internalId="_fywsbO28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_Login" prompt="DWH_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="sa" internalId="_fywsbe28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_Password" prompt="DWH_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:abSSNxZFb25E4KGz/Fzl7IVSmiPw+hPDqkvoVnLF3E3CwO1qMA==" internalId="_fywsbu28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_STAGE_Server" prompt="DWH_STAGE_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="KASV-SQL01" internalId="_Xw__9-29Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_STAGE_AdditionalParams" prompt="DWH_STAGE_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="instance=DWH;useNTLMv2=true;domain=ad42;integratedSecurity=false" internalId="_Xw__-O29Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_STAGE_Port" prompt="DWH_STAGE_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433" internalId="_Xw__-e29Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_STAGE_Login" prompt="DWH_STAGE_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="adm_bi" internalId="_Xw__-u29Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_STAGE_Database" prompt="DWH_STAGE_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DWH" internalId="_Xw__--29Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_STAGE_Schema" prompt="DWH_STAGE_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="STG" internalId="_Xw___O29Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_STAGE_Password" prompt="DWH_STAGE_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:HXGFNHI8HeID38Hh9mHViZ/zN+H/weF2cED6+AYB700/snftHw==" internalId="_Xw___e29Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_STAGE_ADDITIONAL_PARAM" prompt="DWH_STAGE_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="instance=DWH;useNTLMv2=true;domain=ad42;integratedSecurity=false" internalId="_U_VO3TO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="INNOSOFT_ADDITIONAL_PARAM" prompt="INNOSOFT_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="" internalId="_U_VO3jO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="DWH_STAGE_LOGIN" prompt="DWH_STAGE_LOGIN?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="adm_bi" internalId="_U_VO3zO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="DWH_STAGE_PORT" prompt="DWH_STAGE_PORT?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="1433" internalId="_U_VO4DO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="DWH_STAGE_SERVER" prompt="DWH_STAGE_SERVER?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="KASV-SQL01" internalId="_U_VO4TO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="DWH_STAGE_SCHEMA" prompt="DWH_STAGE_SCHEMA?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="STG" internalId="_U_VO4jO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="DWH_STAGE_DATABASE" prompt="DWH_STAGE_DATABASE?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="DWH" internalId="_U_VO4zO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="DWH_STAGE_PASSWORD" prompt="DWH_STAGE_PASSWORD?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_Password" value="enc:system.encryption.key.v1:koqFL3Qd9k7n1be3eTvMAuVfWXRDpB6EbMwUbl4EYHbTnUlrvw==" internalId="_U_VO5DO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="INNOSOFT_SERVER" prompt="INNOSOFT_SERVER?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="rho-hub-p-weu-sqlmi-001.57b5257f5e00.database.windows.net" internalId="_U_VO5TO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="INNOSOFT_DATABASE" prompt="INNOSOFT_DATABASE?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="P_Innosoft" internalId="_U_VO5jO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="INNOSOFT_PASSWORD" prompt="INNOSOFT_PASSWORD?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_Password" value="enc:system.encryption.key.v1:pWix1MgLo/HRoyd9htplvCT1g/6J/G2AGys5UPs1qihpj1xKAf44xQ==" internalId="_U_VO5zO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="INNOSOFT_PORT" prompt="INNOSOFT_PORT?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="1433" internalId="_U_VO6DO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="INNOSOFT_SCHEMA" prompt="INNOSOFT_SCHEMA?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="" internalId="_U_VO6TO0Ee-S7_pzhMQq6w"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="OnPremises">
+    <contextParameter comment="" name="innosoft_AdditionalParams" prompt="innosoft_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_fywsb-28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="INNOSOFT_LOGIN" prompt="INNOSOFT_LOGIN?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="SQL_Talend-Reader" internalId="_fywscO28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="innosoft_Password" prompt="innosoft_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:ocl3m2p7E1OfsFSCnjUGwt3S/kL29rc1PdSDX87FnMT950wx3sw=" internalId="_fywsce28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="innosoft_Schema" prompt="innosoft_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_fywscu28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="innosoft_Port" prompt="innosoft_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433" internalId="_fywsc-28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="innosoft_Server" prompt="innosoft_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="KOSVINNOSOFT01" internalId="_fywsdO28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="innosoft_Database" prompt="innosoft_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_fywsde28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_Port" prompt="DWH_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433" internalId="_fywsdu28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_Server" prompt="DWH_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="KASV-ABAS-BI" internalId="_fywsd-28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_AdditionalParams" prompt="DWH_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="instance=mssql_Dwh" internalId="_fywseO28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_Schema" prompt="DWH_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dwh" internalId="_fywsee28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_Database" prompt="DWH_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="msdb" internalId="_fywseu28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_Login" prompt="DWH_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="sa" internalId="_fywse-28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_Password" prompt="DWH_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:eWBJDm0s4ujLfAHwdCmW643YyPiGN91YfCUf45dEeA0qyWdyzg==" internalId="_fywsfO28Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_STAGE_Server" prompt="DWH_STAGE_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="KASV-SQL01" internalId="_XxAnAO29Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_STAGE_AdditionalParams" prompt="DWH_STAGE_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="instance=DWH;useNTLMv2=true;domain=ad42;integratedSecurity=false" internalId="_XxAnAe29Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_STAGE_Port" prompt="DWH_STAGE_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433" internalId="_XxAnAu29Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_STAGE_Login" prompt="DWH_STAGE_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="adm_bi" internalId="_XxAnA-29Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_STAGE_Database" prompt="DWH_STAGE_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DWH" internalId="_XxAnBO29Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_STAGE_Schema" prompt="DWH_STAGE_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="STG" internalId="_XxAnBe29Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_STAGE_Password" prompt="DWH_STAGE_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:PpQPGSIavolpwVLfTHb85JY3kCvMNmfUswNzUtZk54l7gakWTQ==" internalId="_XxAnBu29Ee6LTJLMTmvwFA"/>
+    <contextParameter comment="" name="DWH_STAGE_ADDITIONAL_PARAM" prompt="DWH_STAGE_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="instance=DWH;useNTLMv2=true;domain=ad42;integratedSecurity=false" internalId="_U_VO6jO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="INNOSOFT_ADDITIONAL_PARAM" prompt="INNOSOFT_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="" internalId="_U_VO6zO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="DWH_STAGE_LOGIN" prompt="DWH_STAGE_LOGIN?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="adm_bi" internalId="_U_VO7DO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="DWH_STAGE_PORT" prompt="DWH_STAGE_PORT?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="1433" internalId="_U_VO7TO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="DWH_STAGE_SERVER" prompt="DWH_STAGE_SERVER?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="KASV-SQL01" internalId="_U_VO7jO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="DWH_STAGE_SCHEMA" prompt="DWH_STAGE_SCHEMA?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="STG" internalId="_U_VO7zO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="DWH_STAGE_DATABASE" prompt="DWH_STAGE_DATABASE?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="DWH" internalId="_U_VO8DO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="DWH_STAGE_PASSWORD" prompt="DWH_STAGE_PASSWORD?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_Password" value="enc:system.encryption.key.v1:U5l+bTBmyUQfqMUTITjnwBo5kikf6JwO9GP7YfOUff3/Owecsw==" internalId="_U_VO8TO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="INNOSOFT_SERVER" prompt="INNOSOFT_SERVER?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="rho-hub-p-weu-sqlmi-001.57b5257f5e00.database.windows.net" internalId="_U_VO8jO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="INNOSOFT_DATABASE" prompt="INNOSOFT_DATABASE?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="P_Innosoft" internalId="_U_VO8zO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="INNOSOFT_PASSWORD" prompt="INNOSOFT_PASSWORD?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_Password" value="enc:system.encryption.key.v1:coPP9lrzRWH3RuaHPt3C9Y82+M2baHvu4R5WXTYuoWQqvyQy0XVaqQ==" internalId="_U_VO9DO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="INNOSOFT_PORT" prompt="INNOSOFT_PORT?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="1433" internalId="_U_VO9TO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="INNOSOFT_SCHEMA" prompt="INNOSOFT_SCHEMA?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="" internalId="_U_VO9jO0Ee-S7_pzhMQq6w"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="PROD">
+    <contextParameter comment="" name="DWH_STAGE_ADDITIONAL_PARAM" prompt="DWH_STAGE_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="instance=DWH;useNTLMv2=true;domain=ad42;integratedSecurity=false" internalId="_U_VO9zO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="INNOSOFT_ADDITIONAL_PARAM" prompt="INNOSOFT_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="" internalId="_U_VO-DO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="DWH_STAGE_LOGIN" prompt="DWH_STAGE_LOGIN?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="adm_bi" internalId="_U_VO-TO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="DWH_STAGE_PORT" prompt="DWH_STAGE_PORT?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="1433" internalId="_U_VO-jO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="DWH_STAGE_SERVER" prompt="DWH_STAGE_SERVER?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="KASV-SQL01" internalId="_U_VO-zO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="DWH_STAGE_SCHEMA" prompt="DWH_STAGE_SCHEMA?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="STG" internalId="_U_VO_DO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="DWH_STAGE_DATABASE" prompt="DWH_STAGE_DATABASE?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="DWH" internalId="_U_VO_TO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="DWH_STAGE_PASSWORD" prompt="DWH_STAGE_PASSWORD?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_Password" value="enc:system.encryption.key.v1:SxIGIj+pQ/Wb3va+nqlUzTmKvUt05pH2SrD90YcE/x0H3Qkf3w==" internalId="_U_VO_jO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="INNOSOFT_LOGIN" prompt="INNOSOFT_LOGIN?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="SQL_Talend-Reader" internalId="_U_VO_zO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="INNOSOFT_SERVER" prompt="INNOSOFT_SERVER?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="rho-hub-p-weu-sqlmi-001.57b5257f5e00.database.windows.net" internalId="_U_VPADO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="INNOSOFT_DATABASE" prompt="INNOSOFT_DATABASE?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="P_Innosoft" internalId="_U_VPATO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="INNOSOFT_PASSWORD" prompt="INNOSOFT_PASSWORD?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_Password" value="enc:system.encryption.key.v1:lkylM4+KeekbXZuR4gwu4GuNkFcE/Mq8tr+nk27lITswLqirmglAgw==" internalId="_U_VPAjO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="INNOSOFT_PORT" prompt="INNOSOFT_PORT?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="1433" internalId="_U_VPAzO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="INNOSOFT_SCHEMA" prompt="INNOSOFT_SCHEMA?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="" internalId="_U_VPBDO0Ee-S7_pzhMQq6w"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="ON_PREM">
+    <contextParameter comment="" name="INNOSOFT_ADDITIONAL_PARAM" prompt="INNOSOFT_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="" internalId="_U_VPBTO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="DWH_STAGE_ADDITIONAL_PARAM" prompt="DWH_STAGE_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="instance=DWH;useNTLMv2=true;domain=ad42;integratedSecurity=false" internalId="_U_VPBjO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="DWH_STAGE_LOGIN" prompt="DWH_STAGE_LOGIN?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="adm_bi" internalId="_U_VPBzO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="DWH_STAGE_PORT" prompt="DWH_STAGE_PORT?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="1433" internalId="_U_VPCDO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="DWH_STAGE_SERVER" prompt="DWH_STAGE_SERVER?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="KASV-SQL01" internalId="_U_VPCTO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="DWH_STAGE_SCHEMA" prompt="DWH_STAGE_SCHEMA?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="STG" internalId="_U_VPCjO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="DWH_STAGE_DATABASE" prompt="DWH_STAGE_DATABASE?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="DWH" internalId="_U_VPCzO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="DWH_STAGE_PASSWORD" prompt="DWH_STAGE_PASSWORD?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_Password" value="enc:system.encryption.key.v1:w3dNEnA/zZCl1+j+WwuchNxHzR8ayJXI1kvOLZIlQV6eX56GtA==" internalId="_U_VPDDO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="INNOSOFT_LOGIN" prompt="INNOSOFT_LOGIN?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="DBReader" internalId="_U_VPDTO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="INNOSOFT_SERVER" prompt="INNOSOFT_SERVER?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="KOSVINNOSOFT01" internalId="_U_VPDjO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="INNOSOFT_DATABASE" prompt="INNOSOFT_DATABASE?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="" internalId="_U_VPDzO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="INNOSOFT_PASSWORD" prompt="INNOSOFT_PASSWORD?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_Password" value="enc:system.encryption.key.v1:soFl97OxMtC0BaI8pqIjnbfLzi3k5geoFuy3fljxyCbpURSlcFo=" internalId="_U_VPEDO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="INNOSOFT_PORT" prompt="INNOSOFT_PORT?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="1433" internalId="_U_VPETO0Ee-S7_pzhMQq6w"/>
+    <contextParameter comment="" name="INNOSOFT_SCHEMA" prompt="INNOSOFT_SCHEMA?" promptNeeded="false" repositoryContextId="__LHX4A9PEe2shNL2goCYFg" type="id_String" value="" internalId="_U_VPEjO0Ee-S7_pzhMQq6w"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="40" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:I3AvJwJS/iYkabNb68DShviEv52hAN9HYOr/Q175" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;E:/Talend-Studio/Workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ECV0crzWlRULGI+MkbBNqhhyGC8pXeLlQgViYDPh" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_fB5FwISOEeayvK0D79Gaqg" name="DataOperation"/>
+    <routinesParameter id="_fC8OoISOEeayvK0D79Gaqg" name="Mathematical"/>
+    <routinesParameter id="_fDK4IISOEeayvK0D79Gaqg" name="Numeric"/>
+    <routinesParameter id="_fDaIsISOEeayvK0D79Gaqg" name="Relational"/>
+    <routinesParameter id="_fDnkEISOEeayvK0D79Gaqg" name="StringHandling"/>
+    <routinesParameter id="_fDtqsISOEeayvK0D79Gaqg" name="TalendDataGenerator"/>
+    <routinesParameter id="_fD3bsISOEeayvK0D79Gaqg" name="TalendDate"/>
+    <routinesParameter id="_fD-wcISOEeayvK0D79Gaqg" name="TalendString"/>
+    <routinesParameter id="_qSCiIA9NEe2shNL2goCYFg" name="TalendStringUtil"/>
+    <routinesParameter id="__wkvQ-hKEe6bjtl1OUplwg" name="SQLike"/>
+  </parameters>
+  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlConnection_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_eRpNoOjiEeiPup4IvSqYiw" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="context.DWH_STAGE_SERVER"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.DWH_STAGE_PORT"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.DWH_STAGE_SCHEMA"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.DWH_STAGE_DATABASE"/>
+    <elementParameter field="TEXT" name="USER" value="context.DWH_STAGE_LOGIN"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:P2aqSjVqvdVhDbKgUXsBd3EGuCFnO3yqCmbkKtAjptah33JsafwqUpAYpZL8DFaC+jk2mtT0"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.DWH_STAGE_ADDITIONAL_PARAM"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Connection"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_1" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
+    <elementParameter field="CHECK" name="CLOSE" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="Commit"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlCommit_1"/>
+  </node>
+  <node componentName="tMSSqlRollback" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlRollback_1" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
+    <elementParameter field="CHECK" name="CLOSE" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="Rollback"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlRollback_1"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(TalendDate.formatDate(&quot;dd.MM.yyyy HH.mm:ss&quot;, TalendDate.getCurrentDate()) + &quot; Lade innosoft Tabelle VKIND...&quot;);&#xA;&#xA;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_3"/>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_U5IU8IStEeafAeGmwGbwig" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.INNOSOFT_SERVER"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.INNOSOFT_PORT"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.INNOSOFT_SCHEMA"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.INNOSOFT_DATABASE"/>
+    <elementParameter field="TEXT" name="USER" value="context.INNOSOFT_LOGIN"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:7BmYph/8iytu6q1ppmtcedM6toc7x++QMFn1CjrnAVyFGEQOhFvwCKrpGhR3lTlTuwb+BhM="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;VKIND&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT ADRNR,&#xD;&#xA;&#x9;&#x9;Zusatzinfo,&#xD;&#xA;&#x9;&#x9;ERP_NR_KA,&#xD;&#xA;&#x9;&#x9;ERP_NR_CO,&#xD;&#xA;&#x9;&#x9;ERP_NR_ST,&#xD;&#xA;&#x9;&#x9;ERP_NR_BO,&#xD;&#xA;&#x9;&#x9;VKIND_PRODUCTLINE,&#xD;&#xA;&#x9;&#x9;VKIND_BUSINESSMODEL,&#xD;&#xA;&#x9;&#x9;verwendetes_dmbs,&#xD;&#xA;&#x9;&#x9;triggers,&#xD;&#xA;&#x9;&#x9;VKIND_MATCHCODE,&#xD;&#xA;&#x9;&#x9;VKIND_ZBedKa,&#xD;&#xA;&#x9;&#x9;VKIND_ZBedCo,&#xD;&#xA;&#x9;&#x9;VKIND_ZBedBo,&#xD;&#xA;&#x9;&#x9;VKIND_ZBedSt,&#xD;&#xA;&#x9;&#x9;VKIND_ZBedKaET,&#xD;&#xA;&#x9;&#x9;VKIND_ZBedCoET,&#xD;&#xA;&#x9;&#x9;VKIND_ZBedBoET,&#xD;&#xA;&#x9;&#x9;VKIND_ZBedStET,&#xD;&#xA;&#x9;&#x9;VKIND_CLKa,&#xD;&#xA;&#x9;&#x9;VKIND_CoCL,&#xD;&#xA;&#x9;&#x9;VKIND_BoCL,&#xD;&#xA;&#x9;&#x9;VKIND_StCL,&#xD;&#xA;&#x9;&#x9;VKIND_CLKaCu,&#xD;&#xA;&#x9;&#x9;VKIND_CLCoCu,&#xD;&#xA;&#x9;&#x9;VKIND_CLBoCu,&#xD;&#xA;&#x9;&#x9;VKIND_CLStCu,&#xD;&#xA;&#x9;&#x9;ISGUID,&#xD;&#xA;&#x9;&#x9;VKIND_Testfeld,&#xD;&#xA;&#x9;&#x9;VKIND_CLASSIFICATION&#xD;&#xA;FROM&#x9;VKIND&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.INNOSOFT_ADDITIONAL_PARAM"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ADRNR"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Zusatzinfo"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ERP_NR_KA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ERP_NR_CO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ERP_NR_ST"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ERP_NR_BO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_PRODUCTLINE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_BUSINESSMODEL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="verwendetes_dmbs"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="triggers"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_MATCHCODE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_ZBedKa"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_ZBedCo"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_ZBedBo"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_ZBedSt"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_ZBedKaET"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_ZBedCoET"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_ZBedBoET"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_ZBedStET"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_CLKa"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_CoCL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_BoCL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_StCL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_CLKaCu"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_CLCoCu"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_CLBoCu"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_CLStCu"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ISGUID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_Testfeld"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_CLASSIFICATION"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlInput_2">
+      <column comment="" key="false" length="20" name="ADRNR" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="Zusatzinfo" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="ERP_NR_KA" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="ERP_NR_CO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="ERP_NR_ST" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="ERP_NR_BO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="33" name="VKIND_PRODUCTLINE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="33" name="VKIND_BUSINESSMODEL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="verwendetes_dmbs" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="triggers" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="VKIND_MATCHCODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="80" name="VKIND_ZBedKa" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="80" name="VKIND_ZBedCo" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="80" name="VKIND_ZBedBo" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="80" name="VKIND_ZBedSt" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="80" name="VKIND_ZBedKaET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="80" name="VKIND_ZBedCoET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="80" name="VKIND_ZBedBoET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="80" name="VKIND_ZBedStET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="VKIND_CLKa" nullable="true" pattern="" precision="4" sourceType="VARBINARY" type="id_Object" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="VKIND_CoCL" nullable="true" pattern="" precision="4" sourceType="VARBINARY" type="id_Object" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="VKIND_BoCL" nullable="true" pattern="" precision="4" sourceType="VARBINARY" type="id_Object" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="VKIND_StCL" nullable="true" pattern="" precision="4" sourceType="VARBINARY" type="id_Object" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="VKIND_CLKaCu" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="VKIND_CLCoCu" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="VKIND_CLBoCu" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="VKIND_CLStCu" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="ISGUID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="80" name="VKIND_Testfeld" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="VKIND_CLASSIFICATION" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_4" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_VAjFwK-gEemmM-L3rhYkqg-tMap_4-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out1">
+      <column comment="" key="false" length="20" name="ADRNR" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="8000" name="Zusatzinfo" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="8000" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="ERP_NR_KA" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="ERP_NR_CO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="ERP_NR_ST" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="ERP_NR_BO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="33" name="VKIND_PRODUCTLINE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="33" name="VKIND_BUSINESSMODEL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="verwendetes_dmbs" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="triggers" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="VKIND_MATCHCODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="VKIND_ZBedKa" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="VKIND_ZBedCo" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="VKIND_ZBedBo" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="VKIND_ZBedSt" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="VKIND_ZBedKaET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="VKIND_ZBedCoET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="VKIND_ZBedBoET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="VKIND_ZBedStET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="VKIND_CLKa" nullable="true" pattern="" precision="4" sourceType="VARBINARY" type="id_Object" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="VKIND_CoCL" nullable="true" pattern="" precision="4" sourceType="VARBINARY" type="id_Object" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="VKIND_BoCL" nullable="true" pattern="" precision="4" sourceType="VARBINARY" type="id_Object" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="VKIND_StCL" nullable="true" pattern="" precision="4" sourceType="VARBINARY" type="id_Object" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="VKIND_CLKaCu" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="VKIND_CLCoCu" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="VKIND_CLBoCu" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="VKIND_CLStCu" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ISGUID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="VKIND_Testfeld" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="VKIND_CLASSIFICATION" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="out1">
+        <mapperTableEntries name="ADRNR" expression="row2.ADRNR " type="id_String"/>
+        <mapperTableEntries name="Zusatzinfo" expression="row2.Zusatzinfo " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ERP_NR_KA" expression="row2.ERP_NR_KA " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ERP_NR_CO" expression="row2.ERP_NR_CO " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ERP_NR_ST" expression="row2.ERP_NR_ST " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ERP_NR_BO" expression="row2.ERP_NR_BO " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKIND_PRODUCTLINE" expression="row2.VKIND_PRODUCTLINE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKIND_BUSINESSMODEL" expression="row2.VKIND_BUSINESSMODEL " type="id_String" nullable="true"/>
+        <mapperTableEntries name="verwendetes_dmbs" expression="row2.verwendetes_dmbs " type="id_String" nullable="true"/>
+        <mapperTableEntries name="triggers" expression="row2.triggers " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKIND_MATCHCODE" expression="row2.VKIND_MATCHCODE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKIND_ZBedKa" expression="row2.VKIND_ZBedKa " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKIND_ZBedCo" expression="row2.VKIND_ZBedCo " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKIND_ZBedBo" expression="row2.VKIND_ZBedBo " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKIND_ZBedSt" expression="row2.VKIND_ZBedSt " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKIND_ZBedKaET" expression="row2.VKIND_ZBedKaET " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKIND_ZBedCoET" expression="row2.VKIND_ZBedCoET " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKIND_ZBedBoET" expression="row2.VKIND_ZBedBoET " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKIND_ZBedStET" expression="row2.VKIND_ZBedStET " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKIND_CLKa" expression="row2.VKIND_CLKa " type="id_Object" nullable="true"/>
+        <mapperTableEntries name="VKIND_CoCL" expression="row2.VKIND_CoCL " type="id_Object" nullable="true"/>
+        <mapperTableEntries name="VKIND_BoCL" expression="row2.VKIND_BoCL " type="id_Object" nullable="true"/>
+        <mapperTableEntries name="VKIND_StCL" expression="row2.VKIND_StCL " type="id_Object" nullable="true"/>
+        <mapperTableEntries name="VKIND_CLKaCu" expression="row2.VKIND_CLKaCu " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKIND_CLCoCu" expression="row2.VKIND_CLCoCu " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKIND_CLBoCu" expression="row2.VKIND_CLBoCu " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKIND_CLStCu" expression="row2.VKIND_CLStCu " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ISGUID" expression="row2.ISGUID " type="id_String"/>
+        <mapperTableEntries name="VKIND_Testfeld" expression="row2.VKIND_Testfeld " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKIND_CLASSIFICATION" expression="row2.VKIND_CLASSIFICATION " type="id_Integer" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="ADRNR" type="id_String"/>
+        <mapperTableEntries name="Zusatzinfo" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ERP_NR_KA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ERP_NR_CO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ERP_NR_ST" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ERP_NR_BO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKIND_PRODUCTLINE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKIND_BUSINESSMODEL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="verwendetes_dmbs" type="id_String" nullable="true"/>
+        <mapperTableEntries name="triggers" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKIND_MATCHCODE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKIND_ZBedKa" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKIND_ZBedCo" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKIND_ZBedBo" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKIND_ZBedSt" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKIND_ZBedKaET" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKIND_ZBedCoET" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKIND_ZBedBoET" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKIND_ZBedStET" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKIND_CLKa" type="id_Object" nullable="true"/>
+        <mapperTableEntries name="VKIND_CoCL" type="id_Object" nullable="true"/>
+        <mapperTableEntries name="VKIND_BoCL" type="id_Object" nullable="true"/>
+        <mapperTableEntries name="VKIND_StCL" type="id_Object" nullable="true"/>
+        <mapperTableEntries name="VKIND_CLKaCu" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKIND_CLCoCu" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKIND_CLBoCu" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKIND_CLStCu" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ISGUID" type="id_String"/>
+        <mapperTableEntries name="VKIND_Testfeld" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKIND_CLASSIFICATION" type="id_Integer" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_eRpNoOjiEeiPup4IvSqYiw" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;KASV-ABAS-BI&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dwh&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;msdb&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:D4J4+s+XO+d82lJw4M17p3h+HSAUbl0A1+Die9x6qV/XKz6dvNh6qA==" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;s_innosoft_vkind&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CLEAR"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" value="false" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" value="ADRNR" show="false"/>
+    <elementParameter field="TEXT" name="START_VALUE" value="1" show="false"/>
+    <elementParameter field="TEXT" name="STEP" value="1" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_eRpNoOjiEeiPup4IvSqYiw - f_time_abas_zeus_" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;instance=mssql_Dwh&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ADRNR"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Zusatzinfo"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ERP_NR_KA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ERP_NR_CO"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ERP_NR_ST"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ERP_NR_BO"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_PRODUCTLINE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_BUSINESSMODEL"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="verwendetes_dmbs"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="triggers"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_MATCHCODE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_ZBedKa"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_ZBedCo"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_ZBedBo"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_ZBedSt"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_ZBedKaET"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_ZBedCoET"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_ZBedBoET"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_ZBedStET"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_CLKa"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_CoCL"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_BoCL"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_StCL"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_CLKaCu"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_CLCoCu"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_CLBoCu"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_CLStCu"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ISGUID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_Testfeld"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VKIND_CLASSIFICATION"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br>__TABLE__&lt;br>__COMMENT__&lt;br>__TABLE_ACTION__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlOutput_1">
+      <column comment="" key="false" length="20" name="ADRNR" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="8000" name="Zusatzinfo" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="8000" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="ERP_NR_KA" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="ERP_NR_CO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="ERP_NR_ST" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="ERP_NR_BO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="33" name="VKIND_PRODUCTLINE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="33" name="VKIND_BUSINESSMODEL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="verwendetes_dmbs" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="triggers" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="VKIND_MATCHCODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="VKIND_ZBedKa" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="VKIND_ZBedCo" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="VKIND_ZBedBo" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="VKIND_ZBedSt" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="VKIND_ZBedKaET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="VKIND_ZBedCoET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="VKIND_ZBedBoET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="VKIND_ZBedStET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="VKIND_CLKa" nullable="true" pattern="" precision="4" sourceType="VARBINARY" type="id_Object" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="VKIND_CoCL" nullable="true" pattern="" precision="4" sourceType="VARBINARY" type="id_Object" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="VKIND_BoCL" nullable="true" pattern="" precision="4" sourceType="VARBINARY" type="id_Object" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="VKIND_StCL" nullable="true" pattern="" precision="4" sourceType="VARBINARY" type="id_Object" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="VKIND_CLKaCu" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="VKIND_CLCoCu" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="VKIND_CLBoCu" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="VKIND_CLStCu" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ISGUID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="VKIND_Testfeld" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="VKIND_CLASSIFICATION" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="20" name="ADRNR" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="8000" name="Zusatzinfo" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="8000" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="ERP_NR_KA" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="ERP_NR_CO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="ERP_NR_ST" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="ERP_NR_BO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="33" name="VKIND_PRODUCTLINE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="33" name="VKIND_BUSINESSMODEL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="verwendetes_dmbs" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="triggers" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="VKIND_MATCHCODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="VKIND_ZBedKa" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="VKIND_ZBedCo" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="VKIND_ZBedBo" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="VKIND_ZBedSt" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="VKIND_ZBedKaET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="VKIND_ZBedCoET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="VKIND_ZBedBoET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="VKIND_ZBedStET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="VKIND_CLKa" nullable="true" pattern="" precision="4" sourceType="VARBINARY" type="id_Object" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="VKIND_CoCL" nullable="true" pattern="" precision="4" sourceType="VARBINARY" type="id_Object" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="VKIND_BoCL" nullable="true" pattern="" precision="4" sourceType="VARBINARY" type="id_Object" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="VKIND_StCL" nullable="true" pattern="" precision="4" sourceType="VARBINARY" type="id_Object" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="VKIND_CLKaCu" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="VKIND_CLCoCu" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="VKIND_CLBoCu" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="VKIND_CLStCu" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ISGUID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="VKIND_Testfeld" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="VKIND_CLASSIFICATION" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(TalendDate.formatDate(&quot;dd.MM.yyyy HH.mm:ss&quot;, TalendDate.getCurrentDate()) + &quot; innosoft Tabelle VKIND geladen.&quot;);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_4"/>
+  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlConnection_1" offsetLabelX="0" offsetLabelY="0" source="tMSSqlConnection_1" target="tJava_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" source="tJava_3" target="tMSSqlInput_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk7" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tMSSqlInput_2" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_2" target="tMap_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlInput_2" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_2" target="tJava_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk8" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_4" target="tMSSqlOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tJava_4" offsetLabelX="0" offsetLabelY="0" source="tJava_4" target="tMSSqlRollback_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_4" offsetLabelX="0" offsetLabelY="0" source="tJava_4" target="tMSSqlCommit_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk5" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlRollback_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+</talendfile:ProcessType>

@@ -1,0 +1,198 @@
+{
+  "itemId" : "_KXIKUNenEeip-OV2NkoeFw",
+  "contextList" : [ {
+    "contextName" : "PROD",
+    "repoId" : "_NMth0O29Ee6LTJLMTmvwFA",
+    "parameterList" : [ {
+      "id" : "_q_bHNu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_q_bHN-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_DATABASE"
+    }, {
+      "id" : "_q_bHMu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_LOGIN"
+    }, {
+      "id" : "_q_bHMe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_PASSWORD"
+    }, {
+      "id" : "_q_bHNe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_PORT"
+    }, {
+      "id" : "_q_bHNO2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_SCHEMA"
+    }, {
+      "id" : "_q_bHM-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_SERVER"
+    } ]
+  }, {
+    "contextName" : "PROD",
+    "repoId" : "_yY2xIBHUEe-yhejSmGGM_Q",
+    "parameterList" : [ {
+      "id" : "_yZAiJBHUEe-yhejSmGGM_Q",
+      "name" : "SAP_MANDANT100_CLIENT"
+    }, {
+      "id" : "_yZAiIhHUEe-yhejSmGGM_Q",
+      "name" : "SAP_MANDANT100_HOST"
+    }, {
+      "id" : "_yZAiIxHUEe-yhejSmGGM_Q",
+      "name" : "SAP_MANDANT100_LANGUAGE"
+    }, {
+      "id" : "_yZAiJRHUEe-yhejSmGGM_Q",
+      "name" : "SAP_MANDANT100_PASSWORD"
+    }, {
+      "id" : "_yZAiJhHUEe-yhejSmGGM_Q",
+      "name" : "SAP_MANDANT100_SYSTEM_NUMBER"
+    }, {
+      "id" : "_yZAiIRHUEe-yhejSmGGM_Q",
+      "name" : "SAP_MANDANT100_USER"
+    } ]
+  }, {
+    "contextName" : "PROD",
+    "repoId" : "__LHX4A9PEe2shNL2goCYFg",
+    "parameterList" : [ {
+      "id" : "_4Ww00ipQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_LOGIN"
+    }, {
+      "id" : "_4Ww01ipQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_SERVER"
+    }, {
+      "id" : "_4Ww00SpQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_4Ww01ypQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_DATABASE"
+    }, {
+      "id" : "_4Ww00ypQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_PASSWORD"
+    }, {
+      "id" : "_4Ww01SpQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_PORT"
+    }, {
+      "id" : "_4Ww01CpQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_SCHEMA"
+    } ]
+  }, {
+    "contextName" : "PROD",
+    "repoId" : "_nZfJMH9ZEeyZfMeOF10yTw",
+    "parameterList" : [ {
+      "id" : "_d14T8CpMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_SERVER"
+    }, {
+      "id" : "_d14T8ypMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_PASSWORD"
+    }, {
+      "id" : "_d14T8SpMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_DATABASE"
+    }, {
+      "id" : "_d14T9ipMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_PORT"
+    }, {
+      "id" : "_d14T9SpMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_SCHEMA"
+    }, {
+      "id" : "_d14T9CpMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_LOGIN"
+    }, {
+      "id" : "_d14T8ipMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_ADDITIONAL_PARAM"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_NMth0O29Ee6LTJLMTmvwFA",
+    "parameterList" : [ {
+      "id" : "_q_bHNu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_q_bHN-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_DATABASE"
+    }, {
+      "id" : "_q_bHMu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_LOGIN"
+    }, {
+      "id" : "_q_bHMe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_PASSWORD"
+    }, {
+      "id" : "_q_bHNe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_PORT"
+    }, {
+      "id" : "_q_bHNO2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_SCHEMA"
+    }, {
+      "id" : "_q_bHM-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_SERVER"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "__LHX4A9PEe2shNL2goCYFg",
+    "parameterList" : [ {
+      "id" : "_4Ww00ipQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_LOGIN"
+    }, {
+      "id" : "_4Ww01ipQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_SERVER"
+    }, {
+      "id" : "_4Ww00SpQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_4Ww01ypQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_DATABASE"
+    }, {
+      "id" : "_4Ww00ypQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_PASSWORD"
+    }, {
+      "id" : "_4Ww01SpQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_PORT"
+    }, {
+      "id" : "_4Ww01CpQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_SCHEMA"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_nZfJMH9ZEeyZfMeOF10yTw",
+    "parameterList" : [ {
+      "id" : "_d14T8CpMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_SERVER"
+    }, {
+      "id" : "_d14T8ypMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_PASSWORD"
+    }, {
+      "id" : "_d14T8SpMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_DATABASE"
+    }, {
+      "id" : "_d14T9ipMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_PORT"
+    }, {
+      "id" : "_d14T9SpMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_SCHEMA"
+    }, {
+      "id" : "_d14T9CpMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_LOGIN"
+    }, {
+      "id" : "_d14T8ipMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_ADDITIONAL_PARAM"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_yY2xIBHUEe-yhejSmGGM_Q",
+    "parameterList" : [ {
+      "id" : "_h-wgQTLQEe-ZYteWlLKUMg",
+      "name" : "SAP_MANDANT100_USER"
+    }, {
+      "id" : "_h-wgQjLQEe-ZYteWlLKUMg",
+      "name" : "SAP_MANDANT100_HOST"
+    }, {
+      "id" : "_h-wgQzLQEe-ZYteWlLKUMg",
+      "name" : "SAP_MANDANT100_LANGUAGE"
+    }, {
+      "id" : "_h-wgRDLQEe-ZYteWlLKUMg",
+      "name" : "SAP_MANDANT100_CLIENT"
+    }, {
+      "id" : "_h-wgRTLQEe-ZYteWlLKUMg",
+      "name" : "SAP_MANDANT100_PASSWORD"
+    }, {
+      "id" : "_h-wgRjLQEe-ZYteWlLKUMg",
+      "name" : "SAP_MANDANT100_SYSTEM_NUMBER"
+    } ]
+  } ]
+}

@@ -1,0 +1,229 @@
+{
+  "itemId" : "_RBHygIS2Eea1D7eo1TFBjg",
+  "contextList" : [ {
+    "contextName" : "Prod",
+    "repoId" : "_NMth0O29Ee6LTJLMTmvwFA",
+    "parameterList" : [ {
+      "id" : "_q_bHNu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_q_bHMu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_LOGIN"
+    }, {
+      "id" : "_q_bHNe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_PORT"
+    }, {
+      "id" : "_q_bHM-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_SERVER"
+    }, {
+      "id" : "_q_bHNO2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_SCHEMA"
+    }, {
+      "id" : "_q_bHN-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_DATABASE"
+    }, {
+      "id" : "_q_bHMe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_PASSWORD"
+    } ]
+  }, {
+    "contextName" : "Prod",
+    "repoId" : "__LHX4A9PEe2shNL2goCYFg",
+    "parameterList" : [ {
+      "id" : "_4Ww00ipQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_LOGIN"
+    }, {
+      "id" : "_4Ww01ipQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_SERVER"
+    }, {
+      "id" : "_4Ww00SpQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_4Ww01ypQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_DATABASE"
+    }, {
+      "id" : "_4Ww00ypQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_PASSWORD"
+    }, {
+      "id" : "_4Ww01SpQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_PORT"
+    }, {
+      "id" : "_4Ww01CpQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_SCHEMA"
+    } ]
+  }, {
+    "contextName" : "Test",
+    "repoId" : "_NMth0O29Ee6LTJLMTmvwFA",
+    "parameterList" : [ {
+      "id" : "_q_bHNu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_q_bHMu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_LOGIN"
+    }, {
+      "id" : "_q_bHNe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_PORT"
+    }, {
+      "id" : "_q_bHM-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_SERVER"
+    }, {
+      "id" : "_q_bHNO2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_SCHEMA"
+    }, {
+      "id" : "_q_bHN-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_DATABASE"
+    }, {
+      "id" : "_q_bHMe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_PASSWORD"
+    } ]
+  }, {
+    "contextName" : "Test",
+    "repoId" : "__LHX4A9PEe2shNL2goCYFg",
+    "parameterList" : [ {
+      "id" : "_4Ww02ipQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_LOGIN"
+    }, {
+      "id" : "_4Ww03ipQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_SERVER"
+    }, {
+      "id" : "_4Ww02SpQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_4Ww03ypQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_DATABASE"
+    }, {
+      "id" : "_4Ww02ypQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_PASSWORD"
+    }, {
+      "id" : "_4Ww03SpQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_PORT"
+    }, {
+      "id" : "_4Ww03CpQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_SCHEMA"
+    } ]
+  }, {
+    "contextName" : "OnPremises",
+    "repoId" : "_NMth0O29Ee6LTJLMTmvwFA",
+    "parameterList" : [ {
+      "id" : "_q_bHNu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_q_bHMu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_LOGIN"
+    }, {
+      "id" : "_q_bHNe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_PORT"
+    }, {
+      "id" : "_q_bHM-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_SERVER"
+    }, {
+      "id" : "_q_bHNO2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_SCHEMA"
+    }, {
+      "id" : "_q_bHN-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_DATABASE"
+    }, {
+      "id" : "_q_bHMe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_PASSWORD"
+    } ]
+  }, {
+    "contextName" : "OnPremises",
+    "repoId" : "__LHX4A9PEe2shNL2goCYFg",
+    "parameterList" : [ {
+      "id" : "_4Ww00ipQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_LOGIN"
+    }, {
+      "id" : "_4Ww01ipQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_SERVER"
+    }, {
+      "id" : "_4Ww00SpQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_4Ww01ypQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_DATABASE"
+    }, {
+      "id" : "_4Ww00ypQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_PASSWORD"
+    }, {
+      "id" : "_4Ww01SpQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_PORT"
+    }, {
+      "id" : "_4Ww01CpQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_SCHEMA"
+    } ]
+  }, {
+    "contextName" : "PROD",
+    "repoId" : "_NMth0O29Ee6LTJLMTmvwFA",
+    "parameterList" : [ {
+      "id" : "_q_bHNu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_q_bHMu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_LOGIN"
+    }, {
+      "id" : "_q_bHNe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_PORT"
+    }, {
+      "id" : "_q_bHM-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_SERVER"
+    }, {
+      "id" : "_q_bHNO2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_SCHEMA"
+    }, {
+      "id" : "_q_bHN-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_DATABASE"
+    }, {
+      "id" : "_q_bHMe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_PASSWORD"
+    } ]
+  }, {
+    "contextName" : "PROD",
+    "repoId" : "__LHX4A9PEe2shNL2goCYFg",
+    "parameterList" : [ {
+      "id" : "_4Ww00ipQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_LOGIN"
+    }, {
+      "id" : "_4Ww01ipQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_SERVER"
+    }, {
+      "id" : "_4Ww00SpQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_4Ww01ypQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_DATABASE"
+    }, {
+      "id" : "_4Ww00ypQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_PASSWORD"
+    }, {
+      "id" : "_4Ww01SpQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_PORT"
+    }, {
+      "id" : "_4Ww01CpQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_SCHEMA"
+    } ]
+  }, {
+    "contextName" : "ON_PREM",
+    "repoId" : "__LHX4A9PEe2shNL2goCYFg",
+    "parameterList" : [ {
+      "id" : "_Yb2ngRPeEe2shNL2goCYFg",
+      "name" : "INNOSOFT_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_Yb2nghPeEe2shNL2goCYFg",
+      "name" : "INNOSOFT_LOGIN"
+    }, {
+      "id" : "_Yb2ngxPeEe2shNL2goCYFg",
+      "name" : "INNOSOFT_PASSWORD"
+    }, {
+      "id" : "_Yb2nhBPeEe2shNL2goCYFg",
+      "name" : "INNOSOFT_SCHEMA"
+    }, {
+      "id" : "_Yb2nhRPeEe2shNL2goCYFg",
+      "name" : "INNOSOFT_PORT"
+    }, {
+      "id" : "_Yb2nhhPeEe2shNL2goCYFg",
+      "name" : "INNOSOFT_SERVER"
+    }, {
+      "id" : "_Yb2nhxPeEe2shNL2goCYFg",
+      "name" : "INNOSOFT_DATABASE"
+    } ]
+  } ]
+}

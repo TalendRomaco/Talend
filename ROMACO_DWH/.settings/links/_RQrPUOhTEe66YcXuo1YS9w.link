@@ -1,0 +1,380 @@
+{
+  "itemId" : "_RQrPUOhTEe66YcXuo1YS9w",
+  "contextList" : [ {
+    "contextName" : "Prod",
+    "repoId" : "_nZfJMH9ZEeyZfMeOF10yTw",
+    "parameterList" : [ {
+      "id" : "_d14T8CpMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_SERVER"
+    }, {
+      "id" : "_d14T8SpMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_DATABASE"
+    }, {
+      "id" : "_d14T8ipMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_d14T8ypMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_PASSWORD"
+    }, {
+      "id" : "_d14T9CpMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_LOGIN"
+    }, {
+      "id" : "_d14T9SpMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_SCHEMA"
+    }, {
+      "id" : "_d14T9ipMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_PORT"
+    } ]
+  }, {
+    "contextName" : "Prod",
+    "repoId" : "_yY2xIBHUEe-yhejSmGGM_Q",
+    "parameterList" : [ {
+      "id" : "_yZAiIhHUEe-yhejSmGGM_Q",
+      "name" : "SAP_MANDANT100_HOST"
+    }, {
+      "id" : "_yZAiIRHUEe-yhejSmGGM_Q",
+      "name" : "SAP_MANDANT100_USER"
+    }, {
+      "id" : "_yZAiJhHUEe-yhejSmGGM_Q",
+      "name" : "SAP_MANDANT100_SYSTEM_NUMBER"
+    }, {
+      "id" : "_yZAiIxHUEe-yhejSmGGM_Q",
+      "name" : "SAP_MANDANT100_LANGUAGE"
+    }, {
+      "id" : "_yZAiJBHUEe-yhejSmGGM_Q",
+      "name" : "SAP_MANDANT100_CLIENT"
+    }, {
+      "id" : "_yZAiJRHUEe-yhejSmGGM_Q",
+      "name" : "SAP_MANDANT100_PASSWORD"
+    } ]
+  }, {
+    "contextName" : "Prod",
+    "repoId" : "__LHX4A9PEe2shNL2goCYFg",
+    "parameterList" : [ {
+      "id" : "_4Ww00ipQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_LOGIN"
+    }, {
+      "id" : "_4Ww01ipQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_SERVER"
+    }, {
+      "id" : "_4Ww00SpQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_4Ww01ypQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_DATABASE"
+    }, {
+      "id" : "_4Ww00ypQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_PASSWORD"
+    }, {
+      "id" : "_4Ww01SpQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_PORT"
+    }, {
+      "id" : "_4Ww01CpQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_SCHEMA"
+    } ]
+  }, {
+    "contextName" : "Prod",
+    "repoId" : "_U-ng4B87Eeu4evOLuCTfoQ",
+    "parameterList" : [ {
+      "id" : "_DJ-wATeoEe-rn-6NwZVhCA",
+      "name" : "ABAS_BI_LOGIN"
+    }, {
+      "id" : "_DJ-wBTeoEe-rn-6NwZVhCA",
+      "name" : "ABAS_BI_SCHEMA"
+    }, {
+      "id" : "_DJ-wBjeoEe-rn-6NwZVhCA",
+      "name" : "ABAS_BI_SERVER"
+    }, {
+      "id" : "_DJ-wBzeoEe-rn-6NwZVhCA",
+      "name" : "ABAS_BI_PASSWORD"
+    }, {
+      "id" : "_DJ-wAjeoEe-rn-6NwZVhCA",
+      "name" : "ABAS_BI_DATABASE"
+    }, {
+      "id" : "_DJ-wBDeoEe-rn-6NwZVhCA",
+      "name" : "ABAS_BI_PORT"
+    }, {
+      "id" : "_DJ-wAzeoEe-rn-6NwZVhCA",
+      "name" : "ABAS_BI_ADDITIONAL_PARAM"
+    } ]
+  }, {
+    "contextName" : "Prod",
+    "repoId" : "_NMth0O29Ee6LTJLMTmvwFA",
+    "parameterList" : [ {
+      "id" : "_q_bHMu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_LOGIN"
+    }, {
+      "id" : "_q_bHNu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_q_bHNe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_PORT"
+    }, {
+      "id" : "_q_bHM-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_SERVER"
+    }, {
+      "id" : "_q_bHNO2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_SCHEMA"
+    }, {
+      "id" : "_q_bHMe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_PASSWORD"
+    }, {
+      "id" : "_q_bHN-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_DATABASE"
+    } ]
+  }, {
+    "contextName" : "Prod",
+    "repoId" : "_lzkJgDIeEe-epOz61AJceA",
+    "parameterList" : [ {
+      "id" : "_lz3EcTIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_lz3EcjIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_SERVER"
+    }, {
+      "id" : "_lz3EczIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_PORT"
+    }, {
+      "id" : "_lz3EdDIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_PASSWORD"
+    }, {
+      "id" : "_lz3EdTIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_LOGIN"
+    }, {
+      "id" : "_lz3EdjIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_SCHEMA"
+    }, {
+      "id" : "_lz3EdzIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_DATABASE"
+    } ]
+  }, {
+    "contextName" : "Prod",
+    "repoId" : "_VSavoJcrEe2AR4f9Fyc4mA",
+    "parameterList" : [ {
+      "id" : "_iecPkJcsEe2AR4f9Fyc4mA",
+      "name" : "SMTP_Port"
+    }, {
+      "id" : "_2TakAZcuEe2AR4f9Fyc4mA",
+      "name" : "SMTP_User_Password"
+    }, {
+      "id" : "_Zn-lMZcsEe2AR4f9Fyc4mA",
+      "name" : "SMTP_Host"
+    }, {
+      "id" : "_2TakAJcuEe2AR4f9Fyc4mA",
+      "name" : "SMTP_User"
+    } ]
+  }, {
+    "contextName" : "Prod",
+    "repoId" : "_iLrqkEEiEfClZdZq5U7F7A",
+    "parameterList" : [ {
+      "id" : "_iMEFFUEiEfClZdZq5U7F7A",
+      "name" : "DOCUWARE_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_iMEFEkEiEfClZdZq5U7F7A",
+      "name" : "DOCUWARE_DATABASE"
+    }, {
+      "id" : "_iMEFFkEiEfClZdZq5U7F7A",
+      "name" : "DOCUWARE_PASSWORD"
+    }, {
+      "id" : "_iMEFF0EiEfClZdZq5U7F7A",
+      "name" : "DOCUWARE_SERVER"
+    }, {
+      "id" : "_iMEFEUEiEfClZdZq5U7F7A",
+      "name" : "DOCUWARE_SCHEMA"
+    }, {
+      "id" : "_iMEFFEEiEfClZdZq5U7F7A",
+      "name" : "DOCUWARE_PORT"
+    }, {
+      "id" : "_iMEFE0EiEfClZdZq5U7F7A",
+      "name" : "DOCUWARE_LOGIN"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_nZfJMH9ZEeyZfMeOF10yTw",
+    "parameterList" : [ {
+      "id" : "_d14T8CpMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_SERVER"
+    }, {
+      "id" : "_d14T8SpMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_DATABASE"
+    }, {
+      "id" : "_d14T8ipMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_d14T8ypMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_PASSWORD"
+    }, {
+      "id" : "_d14T9CpMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_LOGIN"
+    }, {
+      "id" : "_d14T9SpMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_SCHEMA"
+    }, {
+      "id" : "_d14T9ipMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_PORT"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "__LHX4A9PEe2shNL2goCYFg",
+    "parameterList" : [ {
+      "id" : "_4Ww00ipQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_LOGIN"
+    }, {
+      "id" : "_4Ww01ipQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_SERVER"
+    }, {
+      "id" : "_4Ww00SpQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_4Ww01ypQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_DATABASE"
+    }, {
+      "id" : "_4Ww00ypQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_PASSWORD"
+    }, {
+      "id" : "_4Ww01SpQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_PORT"
+    }, {
+      "id" : "_4Ww01CpQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_SCHEMA"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_yY2xIBHUEe-yhejSmGGM_Q",
+    "parameterList" : [ {
+      "id" : "_h-wgQTLQEe-ZYteWlLKUMg",
+      "name" : "SAP_MANDANT100_USER"
+    }, {
+      "id" : "_h-wgQjLQEe-ZYteWlLKUMg",
+      "name" : "SAP_MANDANT100_HOST"
+    }, {
+      "id" : "_h-wgQzLQEe-ZYteWlLKUMg",
+      "name" : "SAP_MANDANT100_LANGUAGE"
+    }, {
+      "id" : "_h-wgRDLQEe-ZYteWlLKUMg",
+      "name" : "SAP_MANDANT100_CLIENT"
+    }, {
+      "id" : "_h-wgRTLQEe-ZYteWlLKUMg",
+      "name" : "SAP_MANDANT100_PASSWORD"
+    }, {
+      "id" : "_h-wgRjLQEe-ZYteWlLKUMg",
+      "name" : "SAP_MANDANT100_SYSTEM_NUMBER"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_U-ng4B87Eeu4evOLuCTfoQ",
+    "parameterList" : [ {
+      "id" : "_DJ-wATeoEe-rn-6NwZVhCA",
+      "name" : "ABAS_BI_LOGIN"
+    }, {
+      "id" : "_DJ-wBTeoEe-rn-6NwZVhCA",
+      "name" : "ABAS_BI_SCHEMA"
+    }, {
+      "id" : "_DJ-wBjeoEe-rn-6NwZVhCA",
+      "name" : "ABAS_BI_SERVER"
+    }, {
+      "id" : "_DJ-wBzeoEe-rn-6NwZVhCA",
+      "name" : "ABAS_BI_PASSWORD"
+    }, {
+      "id" : "_DJ-wAjeoEe-rn-6NwZVhCA",
+      "name" : "ABAS_BI_DATABASE"
+    }, {
+      "id" : "_DJ-wBDeoEe-rn-6NwZVhCA",
+      "name" : "ABAS_BI_PORT"
+    }, {
+      "id" : "_DJ-wAzeoEe-rn-6NwZVhCA",
+      "name" : "ABAS_BI_ADDITIONAL_PARAM"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_NMth0O29Ee6LTJLMTmvwFA",
+    "parameterList" : [ {
+      "id" : "_q_bHMu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_LOGIN"
+    }, {
+      "id" : "_q_bHNu2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_q_bHNe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_PORT"
+    }, {
+      "id" : "_q_bHM-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_SERVER"
+    }, {
+      "id" : "_q_bHNO2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_SCHEMA"
+    }, {
+      "id" : "_q_bHMe2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_PASSWORD"
+    }, {
+      "id" : "_q_bHN-2-Ee6LTJLMTmvwFA",
+      "name" : "DWH_STAGE_DATABASE"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_lzkJgDIeEe-epOz61AJceA",
+    "parameterList" : [ {
+      "id" : "_lz3EcTIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_lz3EcjIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_SERVER"
+    }, {
+      "id" : "_lz3EczIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_PORT"
+    }, {
+      "id" : "_lz3EdDIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_PASSWORD"
+    }, {
+      "id" : "_lz3EdTIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_LOGIN"
+    }, {
+      "id" : "_lz3EdjIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_SCHEMA"
+    }, {
+      "id" : "_lz3EdzIeEe-epOz61AJceA",
+      "name" : "DWH_ADMIN_DATABASE"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_VSavoJcrEe2AR4f9Fyc4mA",
+    "parameterList" : [ {
+      "id" : "_yaivEleLEe6OX5b3c_wNSw",
+      "name" : "SMTP_Port"
+    }, {
+      "id" : "_yaivFFeLEe6OX5b3c_wNSw",
+      "name" : "SMTP_User_Password"
+    }, {
+      "id" : "_yaivEVeLEe6OX5b3c_wNSw",
+      "name" : "SMTP_Host"
+    }, {
+      "id" : "_yaivE1eLEe6OX5b3c_wNSw",
+      "name" : "SMTP_User"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_iLrqkEEiEfClZdZq5U7F7A",
+    "parameterList" : [ {
+      "id" : "_iMEFFUEiEfClZdZq5U7F7A",
+      "name" : "DOCUWARE_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_iMEFEkEiEfClZdZq5U7F7A",
+      "name" : "DOCUWARE_DATABASE"
+    }, {
+      "id" : "_iMEFFkEiEfClZdZq5U7F7A",
+      "name" : "DOCUWARE_PASSWORD"
+    }, {
+      "id" : "_iMEFF0EiEfClZdZq5U7F7A",
+      "name" : "DOCUWARE_SERVER"
+    }, {
+      "id" : "_iMEFEUEiEfClZdZq5U7F7A",
+      "name" : "DOCUWARE_SCHEMA"
+    }, {
+      "id" : "_iMEFFEEiEfClZdZq5U7F7A",
+      "name" : "DOCUWARE_PORT"
+    }, {
+      "id" : "_iMEFE0EiEfClZdZq5U7F7A",
+      "name" : "DOCUWARE_LOGIN"
+    } ]
+  } ]
+}

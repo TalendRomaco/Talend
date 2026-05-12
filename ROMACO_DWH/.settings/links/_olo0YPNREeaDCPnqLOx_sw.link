@@ -1,0 +1,25 @@
+{
+  "itemId" : "_olo0YPNREeaDCPnqLOx_sw",
+  "contextList" : [ {
+    "contextName" : "Prod",
+    "repoId" : "__LHX4A9PEe2shNL2goCYFg",
+    "parameterList" : [ {
+      "id" : "_4Ww00ipQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_LOGIN"
+    } ]
+  }, {
+    "contextName" : "Test",
+    "repoId" : "__LHX4A9PEe2shNL2goCYFg",
+    "parameterList" : [ {
+      "id" : "_4Ww02ipQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_LOGIN"
+    } ]
+  }, {
+    "contextName" : "OnPremises",
+    "repoId" : "__LHX4A9PEe2shNL2goCYFg",
+    "parameterList" : [ {
+      "id" : "_4Ww00ipQEe-nmpxPcdNtAQ",
+      "name" : "INNOSOFT_LOGIN"
+    } ]
+  } ]
+}

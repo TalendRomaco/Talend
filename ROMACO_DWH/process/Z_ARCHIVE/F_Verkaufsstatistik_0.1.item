@@ -1,0 +1,1515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default"/>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:lrCA614l99g0u9RN5U7ZmigsnYmcjbDLqZ4WxeOK" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend/TOS_DI-20160704_1411-V6.2.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Ej+nW+tvudY5ujDQI1wgMeLnY0144FW0+eff87Wg" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_fB5FwISOEeayvK0D79Gaqg" name="DataOperation"/>
+    <routinesParameter id="_fC8OoISOEeayvK0D79Gaqg" name="Mathematical"/>
+    <routinesParameter id="_fDK4IISOEeayvK0D79Gaqg" name="Numeric"/>
+    <routinesParameter id="_fDaIsISOEeayvK0D79Gaqg" name="Relational"/>
+    <routinesParameter id="_fDnkEISOEeayvK0D79Gaqg" name="StringHandling"/>
+    <routinesParameter id="_fDtqsISOEeayvK0D79Gaqg" name="TalendDataGenerator"/>
+    <routinesParameter id="_fD3bsISOEeayvK0D79Gaqg" name="TalendDate"/>
+    <routinesParameter id="_fD-wcISOEeayvK0D79Gaqg" name="TalendString"/>
+    <routinesParameter id="_yUa20ITEEea1D7eo1TFBjg" name="Utils"/>
+  </parameters>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.10.27&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;sql_abasbi_readonly&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:2i1aMG8rDhgEV29Ddlji9GRDA7lBgH/nV+eI5E1Z+DQZwjCXl1aVeQ=="/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_t6-yMISUEeafAeGmwGbwig - Auftragsänderungen_AUBestandshistorie" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;Auftragsänderungen$AUBestandshistorie&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YTUMBAU,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.SN,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NUMMER,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.VERSIONN,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.MANDKENN,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.DELROW,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.GRUPPE,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.DNR,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.DATEIARCHIVIEREN,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.VERSIONIERENICHT,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.VERSIONIERTERSATZ,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.VERSIONERSTELLEN,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.VERSIONRELEVANT,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.ABLAGEN,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.ABLAGEF,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.TYP,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NUM25,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NUMMERB,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.SUCH25,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.SUCH,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.SUCHB,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NAME,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NAME1,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NAME2,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NAME3,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NAME4,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NAME5,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NAME6,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NAME7,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NAME8,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NAME9,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NAME10,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NAME11,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NAME12,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NAME13,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NAME14,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NAME15,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NAME16,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NAME17,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NAME18,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NAME19,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NAME20,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NAME21,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NAME22,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NAME23,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NAME24,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NAME25,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NAME26,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NAME27,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NAME28,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NAME29,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NAME30,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NAME31,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NAMEBSPR,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.SUCHERW,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NAMEKSPR,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.NAMEASPR,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.STAND,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.ERFASS,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.ZEICH,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.ZEICHEN,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.MYINDEX,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.URMAND,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.GUID,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.PAKET,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.STNAME,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.TERM,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.SUBEG,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.ERFDAT,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.FTEXT,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.FTEXT2,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YAUEINGANG,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YUMSATZ,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YAUBESTAND,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YANGEBOT,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YVON,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YBIS,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YVONBELEG,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YBISBELEG,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YNURKUNDE,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YNURVERTRETER,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YNURBETREUER,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YAUSWAEHR,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YKSTAAT,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YKBEREICH,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YKAUART,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YAUSUM,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YUMSATZSUMME,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YOFFENAUSUMME,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YSUMMASCH,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YSUMFORMAT,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YSUMSERVICE,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YSUMERSATZ,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YUMBAU,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YVERSAND,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YSONSTIGES,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YRABATT,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YUMSATZMASCH,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YUMSATZFORMAT,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YUMSATZSERVICE,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YUMSATZERSATZ,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YUMSATZUMBAU,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YUMSATZVERSAND,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YUMSATZSONSTIGES,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YUMSATZRABATT,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YOFFENMASCH,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YOFFENFORMAT,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YOFFENSERVICE,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YOFFENERSATZ,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YOFFENUMBAU,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YOFFENVERSAND,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YOFFENSONSTIGES,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YOFFENRABATT,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YSAVEDATE,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YSAVETS,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YDAY,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YMONTH,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YYEAR,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YREAUSGANG,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.TABNR,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.ZID,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.ZN,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.MARKIERT,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.MARKIERUNG,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.TFTEXT,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.TFTEXT2,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YBELEG,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YBELEGID,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YBUDAT,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YREOM,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YREBUDAT,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YLSBUDAT,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YLIDAT,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YWUNSCHTERM,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YABVOM,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YTBESTDATUM,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YANVOM,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YTANFDATUM,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YLIEFERTERMIN,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YVERW,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YKUNDENR,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YKUNDE2,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YPLZ,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YORT,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YTSTAAT,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YAUART,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YBEREICH,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YMASCHART,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YLINIE,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YPRODLINIE,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YVERTRETER,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YLAND,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YPWERT,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YMASCHINE,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YFORMATPOS,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YMONTAGEKOST,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YERSATZPOS,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YVERPACKUNG,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YTSONSTIGES,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YNACHLASS,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YSCHONUMSATZ,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YSCHONUMSATZMA,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YSCHONUMSATZFO,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YSCHONUMSATZSE,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YSCHONUMSATZER,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YSCHONUMSATZUMB,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YSCHONUMSATZVERS,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YSCHONUMSATZSONST,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YSCHONUMSATZRAB,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YNOCHOFFEN,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YNOCHOFFENMA,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YNOCHOFFENFO,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YNOCHOFFENSE,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YNOCHOFFENER,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YNOCHOFFENUMB,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YNOCHOFFENVERS,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YNOCHOFFENSONST,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YNOCHOFFENRAB,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YVKPOSID,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YRGLISTE,&#xA;&#x9;&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;.YTSAVEDATE&#xA;FROM&#x9;\&quot;Auftragsänderungen$AUBestandshistorie\&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="YTUMBAU"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUMMER"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VERSIONN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MANDKENN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DELROW"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GRUPPE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DNR"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATEIARCHIVIEREN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VERSIONIERENICHT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VERSIONIERTERSATZ"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VERSIONERSTELLEN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VERSIONRELEVANT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ABLAGEN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ABLAGEF"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TYP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUM25"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUMMERB"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUCH25"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUCH"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUCHB"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME3"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME4"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME5"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME6"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME7"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME8"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME9"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME10"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME11"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME12"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME13"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME14"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME15"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME16"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME17"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME18"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME19"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME20"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME21"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME22"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME23"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME24"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME25"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME26"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME27"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME28"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME29"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME30"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME31"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAMEBSPR"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUCHERW"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAMEKSPR"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAMEASPR"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STAND"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ERFASS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ZEICH"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ZEICHEN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MYINDEX"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="URMAND"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GUID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PAKET"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STNAME"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TERM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUBEG"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ERFDAT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FTEXT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FTEXT2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YAUEINGANG"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YUMSATZ"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YAUBESTAND"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YANGEBOT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YVON"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YBIS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YVONBELEG"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YBISBELEG"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YNURKUNDE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YNURVERTRETER"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YNURBETREUER"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YAUSWAEHR"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YKSTAAT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YKBEREICH"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YKAUART"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YAUSUM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YUMSATZSUMME"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YOFFENAUSUMME"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YSUMMASCH"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YSUMFORMAT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YSUMSERVICE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YSUMERSATZ"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YUMBAU"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YVERSAND"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YSONSTIGES"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YRABATT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YUMSATZMASCH"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YUMSATZFORMAT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YUMSATZSERVICE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YUMSATZERSATZ"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YUMSATZUMBAU"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YUMSATZVERSAND"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YUMSATZSONSTIGES"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YUMSATZRABATT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YOFFENMASCH"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YOFFENFORMAT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YOFFENSERVICE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YOFFENERSATZ"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YOFFENUMBAU"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YOFFENVERSAND"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YOFFENSONSTIGES"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YOFFENRABATT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YSAVEDATE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YSAVETS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YDAY"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YMONTH"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YYEAR"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YREAUSGANG"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TABNR"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ZID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ZN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MARKIERT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MARKIERUNG"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TFTEXT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TFTEXT2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YBELEG"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YBELEGID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YBUDAT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YREOM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YREBUDAT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YLSBUDAT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YLIDAT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YWUNSCHTERM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YABVOM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YTBESTDATUM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YANVOM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YTANFDATUM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YLIEFERTERMIN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YVERW"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YKUNDENR"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YKUNDE2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YPLZ"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YORT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YTSTAAT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YAUART"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YBEREICH"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YMASCHART"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YLINIE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YPRODLINIE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YVERTRETER"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YLAND"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YPWERT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YMASCHINE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YFORMATPOS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YMONTAGEKOST"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YERSATZPOS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YVERPACKUNG"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YTSONSTIGES"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YNACHLASS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YSCHONUMSATZ"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YSCHONUMSATZMA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YSCHONUMSATZFO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YSCHONUMSATZSE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YSCHONUMSATZER"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YSCHONUMSATZUMB"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YSCHONUMSATZVERS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YSCHONUMSATZSONST"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YSCHONUMSATZRAB"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YNOCHOFFEN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YNOCHOFFENMA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YNOCHOFFENFO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YNOCHOFFENSE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YNOCHOFFENER"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YNOCHOFFENUMB"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YNOCHOFFENVERS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YNOCHOFFENSONST"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YNOCHOFFENRAB"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YVKPOSID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YRGLISTE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YTSAVEDATE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <metadata connector="FLOW" label="Auftragsänderungen_AUBestandshistorie" name="tMSSqlInput_1">
+      <column comment="" key="false" length="20" name="YTUMBAU" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="SN" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="NUMMER" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="VERSIONN" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="MANDKENN" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="DELROW" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="GRUPPE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="DNR" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="DATEIARCHIVIEREN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="VERSIONIERENICHT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="VERSIONIERTERSATZ" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="VERSIONERSTELLEN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="VERSIONRELEVANT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="ABLAGEN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="ABLAGEF" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="TYP" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="NUM25" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="NUMMERB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="SUCH25" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="SUCH" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="SUCHB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="NAME1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="NAME2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="NAME3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="NAME4" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="NAME5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="NAME6" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="NAME7" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="NAME8" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="NAME9" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="NAME10" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="NAME11" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="NAME12" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="NAME13" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="NAME14" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="NAME15" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="NAME16" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="NAME17" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="NAME18" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="NAME19" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="NAME20" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="NAME21" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="NAME22" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="NAME23" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="NAME24" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="NAME25" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="NAME26" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="NAME27" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="NAME28" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="NAME29" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="NAME30" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="NAME31" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="NAMEBSPR" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="SUCHERW" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="NAMEKSPR" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="NAMEASPR" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="STAND" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="ERFASS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="ZEICH" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="ZEICHEN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="MYINDEX" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="URMAND" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="GUID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="PAKET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="STNAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="TERM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="SUBEG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="ERFDAT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="FTEXT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="FTEXT2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="YAUEINGANG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="YUMSATZ" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="YAUBESTAND" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="YANGEBOT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="YVON" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="YBIS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="YVONBELEG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="YBISBELEG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="YNURKUNDE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="YNURVERTRETER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="YNURBETREUER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="YAUSWAEHR" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="YKSTAAT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="YKBEREICH" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="YKAUART" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YAUSUM" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YUMSATZSUMME" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YOFFENAUSUMME" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YSUMMASCH" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YSUMFORMAT" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YSUMSERVICE" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YSUMERSATZ" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YUMBAU" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YVERSAND" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YSONSTIGES" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YRABATT" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YUMSATZMASCH" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YUMSATZFORMAT" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YUMSATZSERVICE" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YUMSATZERSATZ" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YUMSATZUMBAU" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YUMSATZVERSAND" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YUMSATZSONSTIGES" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YUMSATZRABATT" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YOFFENMASCH" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YOFFENFORMAT" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YOFFENSERVICE" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YOFFENERSATZ" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YOFFENUMBAU" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YOFFENVERSAND" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YOFFENSONSTIGES" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YOFFENRABATT" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="YSAVEDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="YSAVETS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YDAY" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YMONTH" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YYEAR" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="YREAUSGANG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="TABNR" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="ZID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="ZN" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="MARKIERT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="MARKIERUNG" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="TFTEXT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="TFTEXT2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="YBELEG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="YBELEGID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="YBUDAT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="YREOM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="YREBUDAT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="YLSBUDAT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="YLIDAT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="YWUNSCHTERM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="YABVOM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="YTBESTDATUM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="YANVOM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="YTANFDATUM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="YLIEFERTERMIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="YVERW" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="YKUNDENR" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="YKUNDE2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="YPLZ" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="YORT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="YTSTAAT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="YAUART" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="YBEREICH" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="YMASCHART" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="YLINIE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="YPRODLINIE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="YVERTRETER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="YLAND" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YPWERT" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YMASCHINE" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YFORMATPOS" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YMONTAGEKOST" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YERSATZPOS" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YVERPACKUNG" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YTSONSTIGES" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YNACHLASS" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YSCHONUMSATZ" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YSCHONUMSATZMA" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YSCHONUMSATZFO" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YSCHONUMSATZSE" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YSCHONUMSATZER" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YSCHONUMSATZUMB" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YSCHONUMSATZVERS" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YSCHONUMSATZSONST" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YSCHONUMSATZRAB" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YNOCHOFFEN" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YNOCHOFFENMA" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YNOCHOFFENFO" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YNOCHOFFENSE" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YNOCHOFFENER" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YNOCHOFFENUMB" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YNOCHOFFENVERS" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YNOCHOFFENSONST" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YNOCHOFFENRAB" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="YVKPOSID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="YRGLISTE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="YTSAVEDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="480" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_H5zhsErEEeeTkdmjZbok-g-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out1">
+      <column comment="" key="false" length="20" name="YTUMBAU" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="SN" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="NUMMER" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="VERSIONN" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="NUM25" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="NUMMERB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="SUCH25" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="SUCH" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="SUCHB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="STAND" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="ERFASS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="ZEICH" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="ZEICHEN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="ERFDAT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="FTEXT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="FTEXT2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="YAUEINGANG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="YUMSATZ" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="YAUBESTAND" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="YANGEBOT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="YVON" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="YBIS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="YVONBELEG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="YBISBELEG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="YNURKUNDE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="YNURVERTRETER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="YNURBETREUER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="YAUSWAEHR" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="YKSTAAT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="YKBEREICH" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="YKAUART" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YAUSUM" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YUMSATZSUMME" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YOFFENAUSUMME" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YSUMMASCH" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YSUMFORMAT" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YSUMSERVICE" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YSUMERSATZ" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YUMBAU" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YVERSAND" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YSONSTIGES" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YRABATT" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YUMSATZMASCH" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YUMSATZFORMAT" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YUMSATZSERVICE" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YUMSATZERSATZ" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YUMSATZUMBAU" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YUMSATZVERSAND" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YUMSATZSONSTIGES" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YUMSATZRABATT" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YOFFENMASCH" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YOFFENFORMAT" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YOFFENSERVICE" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YOFFENERSATZ" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YOFFENUMBAU" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YOFFENVERSAND" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YOFFENSONSTIGES" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YOFFENRABATT" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="YSAVEDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="YSAVETS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YDAY" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YMONTH" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YYEAR" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="YREAUSGANG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="TABNR" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="ZID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="ZN" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="MARKIERT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="MARKIERUNG" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="TFTEXT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="TFTEXT2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="YBELEG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="YBELEGID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="YBUDAT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="YREOM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="YREBUDAT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="YLSBUDAT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="YLIDAT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="YWUNSCHTERM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="YABVOM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="YTBESTDATUM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="YANVOM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="YTANFDATUM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="YLIEFERTERMIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="YVERW" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="YKUNDENR" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="YKUNDE2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="YPLZ" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="YORT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="YTSTAAT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="YAUART" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="YBEREICH" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="YMASCHART" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="YLINIE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="YPRODLINIE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="YVERTRETER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="YLAND" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YPWERT" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YMASCHINE" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YFORMATPOS" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YMONTAGEKOST" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YERSATZPOS" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YVERPACKUNG" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YTSONSTIGES" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YNACHLASS" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YSCHONUMSATZ" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YSCHONUMSATZMA" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YSCHONUMSATZFO" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YSCHONUMSATZSE" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YSCHONUMSATZER" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YSCHONUMSATZUMB" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YSCHONUMSATZVERS" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YSCHONUMSATZSONST" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YSCHONUMSATZRAB" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YNOCHOFFEN" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YNOCHOFFENMA" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YNOCHOFFENFO" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YNOCHOFFENSE" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YNOCHOFFENER" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YNOCHOFFENUMB" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YNOCHOFFENVERS" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YNOCHOFFENSONST" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="YNOCHOFFENRAB" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="YVKPOSID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="YRGLISTE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="YTSAVEDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="out1">
+        <mapperTableEntries name="YTUMBAU" expression="row1.YTUMBAU " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="SN" expression="row1.SN " type="id_String"/>
+        <mapperTableEntries name="NUMMER" expression="row1.NUMMER " type="id_String"/>
+        <mapperTableEntries name="VERSIONN" expression="row1.VERSIONN " type="id_String"/>
+        <mapperTableEntries name="NUM25" expression="row1.NUM25 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NUMMERB" expression="row1.NUMMERB " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SUCH25" expression="row1.SUCH25 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SUCH" expression="row1.SUCH " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SUCHB" expression="row1.SUCHB " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME" expression="row1.NAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="STAND" expression="row1.STAND " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ERFASS" expression="row1.ERFASS " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ZEICH" expression="row1.ZEICH " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZEICHEN" expression="row1.ZEICHEN " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ERFDAT" expression="row1.ERFDAT " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="FTEXT" expression="row1.FTEXT " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FTEXT2" expression="row1.FTEXT2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="YAUEINGANG" expression="row1.YAUEINGANG " type="id_String" nullable="true"/>
+        <mapperTableEntries name="YUMSATZ" expression="row1.YUMSATZ " type="id_String" nullable="true"/>
+        <mapperTableEntries name="YAUBESTAND" expression="row1.YAUBESTAND " type="id_String" nullable="true"/>
+        <mapperTableEntries name="YANGEBOT" expression="row1.YANGEBOT " type="id_String" nullable="true"/>
+        <mapperTableEntries name="YVON" expression="row1.YVON " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="YBIS" expression="row1.YBIS " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="YVONBELEG" expression="row1.YVONBELEG " type="id_String" nullable="true"/>
+        <mapperTableEntries name="YBISBELEG" expression="row1.YBISBELEG " type="id_String" nullable="true"/>
+        <mapperTableEntries name="YNURKUNDE" expression="row1.YNURKUNDE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="YNURVERTRETER" expression="row1.YNURVERTRETER " type="id_String" nullable="true"/>
+        <mapperTableEntries name="YNURBETREUER" expression="row1.YNURBETREUER " type="id_String" nullable="true"/>
+        <mapperTableEntries name="YAUSWAEHR" expression="row1.YAUSWAEHR " type="id_String" nullable="true"/>
+        <mapperTableEntries name="YKSTAAT" expression="row1.YKSTAAT " type="id_String" nullable="true"/>
+        <mapperTableEntries name="YKBEREICH" expression="row1.YKBEREICH " type="id_String" nullable="true"/>
+        <mapperTableEntries name="YKAUART" expression="row1.YKAUART " type="id_String" nullable="true"/>
+        <mapperTableEntries name="YAUSUM" expression="row1.YAUSUM " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YUMSATZSUMME" expression="row1.YUMSATZSUMME " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YOFFENAUSUMME" expression="row1.YOFFENAUSUMME " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YSUMMASCH" expression="row1.YSUMMASCH " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YSUMFORMAT" expression="row1.YSUMFORMAT " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YSUMSERVICE" expression="row1.YSUMSERVICE " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YSUMERSATZ" expression="row1.YSUMERSATZ " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YUMBAU" expression="row1.YUMBAU " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YVERSAND" expression="row1.YVERSAND " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YSONSTIGES" expression="row1.YSONSTIGES " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YRABATT" expression="row1.YRABATT " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YUMSATZMASCH" expression="row1.YUMSATZMASCH " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YUMSATZFORMAT" expression="row1.YUMSATZFORMAT " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YUMSATZSERVICE" expression="row1.YUMSATZSERVICE " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YUMSATZERSATZ" expression="row1.YUMSATZERSATZ " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YUMSATZUMBAU" expression="row1.YUMSATZUMBAU " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YUMSATZVERSAND" expression="row1.YUMSATZVERSAND " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YUMSATZSONSTIGES" expression="row1.YUMSATZSONSTIGES " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YUMSATZRABATT" expression="row1.YUMSATZRABATT " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YOFFENMASCH" expression="row1.YOFFENMASCH " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YOFFENFORMAT" expression="row1.YOFFENFORMAT " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YOFFENSERVICE" expression="row1.YOFFENSERVICE " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YOFFENERSATZ" expression="row1.YOFFENERSATZ " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YOFFENUMBAU" expression="row1.YOFFENUMBAU " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YOFFENVERSAND" expression="row1.YOFFENVERSAND " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YOFFENSONSTIGES" expression="row1.YOFFENSONSTIGES " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YOFFENRABATT" expression="row1.YOFFENRABATT " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YSAVEDATE" expression="row1.YSAVEDATE " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="YSAVETS" expression="row1.YSAVETS " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="YDAY" expression="row1.YDAY " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YMONTH" expression="row1.YMONTH " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YYEAR" expression="row1.YYEAR " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YREAUSGANG" expression="row1.YREAUSGANG " type="id_String" nullable="true"/>
+        <mapperTableEntries name="TABNR" expression="row1.TABNR " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZID" expression="row1.ZID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZN" expression="row1.ZN " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="MARKIERT" expression="row1.MARKIERT " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MARKIERUNG" expression="row1.MARKIERUNG " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="TFTEXT" expression="row1.TFTEXT " type="id_String" nullable="true"/>
+        <mapperTableEntries name="TFTEXT2" expression="row1.TFTEXT2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="YBELEG" expression="row1.YBELEG " type="id_String" nullable="true"/>
+        <mapperTableEntries name="YBELEGID" expression="row1.YBELEGID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="YBUDAT" expression="row1.YBUDAT " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="YREOM" expression="row1.YREOM " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="YREBUDAT" expression="row1.YREBUDAT " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="YLSBUDAT" expression="row1.YLSBUDAT " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="YLIDAT" expression="row1.YLIDAT " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="YWUNSCHTERM" expression="row1.YWUNSCHTERM " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="YABVOM" expression="row1.YABVOM " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="YTBESTDATUM" expression="row1.YTBESTDATUM " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="YANVOM" expression="row1.YANVOM " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="YTANFDATUM" expression="row1.YTANFDATUM " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="YLIEFERTERMIN" expression="row1.YLIEFERTERMIN " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="YVERW" expression="row1.YVERW " type="id_String" nullable="true"/>
+        <mapperTableEntries name="YKUNDENR" expression="row1.YKUNDENR " type="id_String" nullable="true"/>
+        <mapperTableEntries name="YKUNDE2" expression="row1.YKUNDE2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="YPLZ" expression="row1.YPLZ " type="id_String" nullable="true"/>
+        <mapperTableEntries name="YORT" expression="row1.YORT " type="id_String" nullable="true"/>
+        <mapperTableEntries name="YTSTAAT" expression="row1.YTSTAAT " type="id_String" nullable="true"/>
+        <mapperTableEntries name="YAUART" expression="row1.YAUART " type="id_String" nullable="true"/>
+        <mapperTableEntries name="YBEREICH" expression="row1.YBEREICH " type="id_String" nullable="true"/>
+        <mapperTableEntries name="YMASCHART" expression="row1.YMASCHART " type="id_String" nullable="true"/>
+        <mapperTableEntries name="YLINIE" expression="row1.YLINIE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="YPRODLINIE" expression="row1.YPRODLINIE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="YVERTRETER" expression="row1.YVERTRETER " type="id_String" nullable="true"/>
+        <mapperTableEntries name="YLAND" expression="row1.YLAND " type="id_String" nullable="true"/>
+        <mapperTableEntries name="YPWERT" expression="row1.YPWERT " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YMASCHINE" expression="row1.YMASCHINE " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YFORMATPOS" expression="row1.YFORMATPOS " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YMONTAGEKOST" expression="row1.YMONTAGEKOST " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YERSATZPOS" expression="row1.YERSATZPOS " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YVERPACKUNG" expression="row1.YVERPACKUNG " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YTSONSTIGES" expression="row1.YTSONSTIGES " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YNACHLASS" expression="row1.YNACHLASS " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YSCHONUMSATZ" expression="row1.YSCHONUMSATZ " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YSCHONUMSATZMA" expression="row1.YSCHONUMSATZMA " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YSCHONUMSATZFO" expression="row1.YSCHONUMSATZFO " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YSCHONUMSATZSE" expression="row1.YSCHONUMSATZSE " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YSCHONUMSATZER" expression="row1.YSCHONUMSATZER " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YSCHONUMSATZUMB" expression="row1.YSCHONUMSATZUMB " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YSCHONUMSATZVERS" expression="row1.YSCHONUMSATZVERS " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YSCHONUMSATZSONST" expression="row1.YSCHONUMSATZSONST " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YSCHONUMSATZRAB" expression="row1.YSCHONUMSATZRAB " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YNOCHOFFEN" expression="row1.YNOCHOFFEN " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YNOCHOFFENMA" expression="row1.YNOCHOFFENMA " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YNOCHOFFENFO" expression="row1.YNOCHOFFENFO " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YNOCHOFFENSE" expression="row1.YNOCHOFFENSE " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YNOCHOFFENER" expression="row1.YNOCHOFFENER " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YNOCHOFFENUMB" expression="row1.YNOCHOFFENUMB " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YNOCHOFFENVERS" expression="row1.YNOCHOFFENVERS " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YNOCHOFFENSONST" expression="row1.YNOCHOFFENSONST " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YNOCHOFFENRAB" expression="row1.YNOCHOFFENRAB " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YVKPOSID" expression="row1.YVKPOSID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="YRGLISTE" expression="row1.YRGLISTE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="YTSAVEDATE" expression="row1.YTSAVEDATE " type="id_Date" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="YTUMBAU" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="SN" type="id_String"/>
+        <mapperTableEntries name="NUMMER" type="id_String"/>
+        <mapperTableEntries name="VERSIONN" type="id_String"/>
+        <mapperTableEntries name="MANDKENN" type="id_BigDecimal"/>
+        <mapperTableEntries name="DELROW" type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="GRUPPE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DNR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DATEIARCHIVIEREN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VERSIONIERENICHT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VERSIONIERTERSATZ" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VERSIONERSTELLEN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VERSIONRELEVANT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ABLAGEN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ABLAGEF" type="id_String" nullable="true"/>
+        <mapperTableEntries name="TYP" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="NUM25" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NUMMERB" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SUCH25" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SUCH" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SUCHB" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME3" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME4" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME5" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME6" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME7" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME8" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME9" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME10" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME11" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME12" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME13" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME14" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME15" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME16" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME17" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME18" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME19" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME20" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME21" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME22" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME23" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME24" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME25" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME26" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME27" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME28" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME29" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME30" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME31" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAMEBSPR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SUCHERW" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAMEKSPR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAMEASPR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="STAND" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ERFASS" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ZEICH" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZEICHEN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MYINDEX" type="id_String" nullable="true"/>
+        <mapperTableEntries name="URMAND" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GUID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PAKET" type="id_String" nullable="true"/>
+        <mapperTableEntries name="STNAME" type="id_String" nullable="true"/>
+        <mapperTableEntries name="TERM" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="SUBEG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ERFDAT" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="FTEXT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FTEXT2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="YAUEINGANG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="YUMSATZ" type="id_String" nullable="true"/>
+        <mapperTableEntries name="YAUBESTAND" type="id_String" nullable="true"/>
+        <mapperTableEntries name="YANGEBOT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="YVON" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="YBIS" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="YVONBELEG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="YBISBELEG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="YNURKUNDE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="YNURVERTRETER" type="id_String" nullable="true"/>
+        <mapperTableEntries name="YNURBETREUER" type="id_String" nullable="true"/>
+        <mapperTableEntries name="YAUSWAEHR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="YKSTAAT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="YKBEREICH" type="id_String" nullable="true"/>
+        <mapperTableEntries name="YKAUART" type="id_String" nullable="true"/>
+        <mapperTableEntries name="YAUSUM" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YUMSATZSUMME" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YOFFENAUSUMME" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YSUMMASCH" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YSUMFORMAT" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YSUMSERVICE" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YSUMERSATZ" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YUMBAU" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YVERSAND" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YSONSTIGES" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YRABATT" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YUMSATZMASCH" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YUMSATZFORMAT" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YUMSATZSERVICE" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YUMSATZERSATZ" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YUMSATZUMBAU" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YUMSATZVERSAND" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YUMSATZSONSTIGES" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YUMSATZRABATT" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YOFFENMASCH" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YOFFENFORMAT" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YOFFENSERVICE" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YOFFENERSATZ" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YOFFENUMBAU" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YOFFENVERSAND" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YOFFENSONSTIGES" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YOFFENRABATT" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YSAVEDATE" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="YSAVETS" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="YDAY" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YMONTH" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YYEAR" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YREAUSGANG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="TABNR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZN" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="MARKIERT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MARKIERUNG" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="TFTEXT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="TFTEXT2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="YBELEG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="YBELEGID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="YBUDAT" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="YREOM" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="YREBUDAT" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="YLSBUDAT" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="YLIDAT" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="YWUNSCHTERM" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="YABVOM" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="YTBESTDATUM" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="YANVOM" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="YTANFDATUM" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="YLIEFERTERMIN" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="YVERW" type="id_String" nullable="true"/>
+        <mapperTableEntries name="YKUNDENR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="YKUNDE2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="YPLZ" type="id_String" nullable="true"/>
+        <mapperTableEntries name="YORT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="YTSTAAT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="YAUART" type="id_String" nullable="true"/>
+        <mapperTableEntries name="YBEREICH" type="id_String" nullable="true"/>
+        <mapperTableEntries name="YMASCHART" type="id_String" nullable="true"/>
+        <mapperTableEntries name="YLINIE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="YPRODLINIE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="YVERTRETER" type="id_String" nullable="true"/>
+        <mapperTableEntries name="YLAND" type="id_String" nullable="true"/>
+        <mapperTableEntries name="YPWERT" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YMASCHINE" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YFORMATPOS" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YMONTAGEKOST" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YERSATZPOS" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YVERPACKUNG" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YTSONSTIGES" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YNACHLASS" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YSCHONUMSATZ" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YSCHONUMSATZMA" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YSCHONUMSATZFO" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YSCHONUMSATZSE" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YSCHONUMSATZER" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YSCHONUMSATZUMB" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YSCHONUMSATZVERS" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YSCHONUMSATZSONST" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YSCHONUMSATZRAB" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YNOCHOFFEN" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YNOCHOFFENMA" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YNOCHOFFENFO" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YNOCHOFFENSE" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YNOCHOFFENER" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YNOCHOFFENUMB" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YNOCHOFFENVERS" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YNOCHOFFENSONST" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YNOCHOFFENRAB" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="YVKPOSID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="YRGLISTE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="YTSAVEDATE" type="id_Date" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tMSSqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

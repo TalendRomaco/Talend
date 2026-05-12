@@ -1,0 +1,88 @@
+package routines;
+
+
+public class RomacoConversion {
+
+    public static double getSapValue(String value){
+    	double sapval;
+    	
+    	if (value == "") return 0.0;
+    	
+    	if (value.contains("-"))
+    	{
+    		String sNewValue;
+    		sNewValue = value.replace("-", "");
+    		if (sNewValue == "") return 0.0;
+//    		if( !isNum(sNewValue) ) return 0.0;
+            try {
+            	sapval = ParseDouble(sNewValue) * -1.0;
+            }catch (NumberFormatException e) {
+            	sapval = -2E-19;   // indicator for conversion error
+            }
+    	}
+    	else
+    	{
+//    		if( !isNum(value) ) return 0.0;
+    		
+            try {
+            	sapval = ParseDouble(value);
+            }catch (NumberFormatException e) {
+            	sapval = -1E-19;   // indicator for conversion error
+            }
+    	}
+    	
+    	return sapval;
+    		
+    }
+    
+    public static double ParseDouble(String strNumber) {
+    	   if (strNumber != null && strNumber.length() > 0) {
+    	       try {
+    	          return Double.parseDouble(strNumber);
+    	       } catch(Exception e) {
+    	          return -1E-19;   // or some value to mark this field is wrong. or make a function validates field first ...
+    	       }
+    	   }
+    	   else return 0.0;
+    	}
+    
+    public static boolean isNum(String strNum) {
+        boolean ret = true;
+        try {
+            Double.parseDouble(strNum);
+        }catch (NumberFormatException e) {
+            ret = false;
+        }
+        return ret;
+    }
+        
+    public static Double getSapValueNull(String value){
+
+    	if (value == "") return null;
+    	
+    	return getSapValue(value);    		
+    }
+    
+
+    
+    public static int getIntValue(String value){
+    	
+    	int sapval;
+    	
+    	try{
+    		sapval = Integer.valueOf(value);
+    	} catch (Exception e){
+    		sapval = -1;
+    	}
+    	
+    	return sapval;
+    }
+    
+    public static int getIntValue0(String value){
+
+    	if (value == "") return 0;
+    	
+    	return getIntValue(value);    		
+    }
+ 
+}

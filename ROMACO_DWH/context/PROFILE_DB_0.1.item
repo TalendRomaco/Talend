@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_3ybnQLe_Ee-mcoYSjQV49w" confirmationNeeded="false" hide="false" name="PROD">
+  <contextParameter xmi:id="_3ybnQbe_Ee-mcoYSjQV49w" comment="" name="PROFILE_DB_SCHEMA" prompt="PROFILE_DB_SCHEMA?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dbo"/>
+  <contextParameter xmi:id="_3ybnQre_Ee-mcoYSjQV49w" comment="" name="PROFILE_DB_PASSWORD" prompt="PROFILE_DB_PASSWORD?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:zw/WAOKNrT28aqmya2oLLu9trsOFR0aW1cuikfYELWAuU2GYgP4DbFMbkvDutg=="/>
+  <contextParameter xmi:id="_3ybnQ7e_Ee-mcoYSjQV49w" comment="" name="PROFILE_DB_DATABASE" prompt="PROFILE_DB_DATABASE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="SAP_EXPORT"/>
+  <contextParameter xmi:id="_3ybnRLe_Ee-mcoYSjQV49w" comment="" name="PROFILE_DB_PORT" prompt="PROFILE_DB_PORT?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_3ybnRbe_Ee-mcoYSjQV49w" comment="" name="PROFILE_DB_SERVER" prompt="PROFILE_DB_SERVER?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="KASV-SQL01"/>
+  <contextParameter xmi:id="_3ybnRre_Ee-mcoYSjQV49w" comment="" name="PROFILE_DB_LOGIN" prompt="PROFILE_DB_LOGIN?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="PFDBAdm"/>
+  <contextParameter xmi:id="_3ybnR7e_Ee-mcoYSjQV49w" comment="" name="PROFILE_DB_ADDITIONAL_PARAM" prompt="PROFILE_DB_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="instance=PFDB"/>
+</talendfile:ContextType>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_oHc0gO2-Ee6LTJLMTmvwFA" confirmationNeeded="false" hide="false" name="PROD">
+  <contextParameter xmi:id="_oHc0ge2-Ee6LTJLMTmvwFA" comment="" name="DATA_LINEAGE_PASSWORD" prompt="DATA_LINEAGE_PASSWORD?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:+jCscF3BFqBxWGbxphZL21HVVDFbgmRE4srHO2nY4tJKcIel4A=="/>
+  <contextParameter xmi:id="_oHc0gu2-Ee6LTJLMTmvwFA" comment="" name="DATA_LINEAGE_LOGIN" prompt="DATA_LINEAGE_LOGIN?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="adm_bi"/>
+  <contextParameter xmi:id="_oHc0g-2-Ee6LTJLMTmvwFA" comment="" name="DATA_LINEAGE_SERVER" prompt="DATA_LINEAGE_SERVER?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="KASV-SQL01"/>
+  <contextParameter xmi:id="_oHc0hO2-Ee6LTJLMTmvwFA" comment="" name="DATA_LINEAGE_SCHEMA" prompt="DATA_LINEAGE_SCHEMA?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DL"/>
+  <contextParameter xmi:id="_oHc0he2-Ee6LTJLMTmvwFA" comment="" name="DATA_LINEAGE_PORT" prompt="DATA_LINEAGE_PORT?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+  <contextParameter xmi:id="_oHc0hu2-Ee6LTJLMTmvwFA" comment="" name="DATA_LINEAGE_ADDITIONAL_PARAM" prompt="DATA_LINEAGE_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="instance=DWH;useNTLMv2=true;domain=ad42;Integrated Security=false"/>
+  <contextParameter xmi:id="_oHc0h-2-Ee6LTJLMTmvwFA" comment="" name="DATA_LINEAGE_DATABASE" prompt="DATA_LINEAGE_DATABASE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DWH"/>
+</talendfile:ContextType>

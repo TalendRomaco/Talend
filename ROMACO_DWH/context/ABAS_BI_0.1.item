@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_DJ-wADeoEe-rn-6NwZVhCA" confirmationNeeded="false" hide="false" name="PROD">
+  <contextParameter xmi:id="_DJ-wATeoEe-rn-6NwZVhCA" comment="" name="ABAS_BI_LOGIN" prompt="ABAS_BI_LOGIN?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="sa"/>
+  <contextParameter xmi:id="_DJ-wAjeoEe-rn-6NwZVhCA" comment="" name="ABAS_BI_DATABASE" prompt="ABAS_BI_DATABASE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="abasBI"/>
+  <contextParameter xmi:id="_DJ-wAzeoEe-rn-6NwZVhCA" comment="" name="ABAS_BI_ADDITIONAL_PARAM" prompt="ABAS_BI_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_DJ-wBDeoEe-rn-6NwZVhCA" comment="" name="ABAS_BI_PORT" prompt="ABAS_BI_PORT?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+  <contextParameter xmi:id="_DJ-wBTeoEe-rn-6NwZVhCA" comment="" name="ABAS_BI_SCHEMA" prompt="ABAS_BI_SCHEMA?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dbo"/>
+  <contextParameter xmi:id="_DJ-wBjeoEe-rn-6NwZVhCA" comment="" name="ABAS_BI_SERVER" prompt="ABAS_BI_SERVER?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="192.168.10.27"/>
+  <contextParameter xmi:id="_DJ-wBzeoEe-rn-6NwZVhCA" comment="" name="ABAS_BI_PASSWORD" prompt="ABAS_BI_PASSWORD?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:7yCPtVg7L1I6NxbwQArTedoFnHitUv1Is8z25LE/Iu8t6egTWg=="/>
+</talendfile:ContextType>

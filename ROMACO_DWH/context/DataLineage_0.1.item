@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_i5HxkB8BEe621KslHQMksA" confirmationNeeded="false" name="Prod">
+  <contextParameter xmi:id="_i5HxkR8BEe621KslHQMksA" comment="" name="DWH_Password" prompt="DWH_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:qteZcUiBxiV8kTCdwuvpnQGVMFS0XJr/HyuIeC7DFj5z1WrSEg=="/>
+  <contextParameter xmi:id="_i5Hxkh8BEe621KslHQMksA" comment="" name="DWH_Port" prompt="DWH_Port?" promptNeeded="false" type="id_String" value="1433"/>
+  <contextParameter xmi:id="_i5Hxkx8BEe621KslHQMksA" comment="" name="DWH_Login" prompt="DWH_Login?" promptNeeded="false" type="id_String" value="sa"/>
+  <contextParameter xmi:id="_i5HxlB8BEe621KslHQMksA" comment="" name="DWH_Schema" prompt="DWH_Schema?" promptNeeded="false" type="id_String" value="dl"/>
+  <contextParameter xmi:id="_i5HxlR8BEe621KslHQMksA" comment="" name="DWH_Database" prompt="DWH_Database?" promptNeeded="false" type="id_String" value="msdb"/>
+  <contextParameter xmi:id="_i5Hxlh8BEe621KslHQMksA" comment="" name="DWH_AdditionalParams" prompt="DWH_AdditionalParams?" promptNeeded="false" type="id_String" value="instance=mssql_Dwh"/>
+  <contextParameter xmi:id="_i5Hxlx8BEe621KslHQMksA" comment="" name="DWH_Server" prompt="DWH_Server?" promptNeeded="false" type="id_String" value="KASV-ABAS-BI"/>
+</talendfile:ContextType>

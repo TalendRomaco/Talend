@@ -1,0 +1,29 @@
+{
+  "itemId" : "_fD3-kH9YEeyZfMeOF10yTw",
+  "contextList" : [ {
+    "contextName" : "Prod",
+    "repoId" : "_nZfJMH9ZEeyZfMeOF10yTw",
+    "parameterList" : [ {
+      "id" : "_d14T8CpMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_SERVER"
+    }, {
+      "id" : "_d14T8SpMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_DATABASE"
+    }, {
+      "id" : "_d14T8ipMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_ADDITIONAL_PARAM"
+    }, {
+      "id" : "_d14T8ypMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_PASSWORD"
+    }, {
+      "id" : "_d14T9CpMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_LOGIN"
+    }, {
+      "id" : "_d14T9SpMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_SCHEMA"
+    }, {
+      "id" : "_d14T9ipMEe-nmpxPcdNtAQ",
+      "name" : "ZEUSX_PORT"
+    } ]
+  } ]
+}
