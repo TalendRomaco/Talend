@@ -9244,6 +9244,10 @@
     "version" : "Latest",
     "type" : "job"
   }, {
+    "id" : "ROMACO_DWH:_rlxZwFkREfG2XMgT2rZKoA",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
     "id" : "ROMACO_DWH:_ueh7sAiMEfCT7pmeL36ppw",
     "version" : "Latest",
     "type" : "job"
@@ -9290,6 +9294,49 @@
     "id" : "_eRpNoOjiEeiPup4IvSqYiw - f_time_abas_zeus_",
     "version" : "Latest",
     "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_rlxZwFkREfG2XMgT2rZKoA",
+    "version" : "1.0",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_NMth0O29Ee6LTJLMTmvwFA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_hRKSIO2-Ee6LTJLMTmvwFA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_lzkJgDIeEe-epOz61AJceA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_olXeYBwHEe-jyKEeUw-1JQ",
+    "version" : "Latest",
+    "type" : "joblet"
+  }, {
+    "id" : "_vFNsEBzKEe-jyKEeUw-1JQ",
+    "version" : "Latest",
+    "type" : "joblet"
+  }, {
+    "id" : "_FOgfsO2-Ee6LTJLMTmvwFA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "DataLoading",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Utils",
+    "version" : "Latest",
+    "type" : "routine"
   } ]
 }, {
   "baseItem" : {

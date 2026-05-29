@@ -15,7 +15,7 @@
     <contextParameter comment="" name="DWH_PRESENTATION_SCHEMA" prompt="DWH_PRESENTATION_SCHEMA?" promptNeeded="false" repositoryContextId="_hRKSIO2-Ee6LTJLMTmvwFA" type="id_String" value="PRS" internalId="_snq4VBzaEe-jyKEeUw-1JQ"/>
     <contextParameter comment="" name="DWH_PRESENTATION_PASSWORD" prompt="DWH_PRESENTATION_PASSWORD?" promptNeeded="false" repositoryContextId="_hRKSIO2-Ee6LTJLMTmvwFA" type="id_Password" value="enc:system.encryption.key.v1:WWWxLUEbFZxLXHASsG+dSjFqh+i7BBM9gJELr9kw0VtWNMJa0A==" internalId="_snq4VRzaEe-jyKEeUw-1JQ"/>
     <contextParameter comment="" name="DWH_PRESENTATION_LOGIN" prompt="DWH_PRESENTATION_LOGIN?" promptNeeded="false" repositoryContextId="_hRKSIO2-Ee6LTJLMTmvwFA" type="id_String" value="adm_bi" internalId="_snq4VhzaEe-jyKEeUw-1JQ"/>
-    <contextParameter comment="" name="TARGET_TABLE" prompt="TARGET_TABLE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="F_QUOTE" internalId="_snq4VxzaEe-jyKEeUw-1JQ"/>
+    <contextParameter comment="" name="TARGET_TABLE" prompt="TARGET_TABLE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="F_INNOSOFT_QUOTE" internalId="_snq4VxzaEe-jyKEeUw-1JQ"/>
     <contextParameter comment="" name="DWH_ADMIN_ADDITIONAL_PARAM" prompt="DWH_ADMIN_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="_lzkJgDIeEe-epOz61AJceA" type="id_String" value="instance=DWH;useNTLMv2=true;domain=ad42;Integrated Security=false" internalId="_4VZF8DIeEe-epOz61AJceA"/>
     <contextParameter comment="" name="DWH_ADMIN_SERVER" prompt="DWH_ADMIN_SERVER?" promptNeeded="false" repositoryContextId="_lzkJgDIeEe-epOz61AJceA" type="id_String" value="KASV-SQL01" internalId="_4VZF8TIeEe-epOz61AJceA"/>
     <contextParameter comment="" name="DWH_ADMIN_PORT" prompt="DWH_ADMIN_PORT?" promptNeeded="false" repositoryContextId="_lzkJgDIeEe-epOz61AJceA" type="id_String" value="1433" internalId="_4VZF8jIeEe-epOz61AJceA"/>
@@ -29,7 +29,7 @@
     <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms256M&quot;,&quot;-Xmx2048M&quot;]}" show="false"/>
     <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="true" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="280" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="320" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -69,7 +69,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:I3AvJwJS/iYkabNb68DShviEv52hAN9HYOr/Q175" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:AE2ATkabfkPhwdmcu3rsWv9NfaWnLmXKWmRAoGF6" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -104,7 +104,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ECV0crzWlRULGI+MkbBNqhhyGC8pXeLlQgViYDPh" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:2QgiKo8ttxJWQj+JGh0b2jaotF8dEHRuEZB0yDbM" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -123,17 +123,7 @@
     <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
-    <routinesParameter id="_fB5FwISOEeayvK0D79Gaqg" name="DataOperation"/>
-    <routinesParameter id="_fC8OoISOEeayvK0D79Gaqg" name="Mathematical"/>
-    <routinesParameter id="_fDK4IISOEeayvK0D79Gaqg" name="Numeric"/>
-    <routinesParameter id="_fDaIsISOEeayvK0D79Gaqg" name="Relational"/>
-    <routinesParameter id="_fDnkEISOEeayvK0D79Gaqg" name="StringHandling"/>
-    <routinesParameter id="_fDtqsISOEeayvK0D79Gaqg" name="TalendDataGenerator"/>
-    <routinesParameter id="_fD3bsISOEeayvK0D79Gaqg" name="TalendDate"/>
-    <routinesParameter id="_fD-wcISOEeayvK0D79Gaqg" name="TalendString"/>
     <routinesParameter id="_yUa20ITEEea1D7eo1TFBjg" name="Utils"/>
-    <routinesParameter id="_qSCiIA9NEe2shNL2goCYFg" name="TalendStringUtil"/>
-    <routinesParameter id="__wkvQ-hKEe6bjtl1OUplwg" name="SQLike"/>
   </parameters>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="120" posY="-240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
@@ -1399,7 +1389,7 @@
       <column comment="" key="false" length="20" name="ANGIND_GROUPPROJECT_NUMBER" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="year" expression="angind.ANGIND_QuoteInquiryDate != null ? TalendDate.formatDate(&quot;yyyy&quot;,angind.ANGIND_QuoteInquiryDate) : null " type="id_String"/>
         <mapperTableEntries name="month" expression="angind.ANGIND_QuoteInquiryDate != null ? TalendDate.formatDate(&quot;MM&quot;,angind.ANGIND_QuoteInquiryDate) : null " type="id_String"/>
@@ -1893,7 +1883,7 @@
       <column comment="" key="false" length="20" name="ANGIND_GROUPPROJECT_NUMBER" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out3">
         <mapperTableEntries name="ANGNR" expression="row3.ANGNR " type="id_String"/>
@@ -2763,7 +2753,7 @@
       <column comment="" key="false" length="20" name="ANGIND_GROUPPROJECT_NUMBER" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out5">
         <mapperTableEntries name="Business_Unit" expression="row6.OBERGRUPPE != null ? row6.OBERGRUPPE : &quot;None&quot;" type="id_String" nullable="true"/>
@@ -3698,7 +3688,7 @@
       <column comment="" key="false" length="20" name="ANGIND_GROUPPROJECT_NUMBER" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="Quote_Send_Date" expression="out6.Quote_Send_Date!= null ? out6.Quote_Send_Date: out6.CreationDate " type="id_Date"/>
         <mapperTableEntries name="Status" expression="out6.Status!= null ? out6.Status.toLowerCase(): null" type="id_String"/>
@@ -5734,7 +5724,7 @@
       <column comment="" key="false" length="20" name="ANGIND_GROUPPROJECT_NUMBER" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="RSD" expression="//Verwende für abgeschlossene Quotes Date of Completion  &#xD;&#xA;out123.Date_Completion != null ?&#xD;&#xA;(row8.VALID_FROM!= null &amp;&amp; row8.VALID_FROM.compareTo(out123.Date_Completion)!=1 &amp;&amp; (row8.VALID_TO == null || row8.VALID_TO.compareTo(out123.Date_Completion)!=-1)? &#xD;&#xA;&#x9;row8.RSD:&#xD;&#xA;&#x9;null):&#xD;&#xA;//Nutze aktuelles Datum für Zuweisung offener Quotes&#xD;&#xA;(row8.VALID_FROM!= null &amp;&amp; row8.VALID_FROM.compareTo(TalendDate.getCurrentDate())!=1 &amp;&amp; (row8.VALID_TO == null || row8.VALID_TO.compareTo(TalendDate.getCurrentDate())!=-1)? &#xD;&#xA;row8.RSD:&#xD;&#xA;null)" type="id_String" nullable="true"/>
         <mapperTableEntries name="SSC" expression="//Verwende für abgeschlossene Quotes Date of Completion  &#xD;&#xA;out123.Date_Completion != null ?&#xD;&#xA;(row8.VALID_FROM!= null &amp;&amp; row8.VALID_FROM.compareTo(out123.Date_Completion)!=1 &amp;&amp;&#xD;&#xA;(row8.VALID_TO == null || row8.VALID_TO.compareTo(out123.Date_Completion)!=-1)? &#xD;&#xA;row8.SSC:&#xD;&#xA;null):&#xD;&#xA;//Nutze aktuelles Datum für Zuweisung offener Quotes&#xD;&#xA;(row8.VALID_FROM!= null &amp;&amp; row8.VALID_FROM.compareTo(TalendDate.getCurrentDate())!=1 &amp;&amp;&#xD;&#xA;(row8.VALID_TO == null || row8.VALID_TO.compareTo(TalendDate.getCurrentDate())!=-1)? &#xD;&#xA;row8.SSC:&#xD;&#xA;null)" type="id_String" nullable="true"/>
@@ -7931,7 +7921,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="filtered_quote_name" expressionFilter="!(row17.Quote.toLowerCase().startsWith(&quot;op&quot;) || row17.Quote.toLowerCase().startsWith(&quot;oc&quot;) )" activateExpressionFilter="true">
         <mapperTableEntries name="Business_Unit" expression="row17.Business_Unit" type="id_String" nullable="true"/>
@@ -11310,7 +11300,7 @@
       <column comment="" key="false" length="100" name="COUNTRY_RSD_ORIGINAL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="filter_status" expressionFilter="row10.ANGKOPFZ_STATUS.equals(&quot;A&quot;)&#xD;&#xA;" activateExpressionFilter="true" activateCondensedTool="true">
         <mapperTableEntries name="Business_Unit" expression="row10.Business_Unit" type="id_String" nullable="true"/>
@@ -12872,7 +12862,7 @@
       <column comment="" key="false" length="100" name="RSD_SSC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="row1" activateExpressionFilter="true">
         <mapperTableEntries name="Country" expression="row12.Country" type="id_String" nullable="true"/>
@@ -13093,7 +13083,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="row13" activateExpressionFilter="true">
         <mapperTableEntries name="Country" expression="row1.Country" type="id_String" nullable="true"/>
@@ -13196,7 +13186,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="row15" expressionFilter="row13.YearToDate  || row13.LastYearToDate  || row13.LastYearTotal  || row13.YearToPrevMonth  || row13.LastYearToPrevMonth  ||&#xD;&#xA;row13.YearToDate_Orig || row13.LastYearToDate_Orig || row13.LastYearTotal_Orig || row13.YearToPrevMonth_Orig || row13.LastYearToPrevMonth_Orig" activateExpressionFilter="true">
         <mapperTableEntries name="Country" expression="row13.Country" type="id_String" nullable="true"/>

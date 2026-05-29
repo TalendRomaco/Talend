@@ -69,7 +69,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:I3AvJwJS/iYkabNb68DShviEv52hAN9HYOr/Q175" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:AE2ATkabfkPhwdmcu3rsWv9NfaWnLmXKWmRAoGF6" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -104,7 +104,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ECV0crzWlRULGI+MkbBNqhhyGC8pXeLlQgViYDPh" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:2QgiKo8ttxJWQj+JGh0b2jaotF8dEHRuEZB0yDbM" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -123,18 +123,8 @@
     <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
-    <routinesParameter id="_fB5FwISOEeayvK0D79Gaqg" name="DataOperation"/>
-    <routinesParameter id="_fC8OoISOEeayvK0D79Gaqg" name="Mathematical"/>
-    <routinesParameter id="_fDK4IISOEeayvK0D79Gaqg" name="Numeric"/>
-    <routinesParameter id="_fDaIsISOEeayvK0D79Gaqg" name="Relational"/>
-    <routinesParameter id="_fDnkEISOEeayvK0D79Gaqg" name="StringHandling"/>
-    <routinesParameter id="_fDtqsISOEeayvK0D79Gaqg" name="TalendDataGenerator"/>
-    <routinesParameter id="_fD3bsISOEeayvK0D79Gaqg" name="TalendDate"/>
-    <routinesParameter id="_fD-wcISOEeayvK0D79Gaqg" name="TalendString"/>
     <routinesParameter id="_EeqWMLJvEeeZif3o8SvhfA" name="DataLoading"/>
     <routinesParameter id="_yUa20ITEEea1D7eo1TFBjg" name="Utils"/>
-    <routinesParameter id="_qSCiIA9NEe2shNL2goCYFg" name="TalendStringUtil"/>
-    <routinesParameter id="__wkvQ-hKEe6bjtl1OUplwg" name="SQLike"/>
   </parameters>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-288" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_1" show="false"/>
@@ -155,7 +145,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xD;&#xA;SELECT MARA.matnr AS MATERIAL_ID,&#xD;&#xA;       MARC.werks AS PLANT_ID,&#xD;&#xA;       min(MARA.meins) AS UNIT,&#xD;&#xA;       min(MARC.ekgrp) AS PURCHASING_GROUP,&#xD;&#xA;       min(MARC.stawn) AS COMMODITY_CODE,&#xD;&#xA;       min(MBEW.verpr) AS PRICE_MOVING_AVERAGE,&#xD;&#xA;       min(MBEW.stprs) AS PRICE_MM03,&#xD;&#xA;       min(MBEW.peinh) AS PRICE_UNIT,&#xD;&#xA;       min(MBEW.laepr) AS LAST_PRICE_MODIFICATION,&#xD;&#xA;       min(case when cabn.atnam is not null then AUSP.atwrt else null end) AS MATERIAL_CHARACTERISTIC &#xD;&#xA;FROM   stg.s_sap_mara MARA&#xD;&#xA;       INNER JOIN stg.s_sap_marc MARC&#xD;&#xA;               ON MARA.matnr = MARC.matnr&#xD;&#xA;       LEFT JOIN stg.s_sap_mbew MBEW&#xD;&#xA;               ON MARC.matnr = MBEW.matnr&#xD;&#xA;                  AND MARC.werks = MBEW.bwkey&#xD;&#xA;       LEFT JOIN stg.s_sap_ausp AUSP&#xD;&#xA;               ON MARA.matnr = AUSP.objek&#xD;&#xA;&#xD;&#xA;&#x9;   LEFT JOIN stg.s_sap_cabn CABN&#xD;&#xA;               ON CABN.atinn = AUSP.atinn&#xD;&#xA;                  AND CABN.atnam LIKE 'P_KLASSE_SIEBLER'&#xD;&#xA;&#xD;&#xA;GROUP BY MARA.matnr,&#xD;&#xA;       MARC.werks&#xD;&#xA;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xD;&#xA;SELECT MARA.matnr AS MATERIAL_ID,&#xD;&#xA;       MARC.werks AS PLANT_ID,&#xD;&#xA;       min(MARA.meins) AS UNIT,&#xD;&#xA;       min(MARC.ekgrp) AS PURCHASING_GROUP,&#xD;&#xA;       min(MARC.stawn) AS COMMODITY_CODE,&#xD;&#xA;       min(MARC.herkl) as HOME_COUNTRY,&#xD;&#xA;       min(MBEW.verpr) AS PRICE_MOVING_AVERAGE,&#xD;&#xA;       min(MBEW.stprs) AS PRICE_MM03,&#xD;&#xA;       min(MBEW.peinh) AS PRICE_UNIT,&#xD;&#xA;       min(MBEW.laepr) AS LAST_PRICE_MODIFICATION,&#xD;&#xA;       min(case when cabn.atnam is not null then AUSP.atwrt else null end) AS MATERIAL_CHARACTERISTIC&#xD;&#xA;FROM   stg.s_sap_mara MARA&#xD;&#xA;       INNER JOIN stg.s_sap_marc MARC&#xD;&#xA;               ON MARA.matnr = MARC.matnr&#xD;&#xA;       LEFT JOIN stg.s_sap_mbew MBEW&#xD;&#xA;               ON MARC.matnr = MBEW.matnr&#xD;&#xA;                  AND MARC.werks = MBEW.bwkey&#xD;&#xA;       LEFT JOIN stg.s_sap_ausp AUSP&#xD;&#xA;               ON MARA.matnr = AUSP.objek&#xD;&#xA;&#xD;&#xA;&#x9;   LEFT JOIN stg.s_sap_cabn CABN&#xD;&#xA;               ON CABN.atinn = AUSP.atinn&#xD;&#xA;                  AND CABN.atnam LIKE 'P_KLASSE_SIEBLER'&#xD;&#xA;&#xD;&#xA;GROUP BY MARA.matnr,&#xD;&#xA;       MARC.werks&#xD;&#xA;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -179,6 +169,8 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="COMMODITY_CODE"/>
       <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HOME_COUNTRY"/>
+      <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="PRICE_MOVING_AVERAGE"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="PRICE_MM03"/>
@@ -200,6 +192,7 @@
       <column comment="" key="false" length="3" name="UNIT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="PURCHASING_GROUP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="COMMODITY_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="HOME_COUNTRY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="20" name="PRICE_MOVING_AVERAGE" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="20" name="PRICE_MM03" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="11" name="PRICE_UNIT" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
@@ -231,6 +224,7 @@
       <column comment="" key="false" length="3" name="UNIT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="PURCHASING_GROUP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="COMMODITY_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="HOME_COUNTRY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="20" name="PRICE_MOVING_AVERAGE" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="20" name="PRICE_MM03" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="11" name="PRICE_UNIT" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
@@ -248,6 +242,7 @@
         <mapperTableEntries name="UNIT" expression="row0.UNIT " type="id_String" nullable="true"/>
         <mapperTableEntries name="PURCHASING_GROUP" expression="row0.PURCHASING_GROUP " type="id_String" nullable="true"/>
         <mapperTableEntries name="COMMODITY_CODE" expression="row0.COMMODITY_CODE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="HOME_COUNTRY" expression="row0.HOME_COUNTRY " type="id_String" nullable="true"/>
         <mapperTableEntries name="PRICE_MOVING_AVERAGE" expression="row0.PRICE_MOVING_AVERAGE " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="PRICE_MM03" expression="row0.PRICE_MM03 " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="PRICE_UNIT" expression="row0.PRICE_UNIT " type="id_BigDecimal" nullable="true"/>
@@ -260,6 +255,7 @@
         <mapperTableEntries name="UNIT" type="id_String" nullable="true"/>
         <mapperTableEntries name="PURCHASING_GROUP" type="id_String" nullable="true"/>
         <mapperTableEntries name="COMMODITY_CODE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="HOME_COUNTRY" type="id_String" nullable="true"/>
         <mapperTableEntries name="PRICE_MOVING_AVERAGE" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="PRICE_MM03" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="PRICE_UNIT" type="id_BigDecimal" nullable="true"/>
@@ -337,6 +333,8 @@
       <elementValue elementRef="INPUT_COLUMN" value="PURCHASING_GROUP"/>
       <elementValue elementRef="OUTPUT_COLUMN" value="COMMODITY_CODE"/>
       <elementValue elementRef="INPUT_COLUMN" value="COMMODITY_CODE"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="HOME_COUNTRY"/>
+      <elementValue elementRef="INPUT_COLUMN" value="HOME_COUNTRY"/>
       <elementValue elementRef="OUTPUT_COLUMN" value="PRICE_MOVING_AVERAGE"/>
       <elementValue elementRef="INPUT_COLUMN" value="PRICE_MOVING_AVERAGE"/>
       <elementValue elementRef="OUTPUT_COLUMN" value="PRICE_MM03"/>
@@ -372,6 +370,7 @@
       <column comment="" key="false" length="3" name="UNIT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="PURCHASING_GROUP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="COMMODITY_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="HOME_COUNTRY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="20" name="PRICE_MOVING_AVERAGE" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="20" name="PRICE_MM03" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="11" name="PRICE_UNIT" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
@@ -403,6 +402,7 @@
       <column comment="" key="false" length="3" name="UNIT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="PURCHASING_GROUP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="COMMODITY_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="HOME_COUNTRY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="20" name="PRICE_MOVING_AVERAGE" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="20" name="PRICE_MM03" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="11" name="PRICE_UNIT" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
@@ -422,6 +422,7 @@
         <mapperTableEntries name="UNIT" expression="row1.UNIT" type="id_String" nullable="true"/>
         <mapperTableEntries name="PURCHASING_GROUP" expression="row1.PURCHASING_GROUP" type="id_String" nullable="true"/>
         <mapperTableEntries name="COMMODITY_CODE" expression="row1.COMMODITY_CODE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="HOME_COUNTRY" expression="row1.HOME_COUNTRY " type="id_String" nullable="true"/>
         <mapperTableEntries name="PRICE_MOVING_AVERAGE" expression="row1.PRICE_MOVING_AVERAGE " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="PRICE_MM03" expression="row1.PRICE_MM03" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="PRICE_UNIT" expression="row1.PRICE_UNIT" type="id_BigDecimal" nullable="true"/>
@@ -436,6 +437,7 @@
         <mapperTableEntries name="UNIT" type="id_String" nullable="true"/>
         <mapperTableEntries name="PURCHASING_GROUP" type="id_String" nullable="true"/>
         <mapperTableEntries name="COMMODITY_CODE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="HOME_COUNTRY" type="id_String" nullable="true"/>
         <mapperTableEntries name="PRICE_MOVING_AVERAGE" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="PRICE_MM03" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="PRICE_UNIT" type="id_BigDecimal" nullable="true"/>
@@ -527,6 +529,11 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HOME_COUNTRY"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="PRICE_MOVING_AVERAGE"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
@@ -571,6 +578,7 @@
       <column comment="" key="false" length="3" name="UNIT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="PURCHASING_GROUP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="COMMODITY_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="HOME_COUNTRY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="20" name="PRICE_MOVING_AVERAGE" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="20" name="PRICE_MM03" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="11" name="PRICE_UNIT" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
@@ -587,6 +595,7 @@
       <column comment="" key="false" length="3" name="UNIT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="PURCHASING_GROUP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="COMMODITY_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="HOME_COUNTRY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="20" name="PRICE_MOVING_AVERAGE" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="20" name="PRICE_MM03" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="11" name="PRICE_UNIT" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
@@ -678,6 +687,9 @@
       <elementValue elementRef="TRACE_COLUMN" value="COMMODITY_CODE"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="HOME_COUNTRY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row0" show="false"/>
@@ -738,6 +750,9 @@
       <elementValue elementRef="TRACE_COLUMN" value="COMMODITY_CODE"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="HOME_COUNTRY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
@@ -757,6 +772,9 @@
       <elementValue elementRef="TRACE_COLUMN" value="COMMODITY_CODE"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="HOME_COUNTRY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
@@ -770,6 +788,9 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="COMMODITY_CODE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="HOME_COUNTRY"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
