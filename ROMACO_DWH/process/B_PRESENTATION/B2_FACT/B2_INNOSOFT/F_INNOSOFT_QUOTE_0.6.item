@@ -2753,7 +2753,7 @@
       <column comment="" key="false" length="20" name="ANGIND_GROUPPROJECT_NUMBER" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out5">
         <mapperTableEntries name="Business_Unit" expression="row6.OBERGRUPPE != null ? row6.OBERGRUPPE : &quot;None&quot;" type="id_String" nullable="true"/>
@@ -7921,7 +7921,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="filtered_quote_name" expressionFilter="!(row17.Quote.toLowerCase().startsWith(&quot;op&quot;) || row17.Quote.toLowerCase().startsWith(&quot;oc&quot;) )" activateExpressionFilter="true">
         <mapperTableEntries name="Business_Unit" expression="row17.Business_Unit" type="id_String" nullable="true"/>

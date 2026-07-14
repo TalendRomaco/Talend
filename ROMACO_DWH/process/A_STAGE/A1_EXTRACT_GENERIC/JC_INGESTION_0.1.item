@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="PROD" jobType="Standard">
   <context confirmationNeeded="false" hide="false" name="PROD">
-    <contextParameter comment="" name="LOAD_GROUP" prompt="LOAD_GROUP?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1" internalId="_slnHMAIdEe-hw6eqocfYFg"/>
+    <contextParameter comment="" name="LOAD_GROUP" prompt="LOAD_GROUP?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="2" internalId="_slnHMAIdEe-hw6eqocfYFg"/>
     <contextParameter comment="" name="DEBUG" prompt="DEBUG?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="true" internalId="_slnHMQIdEe-hw6eqocfYFg"/>
     <contextParameter comment="" name="DWH_STAGE_ADDITIONAL_PARAM" prompt="DWH_STAGE_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="instance=DWH;useNTLMv2=true;domain=ad42;integratedSecurity=false" internalId="_tRMsTRH_Ee-yhejSmGGM_Q"/>
     <contextParameter comment="" name="DWH_STAGE_DATABASE" prompt="DWH_STAGE_DATABASE?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="DWH" internalId="_tRMsThH_Ee-yhejSmGGM_Q"/>
@@ -175,7 +175,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:I3AvJwJS/iYkabNb68DShviEv52hAN9HYOr/Q175" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:AE2ATkabfkPhwdmcu3rsWv9NfaWnLmXKWmRAoGF6" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -210,7 +210,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ECV0crzWlRULGI+MkbBNqhhyGC8pXeLlQgViYDPh" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:2QgiKo8ttxJWQj+JGh0b2jaotF8dEHRuEZB0yDbM" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -229,16 +229,6 @@
     <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
-    <routinesParameter id="_ZoodYC6hEeiDovfuYKs14w" name="DataOperation"/>
-    <routinesParameter id="_ZoxnUC6hEeiDovfuYKs14w" name="Mathematical"/>
-    <routinesParameter id="_ZoxnVC6hEeiDovfuYKs14w" name="Numeric"/>
-    <routinesParameter id="_Zo7YUy6hEeiDovfuYKs14w" name="Relational"/>
-    <routinesParameter id="_Zn42gi6hEeiDovfuYKs14w" name="SQLike"/>
-    <routinesParameter id="_Zo7YVy6hEeiDovfuYKs14w" name="StringHandling"/>
-    <routinesParameter id="_Zo7YWy6hEeiDovfuYKs14w" name="TalendDataGenerator"/>
-    <routinesParameter id="_ZpFJUC6hEeiDovfuYKs14w" name="TalendDate"/>
-    <routinesParameter id="_ZpFJWC6hEeiDovfuYKs14w" name="TalendStringUtil"/>
-    <routinesParameter id="_ZpFJVC6hEeiDovfuYKs14w" name="TalendString"/>
     <routinesParameter id="_qRfuIMyDEeila_ysD5cASw" name="TtaSerialization"/>
     <routinesParameter id="_Kipm0FNuEeiyKbn4gXKnQQ" name="TtaQueryGenerator"/>
     <routinesParameter id="_QzBrMLplEeiJrIU6TgpIBQ" name="TtaRoutines"/>
@@ -262,7 +252,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT&#xD;&#xA;&#xD;&#xA;&#x9;NEXT VALUE FOR [ADM].[ADMIN_UNIQUE_JOB_ID] AS Job_Id,&#xD;&#xA;&#x9;Structure.Chore_Id,&#xD;&#xA;&#x9;SourceSystem.Talend_Staging_Node AS Chore_Talend_Node,&#xD;&#xA;&#x9;SourceSystem.Source_System_Name AS Source_System,&#xD;&#xA;&#x9;SourceSystem.Source_System_Type AS Source_Type,&#xD;&#xA;&#x9;Structure.Source_Structure,&#xD;&#xA;&#x9;Structure.Source_Fields,&#xD;&#xA;&#x9;Structure.Source_Param,&#xD;&#xA;&#x9;Structure.Source_Advanced_Param,&#xD;&#xA;&#x9;Structure.Delta_Method,&#xD;&#xA;&#x9;Structure.Delta_Field_Name,&#xD;&#xA;&#x9;Structure.Delta_Field_Type,&#xD;&#xA;&#x9;Structure.Delta_Offset,&#xD;&#xA;&#x9;Structure.Target_System,&#xD;&#xA;&#x9;Structure.Target_Table,&#xD;&#xA;&#x9;Structure.Target_Truncate,&#xD;&#xA;&#x9;Structure.Target_Recreate,&#xD;&#xA;    Structure.Target_Switch,&#xD;&#xA;    Structure.Target_Post_Sql,&#xD;&#xA;    Load_Last_Delta_Key,&#xD;&#xA;&#x9;Structure.Is_Persistent,&#xD;&#xA;&#x9;Structure.Persistent_System,&#xD;&#xA;&#x9;Structure.Persistent_Table,&#xD;&#xA;&#x9;Structure.Persistent_Table_PK1,&#xD;&#xA;&#x9;Structure.Persistent_Table_PK2,&#xD;&#xA;&#x9;Structure.Persistent_Table_PK3,&#xD;&#xA;&#x9;Structure.Target_Table_PK1,&#xD;&#xA;&#x9;Structure.Target_Table_PK2,&#xD;&#xA;&#x9;Structure.Target_Table_PK3&#xD;&#xA;&#xD;&#xA;FROM ADM.ADMIN_PARAM_STAGING Structure&#xD;&#xA;&#xD;&#xA;INNER JOIN ADM.ADMIN_SOURCE_SYSTEM SourceSystem&#xD;&#xA;ON Structure.Source_System = SourceSystem.Source_System_id&#xD;&#xA;&#xD;&#xA;WHERE Structure.Is_Active = 1&#xD;&#xA;AND Load_Group = &quot; + context.LOAD_GROUP  + &quot;&#xD;&#xA;and chore_id = 1112&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT&#xD;&#xA;&#xD;&#xA;&#x9;NEXT VALUE FOR [ADM].[ADMIN_UNIQUE_JOB_ID] AS Job_Id,&#xD;&#xA;&#x9;Structure.Chore_Id,&#xD;&#xA;&#x9;SourceSystem.Talend_Staging_Node AS Chore_Talend_Node,&#xD;&#xA;&#x9;SourceSystem.Source_System_Name AS Source_System,&#xD;&#xA;&#x9;SourceSystem.Source_System_Type AS Source_Type,&#xD;&#xA;&#x9;Structure.Source_Structure,&#xD;&#xA;&#x9;Structure.Source_Fields,&#xD;&#xA;&#x9;Structure.Source_Param,&#xD;&#xA;&#x9;Structure.Source_Advanced_Param,&#xD;&#xA;&#x9;Structure.Delta_Method,&#xD;&#xA;&#x9;Structure.Delta_Field_Name,&#xD;&#xA;&#x9;Structure.Delta_Field_Type,&#xD;&#xA;&#x9;Structure.Delta_Offset,&#xD;&#xA;&#x9;Structure.Target_System,&#xD;&#xA;&#x9;Structure.Target_Table,&#xD;&#xA;&#x9;Structure.Target_Truncate,&#xD;&#xA;&#x9;Structure.Target_Recreate,&#xD;&#xA;    Structure.Target_Switch,&#xD;&#xA;    Structure.Target_Post_Sql,&#xD;&#xA;    Load_Last_Delta_Key,&#xD;&#xA;&#x9;Structure.Is_Persistent,&#xD;&#xA;&#x9;Structure.Persistent_System,&#xD;&#xA;&#x9;Structure.Persistent_Table,&#xD;&#xA;&#x9;Structure.Persistent_Table_PK1,&#xD;&#xA;&#x9;Structure.Persistent_Table_PK2,&#xD;&#xA;&#x9;Structure.Persistent_Table_PK3,&#xD;&#xA;&#x9;Structure.Target_Table_PK1,&#xD;&#xA;&#x9;Structure.Target_Table_PK2,&#xD;&#xA;&#x9;Structure.Target_Table_PK3&#xD;&#xA;&#xD;&#xA;FROM ADM.ADMIN_PARAM_STAGING Structure&#xD;&#xA;&#xD;&#xA;INNER JOIN ADM.ADMIN_SOURCE_SYSTEM SourceSystem&#xD;&#xA;ON Structure.Source_System = SourceSystem.Source_System_id&#xD;&#xA;&#xD;&#xA;WHERE Structure.Is_Active = 1&#xD;&#xA;AND Load_Group = &quot; + context.LOAD_GROUP "/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>

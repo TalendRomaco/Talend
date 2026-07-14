@@ -60,7 +60,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:I3AvJwJS/iYkabNb68DShviEv52hAN9HYOr/Q175" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:AE2ATkabfkPhwdmcu3rsWv9NfaWnLmXKWmRAoGF6" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -95,7 +95,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ECV0crzWlRULGI+MkbBNqhhyGC8pXeLlQgViYDPh" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:2QgiKo8ttxJWQj+JGh0b2jaotF8dEHRuEZB0yDbM" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -114,18 +114,8 @@
     <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
-    <routinesParameter id="_fB5FwISOEeayvK0D79Gaqg" name="DataOperation"/>
-    <routinesParameter id="_fC8OoISOEeayvK0D79Gaqg" name="Mathematical"/>
-    <routinesParameter id="_fDK4IISOEeayvK0D79Gaqg" name="Numeric"/>
-    <routinesParameter id="_fDaIsISOEeayvK0D79Gaqg" name="Relational"/>
-    <routinesParameter id="_fDnkEISOEeayvK0D79Gaqg" name="StringHandling"/>
-    <routinesParameter id="_fDtqsISOEeayvK0D79Gaqg" name="TalendDataGenerator"/>
-    <routinesParameter id="_fD3bsISOEeayvK0D79Gaqg" name="TalendDate"/>
-    <routinesParameter id="_fD-wcISOEeayvK0D79Gaqg" name="TalendString"/>
     <routinesParameter id="_yUa20ITEEea1D7eo1TFBjg" name="Utils"/>
     <routinesParameter id="_EeqWMLJvEeeZif3o8SvhfA" name="DataLoading"/>
-    <routinesParameter id="_qSCiIA9NEe2shNL2goCYFg" name="TalendStringUtil"/>
-    <routinesParameter id="__wkvQ-hKEe6bjtl1OUplwg" name="SQLike"/>
   </parameters>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="-64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
@@ -181,7 +171,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xD;&#xA;SELECT        COUNT(PROBLEM_NO) AS Count, &#xD;&#xA;                         TYP as TYPE, &#xD;&#xA;                         CONVERT(int, CONVERT(varchar, YEAR(GETDATE())) + CASE WHEN len(CONVERT(varchar, MONTH(GETDATE()))) = 1 THEN '0' + CONVERT(varchar, MONTH(GETDATE())) &#xD;&#xA;                         ELSE CONVERT(varchar, MONTH(GETDATE())) END + CASE WHEN len(CONVERT(varchar, day(GETDATE()))) = 1 THEN '0' + CONVERT(varchar, day(GETDATE())) ELSE CONVERT(varchar, day(GETDATE())) END) AS Hist_Date, &#xD;&#xA;                         BRAND&#xD;&#xA;FROM            PRS.F_TICKET_REPORT&#xD;&#xA;WHERE        (URGENCY = 1) AND (TICKET_STATUS = 'offen')&#xD;&#xA;GROUP BY TYP, BRAND&#xD;&#xA;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xD;&#xA;SELECT        COUNT(PROBLEM_NO) AS Count, &#xD;&#xA;                         TYP as TYPE, &#xD;&#xA;                         CONVERT(int, CONVERT(varchar, YEAR(GETDATE())) + CASE WHEN len(CONVERT(varchar, MONTH(GETDATE()))) = 1 THEN '0' + CONVERT(varchar, MONTH(GETDATE())) &#xD;&#xA;                         ELSE CONVERT(varchar, MONTH(GETDATE())) END + CASE WHEN len(CONVERT(varchar, day(GETDATE()))) = 1 THEN '0' + CONVERT(varchar, day(GETDATE())) ELSE CONVERT(varchar, day(GETDATE())) END) AS Hist_Date, &#xD;&#xA;                         BRAND&#xD;&#xA;FROM            PRS.F_INNOSOFT_TICKET_REPORT&#xD;&#xA;WHERE        (URGENCY = 1) AND (TICKET_STATUS = 'offen')&#xD;&#xA;GROUP BY TYP, BRAND&#xD;&#xA;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -237,7 +227,7 @@
       <column comment="" key="false" length="33" name="BRAND" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out">
         <mapperTableEntries name="AMOUNT" expression="row4.Count " type="id_Integer" nullable="true"/>
