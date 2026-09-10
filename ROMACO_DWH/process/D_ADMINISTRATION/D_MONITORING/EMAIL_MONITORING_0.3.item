@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="PROD" jobType="Standard">
   <context confirmationNeeded="false" hide="false" name="PROD">
+    <contextParameter comment="" name="RECEIVER_MACHINE" prompt="RECEIVER_MACHINE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="tappelhoff@ceteris.ag;Sara.Galiotta@romaco.com;Ilham.Benali@romaco.com" internalId="_3oVSsMZTEfCVr_zTFoLeiw"/>
     <contextParameter comment="" name="RECEIVER" prompt="RECEIVER?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;sysaid@romaco.com; till.appelhoff@romaco.com&quot;" internalId="_ZriE4O27Ee6LTJLMTmvwFA"/>
     <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" repositoryContextId="_VSavoJcrEe2AR4f9Fyc4mA" type="id_String" value="587" internalId="_fzpdN-28Ee6LTJLMTmvwFA"/>
     <contextParameter comment="" name="SMTP_User_Password" prompt="SMTP_User_Password?" promptNeeded="false" repositoryContextId="_VSavoJcrEe2AR4f9Fyc4mA" type="id_Password" value="enc:system.encryption.key.v1:D2yMGLzpxU3yhFi6sTpjRpbdNZBlKZ2yNKRWAOA2gmNZ81ux+qs9ug==" internalId="_fzpdOO28Ee6LTJLMTmvwFA"/>
@@ -20,9 +21,9 @@
     <contextParameter comment="" name="DWH_PRESENTATION_SCHEMA" prompt="DWH_PRESENTATION_SCHEMA?" promptNeeded="false" repositoryContextId="_hRKSIO2-Ee6LTJLMTmvwFA" type="id_String" value="PRS" internalId="_QgN4FClUEe-7yNs3ZTFkgA"/>
     <contextParameter comment="" name="DWH_PRESENTATION_PASSWORD" prompt="DWH_PRESENTATION_PASSWORD?" promptNeeded="false" repositoryContextId="_hRKSIO2-Ee6LTJLMTmvwFA" type="id_Password" value="enc:system.encryption.key.v1:Vdjg1qIEF7OmHl1ahou3z6zkldp+RMJ2guDv9d0Fzy3Xu4zSOw==" internalId="_QgN4FSlUEe-7yNs3ZTFkgA"/>
     <contextParameter comment="" name="DWH_PRESENTATION_LOGIN" prompt="DWH_PRESENTATION_LOGIN?" promptNeeded="false" repositoryContextId="_hRKSIO2-Ee6LTJLMTmvwFA" type="id_String" value="adm_bi" internalId="_QgN4FilUEe-7yNs3ZTFkgA"/>
-    <contextParameter comment="" name="RECEIVER_MACHINE" prompt="RECEIVER_MACHINE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="tappelhoff@ceteris.ag;Ilham.Benali@romaco.com" internalId="_3oVSsMZTEfCVr_zTFoLeiw"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="DEV">
+    <contextParameter comment="" name="RECEIVER_MACHINE" prompt="RECEIVER_MACHINE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_3oVSscZTEfCVr_zTFoLeiw"/>
     <contextParameter comment="" name="RECEIVER" prompt="RECEIVER?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;tappelhoff@ceteris.ag&quot;" internalId="_ZriE5O27Ee6LTJLMTmvwFA"/>
     <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" repositoryContextId="_VSavoJcrEe2AR4f9Fyc4mA" type="id_String" value="587" internalId="_fzpdTe28Ee6LTJLMTmvwFA"/>
     <contextParameter comment="" name="SMTP_User_Password" prompt="SMTP_User_Password?" promptNeeded="false" repositoryContextId="_VSavoJcrEe2AR4f9Fyc4mA" type="id_Password" value="enc:system.encryption.key.v1:86hEDwOeDIw8REj+OdSxZk4MBCJi/1jnuYEJn8I5JE6lZso1YxJfKQ==" internalId="_fzpdTu28Ee6LTJLMTmvwFA"/>
@@ -42,7 +43,6 @@
     <contextParameter comment="" name="DWH_PRESENTATION_SCHEMA" prompt="DWH_PRESENTATION_SCHEMA?" promptNeeded="false" repositoryContextId="_hRKSIO2-Ee6LTJLMTmvwFA" type="id_String" value="PRS" internalId="_QgN4IilUEe-7yNs3ZTFkgA"/>
     <contextParameter comment="" name="DWH_PRESENTATION_PASSWORD" prompt="DWH_PRESENTATION_PASSWORD?" promptNeeded="false" repositoryContextId="_hRKSIO2-Ee6LTJLMTmvwFA" type="id_Password" value="enc:system.encryption.key.v1:YU9MAJoSjFZ3OIB7adoiJ8/ACdNzo+255UwNcB0ks8XN1Hgo3w==" internalId="_QgN4IylUEe-7yNs3ZTFkgA"/>
     <contextParameter comment="" name="DWH_PRESENTATION_LOGIN" prompt="DWH_PRESENTATION_LOGIN?" promptNeeded="false" repositoryContextId="_hRKSIO2-Ee6LTJLMTmvwFA" type="id_String" value="adm_bi" internalId="_QgN4JClUEe-7yNs3ZTFkgA"/>
-    <contextParameter comment="" name="RECEIVER_MACHINE" prompt="RECEIVER_MACHINE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_3oVSscZTEfCVr_zTFoLeiw"/>
   </context>
   <parameters>
     <elementParameter field="CHECK" name="LOG4J_RUN_ACTIVATE" value="true" show="false"/>
@@ -90,7 +90,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:I3AvJwJS/iYkabNb68DShviEv52hAN9HYOr/Q175" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:AE2ATkabfkPhwdmcu3rsWv9NfaWnLmXKWmRAoGF6" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -125,7 +125,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ECV0crzWlRULGI+MkbBNqhhyGC8pXeLlQgViYDPh" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:2QgiKo8ttxJWQj+JGh0b2jaotF8dEHRuEZB0yDbM" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -144,17 +144,7 @@
     <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
-    <routinesParameter id="_-wdTMJqEEeWJ_ae9r_Om8Q" name="DataOperation"/>
-    <routinesParameter id="_-yDOoJqEEeWJ_ae9r_Om8Q" name="Mathematical"/>
-    <routinesParameter id="_-yUUYJqEEeWJ_ae9r_Om8Q" name="Numeric"/>
-    <routinesParameter id="_-ymBMJqEEeWJ_ae9r_Om8Q" name="Relational"/>
-    <routinesParameter id="_-y3G8JqEEeWJ_ae9r_Om8Q" name="StringHandling"/>
-    <routinesParameter id="_-zIMsJqEEeWJ_ae9r_Om8Q" name="TalendDataGenerator"/>
-    <routinesParameter id="_-zZ5gJqEEeWJ_ae9r_Om8Q" name="TalendDate"/>
-    <routinesParameter id="_-zs0cJqEEeWJ_ae9r_Om8Q" name="TalendString"/>
     <routinesParameter id="_07HgoNu9EeW4rP_Zio1nmA" name="Utils"/>
-    <routinesParameter id="_qiNUYBSYEe24MdZ2QvgQMQ" name="TalendStringUtil"/>
-    <routinesParameter id="__wkvQ-hKEe6bjtl1OUplwg" name="SQLike"/>
   </parameters>
   <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_1" show="false"/>
@@ -733,8 +723,10 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
   <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Ermittel / Kommuniziere fehlende Maschinen Stammdaten (Category)"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
   <subjob>
