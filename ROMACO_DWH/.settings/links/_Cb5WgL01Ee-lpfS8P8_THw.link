@@ -1,0 +1,36 @@
+{
+  "itemId" : "_Cb5WgL01Ee-lpfS8P8_THw",
+  "contextList" : [ {
+    "contextName" : "PROD",
+    "repoId" : "_VSavoJcrEe2AR4f9Fyc4mA",
+    "parameterList" : [ {
+      "id" : "_iecPkJcsEe2AR4f9Fyc4mA",
+      "name" : "SMTP_Port"
+    }, {
+      "id" : "_2TakAZcuEe2AR4f9Fyc4mA",
+      "name" : "SMTP_User_Password"
+    }, {
+      "id" : "_Zn-lMZcsEe2AR4f9Fyc4mA",
+      "name" : "SMTP_Host"
+    }, {
+      "id" : "_2TakAJcuEe2AR4f9Fyc4mA",
+      "name" : "SMTP_User"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_VSavoJcrEe2AR4f9Fyc4mA",
+    "parameterList" : [ {
+      "id" : "_yaivEleLEe6OX5b3c_wNSw",
+      "name" : "SMTP_Port"
+    }, {
+      "id" : "_yaivFFeLEe6OX5b3c_wNSw",
+      "name" : "SMTP_User_Password"
+    }, {
+      "id" : "_yaivEVeLEe6OX5b3c_wNSw",
+      "name" : "SMTP_Host"
+    }, {
+      "id" : "_yaivE1eLEe6OX5b3c_wNSw",
+      "name" : "SMTP_User"
+    } ]
+  } ]
+}

@@ -54,6 +54,13 @@
     <contextParameter comment="" name="DOCUWARE_SCHEMA" prompt="DOCUWARE_SCHEMA?" promptNeeded="false" repositoryContextId="_iLrqkEEiEfClZdZq5U7F7A" type="id_String" value="dbo" internalId="_Ptm41EE6EfClZdZq5U7F7A"/>
     <contextParameter comment="" name="DOCUWARE_PORT" prompt="DOCUWARE_PORT?" promptNeeded="false" repositoryContextId="_iLrqkEEiEfClZdZq5U7F7A" type="id_String" value="1433" internalId="_Ptm41UE6EfClZdZq5U7F7A"/>
     <contextParameter comment="" name="DOCUWARE_LOGIN" prompt="DOCUWARE_LOGIN?" promptNeeded="false" repositoryContextId="_iLrqkEEiEfClZdZq5U7F7A" type="id_String" value="DocuwareDBO" internalId="_Ptm41kE6EfClZdZq5U7F7A"/>
+    <contextParameter comment="" name="PROFILE_DB_PORT" prompt="PROFILE_DB_PORT?" promptNeeded="false" repositoryContextId="_3yG3ILe_Ee-mcoYSjQV49w" type="id_String" value="" internalId="_l5QsIJA2EfG7MspuNjDlDQ"/>
+    <contextParameter comment="" name="PROFILE_DB_ADDITIONAL_PARAM" prompt="PROFILE_DB_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="_3yG3ILe_Ee-mcoYSjQV49w" type="id_String" value="instance=PFDB" internalId="_l5QsIZA2EfG7MspuNjDlDQ"/>
+    <contextParameter comment="" name="PROFILE_DB_LOGIN" prompt="PROFILE_DB_LOGIN?" promptNeeded="false" repositoryContextId="_3yG3ILe_Ee-mcoYSjQV49w" type="id_String" value="PFDBAdm" internalId="_l5QsIpA2EfG7MspuNjDlDQ"/>
+    <contextParameter comment="" name="PROFILE_DB_PASSWORD" prompt="PROFILE_DB_PASSWORD?" promptNeeded="false" repositoryContextId="_3yG3ILe_Ee-mcoYSjQV49w" type="id_Password" value="enc:system.encryption.key.v1:17r7L+xW1QEC3Xz1fa5rNMNXNh39KmWvJ4GLoFk1SC0ruilXrPP8ndZ416n/BQ==" internalId="_l5QsI5A2EfG7MspuNjDlDQ"/>
+    <contextParameter comment="" name="PROFILE_DB_DATABASE" prompt="PROFILE_DB_DATABASE?" promptNeeded="false" repositoryContextId="_3yG3ILe_Ee-mcoYSjQV49w" type="id_String" value="SAP_EXPORT" internalId="_l5QsJJA2EfG7MspuNjDlDQ"/>
+    <contextParameter comment="" name="PROFILE_DB_SERVER" prompt="PROFILE_DB_SERVER?" promptNeeded="false" repositoryContextId="_3yG3ILe_Ee-mcoYSjQV49w" type="id_String" value="KASV-SQL01" internalId="_l5QsJZA2EfG7MspuNjDlDQ"/>
+    <contextParameter comment="" name="PROFILE_DB_SCHEMA" prompt="PROFILE_DB_SCHEMA?" promptNeeded="false" repositoryContextId="_3yG3ILe_Ee-mcoYSjQV49w" type="id_String" value="dbo" internalId="_l5QsJpA2EfG7MspuNjDlDQ"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="DEV">
     <contextParameter comment="" name="ZEUSX_SERVER" prompt="ZEUSX_SERVER?" promptNeeded="false" repositoryContextId="_nZfJMH9ZEeyZfMeOF10yTw" type="id_String" value="KASV-SAGE-DB" internalId="_h67wMDLQEe-ZYteWlLKUMg"/>
@@ -109,6 +116,13 @@
     <contextParameter comment="" name="DOCUWARE_SCHEMA" prompt="DOCUWARE_SCHEMA?" promptNeeded="false" repositoryContextId="_iLrqkEEiEfClZdZq5U7F7A" type="id_String" value="dbo" internalId="_Ptm420E6EfClZdZq5U7F7A"/>
     <contextParameter comment="" name="DOCUWARE_PORT" prompt="DOCUWARE_PORT?" promptNeeded="false" repositoryContextId="_iLrqkEEiEfClZdZq5U7F7A" type="id_String" value="1433" internalId="_Ptm43EE6EfClZdZq5U7F7A"/>
     <contextParameter comment="" name="DOCUWARE_LOGIN" prompt="DOCUWARE_LOGIN?" promptNeeded="false" repositoryContextId="_iLrqkEEiEfClZdZq5U7F7A" type="id_String" value="DocuwareDBO" internalId="_Ptm43UE6EfClZdZq5U7F7A"/>
+    <contextParameter comment="" name="PROFILE_DB_PORT" prompt="PROFILE_DB_PORT?" promptNeeded="false" repositoryContextId="_3yG3ILe_Ee-mcoYSjQV49w" type="id_String" value="" internalId="_l5QsJ5A2EfG7MspuNjDlDQ"/>
+    <contextParameter comment="" name="PROFILE_DB_ADDITIONAL_PARAM" prompt="PROFILE_DB_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="_3yG3ILe_Ee-mcoYSjQV49w" type="id_String" value="instance=PFDB" internalId="_l5QsKJA2EfG7MspuNjDlDQ"/>
+    <contextParameter comment="" name="PROFILE_DB_LOGIN" prompt="PROFILE_DB_LOGIN?" promptNeeded="false" repositoryContextId="_3yG3ILe_Ee-mcoYSjQV49w" type="id_String" value="PFDBAdm" internalId="_l5QsKZA2EfG7MspuNjDlDQ"/>
+    <contextParameter comment="" name="PROFILE_DB_PASSWORD" prompt="PROFILE_DB_PASSWORD?" promptNeeded="false" repositoryContextId="_3yG3ILe_Ee-mcoYSjQV49w" type="id_Password" value="enc:system.encryption.key.v1:N3iZwZ70SV8m2p4IN4WF1swhLn+gnkFC7mUnrrU6wIJIqDckM8O52YCayWcaEQ==" internalId="_l5QsKpA2EfG7MspuNjDlDQ"/>
+    <contextParameter comment="" name="PROFILE_DB_DATABASE" prompt="PROFILE_DB_DATABASE?" promptNeeded="false" repositoryContextId="_3yG3ILe_Ee-mcoYSjQV49w" type="id_String" value="SAP_EXPORT" internalId="_l5QsK5A2EfG7MspuNjDlDQ"/>
+    <contextParameter comment="" name="PROFILE_DB_SERVER" prompt="PROFILE_DB_SERVER?" promptNeeded="false" repositoryContextId="_3yG3ILe_Ee-mcoYSjQV49w" type="id_String" value="KASV-SQL01" internalId="_l5QsLJA2EfG7MspuNjDlDQ"/>
+    <contextParameter comment="" name="PROFILE_DB_SCHEMA" prompt="PROFILE_DB_SCHEMA?" promptNeeded="false" repositoryContextId="_3yG3ILe_Ee-mcoYSjQV49w" type="id_String" value="dbo" internalId="_l5QsLZA2EfG7MspuNjDlDQ"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
@@ -705,7 +719,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-280" posY="440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="String foo = null;&#xA;&#xA;System.out.println(context.DOCUWARE_PASSWORD);"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String foo = null;&#xA;&#xA;System.out.println(context.PROFILE_DB_PASSWORD);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_2"/>

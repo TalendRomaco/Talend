@@ -183,7 +183,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:I3AvJwJS/iYkabNb68DShviEv52hAN9HYOr/Q175" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:AE2ATkabfkPhwdmcu3rsWv9NfaWnLmXKWmRAoGF6" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -218,7 +218,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ECV0crzWlRULGI+MkbBNqhhyGC8pXeLlQgViYDPh" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:2QgiKo8ttxJWQj+JGh0b2jaotF8dEHRuEZB0yDbM" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -237,16 +237,6 @@
     <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
-    <routinesParameter id="__xUWKehKEe6bjtl1OUplwg" name="DataOperation"/>
-    <routinesParameter id="__xeHJuhKEe6bjtl1OUplwg" name="Mathematical"/>
-    <routinesParameter id="__xn4JuhKEe6bjtl1OUplwg" name="Numeric"/>
-    <routinesParameter id="__xxCEOhKEe6bjtl1OUplwg" name="Relational"/>
-    <routinesParameter id="__wkvQ-hKEe6bjtl1OUplwg" name="SQLike"/>
-    <routinesParameter id="__xxCGuhKEe6bjtl1OUplwg" name="StringHandling"/>
-    <routinesParameter id="__x6zFuhKEe6bjtl1OUplwg" name="TalendDataGenerator"/>
-    <routinesParameter id="__x6zIOhKEe6bjtl1OUplwg" name="TalendDate"/>
-    <routinesParameter id="__yD9CuhKEe6bjtl1OUplwg" name="TalendStringUtil"/>
-    <routinesParameter id="__yD9AOhKEe6bjtl1OUplwg" name="TalendString"/>
     <routinesParameter id="_Kipm0FNuEeiyKbn4gXKnQQ" name="TtaQueryGenerator"/>
     <routinesParameter id="_qRfuIMyDEeila_ysD5cASw" name="TtaSerialization"/>
   </parameters>
@@ -339,6 +329,31 @@
       <column comment="" key="false" length="-1" name="dyn_data" nullable="true" pattern="&quot;yyyyMMdd&quot;" precision="-1" sourceType="VARCHAR" type="id_Dynamic" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="360" posY="1600">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="true"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="dyn_data"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="f_time_abas_zeus_" name="tLogRow_2">
+      <column comment="" key="false" length="-1" name="dyn_data" nullable="true" pattern="&quot;yyyyMMdd&quot;" precision="-1" sourceType="VARCHAR" type="id_Dynamic" originalLength="-1" usefulColumn="true"/>
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
@@ -1549,6 +1564,31 @@
       <column comment="" key="false" length="-1" name="dyn_data" nullable="true" pattern="&quot;yyyyMMdd&quot;" precision="-1" sourceType="VARCHAR" type="id_Dynamic" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="400" posY="2600">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="dyn_data"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="f_time_abas_zeus_" name="tLogRow_1">
+      <column comment="" key="false" length="-1" name="dyn_data" nullable="true" pattern="&quot;yyyyMMdd&quot;" precision="-1" sourceType="VARCHAR" type="id_Dynamic" originalLength="-1" usefulColumn="true"/>
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
@@ -4273,7 +4313,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-80" posY="-1000">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_9" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="context.TARGET_SYSTEM = &quot;DWH&quot;;&#xA;&#xA;if (context.TARGET_SYSTEM.equals(&quot;DWH&quot;)){&#xA;globalMap.put(&quot;SERVER&quot;,context.DWH_STAGE_SERVER);&#xA;globalMap.put(&quot;DATABASE&quot;,context.DWH_STAGE_DATABASE);&#xA;globalMap.put(&quot;PORT&quot;,context.DWH_STAGE_PORT);&#xA;globalMap.put(&quot;LOGIN&quot;,context.DWH_STAGE_LOGIN);&#xA;globalMap.put(&quot;PASSWORD&quot;,context.DWH_STAGE_PASSWORD);&#xA;globalMap.put(&quot;ADDITIONAL_PARAM&quot;,context.DWH_STAGE_ADDITIONAL_PARAM);&#xA;globalMap.put(&quot;SCHEMA&quot;,context.DWH_STAGE_SCHEMA);&#xA;}&#xA;&#xA;if(context.TARGET_SYSTEM.equals(&quot;PROFILE_DB&quot;)){&#xA;globalMap.put(&quot;SERVER&quot;,context.PROFILE_DB_SERVER);&#xA;globalMap.put(&quot;DATABASE&quot;,context.PROFILE_DB_DATABASE);&#xA;globalMap.put(&quot;PORT&quot;,context.PROFILE_DB_PORT);&#xA;globalMap.put(&quot;LOGIN&quot;,context.PROFILE_DB_LOGIN);&#xA;globalMap.put(&quot;PASSWORD&quot;,context.PROFILE_DB_PASSWORD);&#xA;globalMap.put(&quot;ADDITIONAL_PARAM&quot;,context.PROFILE_DB_ADDITIONAL_PARAM);&#xA;globalMap.put(&quot;SCHEMA&quot;,context.PROFILE_DB_SCHEMA);&#xA;}&#xA;&#xA;&#xA;&#xA;&#xA;context.SOURCE_SYSTEM = &quot;SAP&quot;;&#xA;context.TARGET_RECREATE = true;&#xA;&#xA;context.SOURCE_STRUCTURE = &quot;TVAKT&quot;;&#xA;&#xA;context.SOURCE_FIELD = &quot;*&quot;;&#xA;&#xA;context.TARGET_TABLE = &quot;S_SAP_TVAKT_TEST&quot;;&#xA;&#xA;//context.SOURCE_PARAM = &quot;BUKRS in (1100,1110,1120,2020)&quot;;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="context.TARGET_SYSTEM = &quot;DWH&quot;;&#xA;&#xA;if (context.TARGET_SYSTEM.equals(&quot;DWH&quot;)){&#xA;globalMap.put(&quot;SERVER&quot;,context.DWH_STAGE_SERVER);&#xA;globalMap.put(&quot;DATABASE&quot;,context.DWH_STAGE_DATABASE);&#xA;globalMap.put(&quot;PORT&quot;,context.DWH_STAGE_PORT);&#xA;globalMap.put(&quot;LOGIN&quot;,context.DWH_STAGE_LOGIN);&#xA;globalMap.put(&quot;PASSWORD&quot;,context.DWH_STAGE_PASSWORD);&#xA;globalMap.put(&quot;ADDITIONAL_PARAM&quot;,context.DWH_STAGE_ADDITIONAL_PARAM);&#xA;globalMap.put(&quot;SCHEMA&quot;,context.DWH_STAGE_SCHEMA);&#xA;}&#xA;&#xA;if(context.TARGET_SYSTEM.equals(&quot;PROFILE_DB&quot;)){&#xA;globalMap.put(&quot;SERVER&quot;,context.PROFILE_DB_SERVER);&#xA;globalMap.put(&quot;DATABASE&quot;,context.PROFILE_DB_DATABASE);&#xA;globalMap.put(&quot;PORT&quot;,context.PROFILE_DB_PORT);&#xA;globalMap.put(&quot;LOGIN&quot;,context.PROFILE_DB_LOGIN);&#xA;globalMap.put(&quot;PASSWORD&quot;,context.PROFILE_DB_PASSWORD);&#xA;globalMap.put(&quot;ADDITIONAL_PARAM&quot;,context.PROFILE_DB_ADDITIONAL_PARAM);&#xA;globalMap.put(&quot;SCHEMA&quot;,context.PROFILE_DB_SCHEMA);&#xA;}&#xA;&#xA;&#xA;&#xA;&#xA;context.SOURCE_SYSTEM = &quot;SAP&quot;;&#xA;context.TARGET_RECREATE = true;&#xA;&#xA;context.SOURCE_STRUCTURE = &quot;VTTP&quot;;&#xA;&#xA;context.SOURCE_FIELD = &quot;*&quot;;&#xA;&#xA;context.TARGET_TABLE = &quot;S_SAP_VTTP_TEST&quot;;&#xA;&#xA;//context.SOURCE_PARAM = &quot;BUKRS in (1100,1110,1120,2020)&quot;;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <elementParameter field="MEMO" name="COMMENT" value="Setze Variablen für Connection (Ziel)"/>
@@ -4297,9 +4337,13 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tCreateTemporaryFile_1" offsetLabelX="0" offsetLabelY="0" source="tCreateTemporaryFile_1" target="tFixedFlowInput_3">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tDBOutput_1">
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tLogRow_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row35" lineStyle="0" metaname="tLogRow_2" offsetLabelX="0" offsetLabelY="0" source="tLogRow_2" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row35" show="false"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBOutput_1" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_1" target="tDBCommit_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
@@ -4439,9 +4483,13 @@
     <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.TARGET_RECREATE == null || context.TARGET_RECREATE == false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="If_Recreate_False" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row9" lineStyle="0" metaname="tFileInputDelimited_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_2" target="tDBOutput_4">
+  <connection connectorName="FLOW" label="row9" lineStyle="0" metaname="tFileInputDelimited_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_2" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row9" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row34" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tDBOutput_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row34" show="false"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBOutput_4" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_4" target="tDBCommit_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk4" show="false"/>

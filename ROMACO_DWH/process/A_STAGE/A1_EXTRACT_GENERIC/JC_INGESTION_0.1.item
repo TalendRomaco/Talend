@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="PROD" jobType="Standard">
   <context confirmationNeeded="false" hide="false" name="PROD">
-    <contextParameter comment="" name="LOAD_GROUP" prompt="LOAD_GROUP?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="2" internalId="_slnHMAIdEe-hw6eqocfYFg"/>
+    <contextParameter comment="" name="LOAD_GROUP" prompt="LOAD_GROUP?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1" internalId="_slnHMAIdEe-hw6eqocfYFg"/>
     <contextParameter comment="" name="DEBUG" prompt="DEBUG?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="true" internalId="_slnHMQIdEe-hw6eqocfYFg"/>
     <contextParameter comment="" name="DWH_STAGE_ADDITIONAL_PARAM" prompt="DWH_STAGE_ADDITIONAL_PARAM?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="instance=DWH;useNTLMv2=true;domain=ad42;integratedSecurity=false" internalId="_tRMsTRH_Ee-yhejSmGGM_Q"/>
     <contextParameter comment="" name="DWH_STAGE_DATABASE" prompt="DWH_STAGE_DATABASE?" promptNeeded="false" repositoryContextId="_NMth0O29Ee6LTJLMTmvwFA" type="id_String" value="DWH" internalId="_tRMsThH_Ee-yhejSmGGM_Q"/>
