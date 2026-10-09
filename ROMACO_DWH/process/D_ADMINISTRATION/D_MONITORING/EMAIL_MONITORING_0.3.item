@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="PROD" jobType="Standard">
   <context confirmationNeeded="false" hide="false" name="PROD">
-    <contextParameter comment="" name="RECEIVER_MACHINE" prompt="RECEIVER_MACHINE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="tappelhoff@ceteris.ag;Sara.Galiotta@romaco.com;Ilham.Benali@romaco.com" internalId="_3oVSsMZTEfCVr_zTFoLeiw"/>
+    <contextParameter comment="" name="RECEIVER_MACHINE" prompt="RECEIVER_MACHINE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Sara.Galiotta@romaco.com;Massimo.Zancolich@romaco.com;tappelhoff@ceteris.ag;vbarten@ceteris.ag" internalId="_3oVSsMZTEfCVr_zTFoLeiw"/>
     <contextParameter comment="" name="RECEIVER" prompt="RECEIVER?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;sysaid@romaco.com; till.appelhoff@romaco.com&quot;" internalId="_ZriE4O27Ee6LTJLMTmvwFA"/>
     <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" repositoryContextId="_VSavoJcrEe2AR4f9Fyc4mA" type="id_String" value="587" internalId="_fzpdN-28Ee6LTJLMTmvwFA"/>
     <contextParameter comment="" name="SMTP_User_Password" prompt="SMTP_User_Password?" promptNeeded="false" repositoryContextId="_VSavoJcrEe2AR4f9Fyc4mA" type="id_Password" value="enc:system.encryption.key.v1:D2yMGLzpxU3yhFi6sTpjRpbdNZBlKZ2yNKRWAOA2gmNZ81ux+qs9ug==" internalId="_fzpdOO28Ee6LTJLMTmvwFA"/>
